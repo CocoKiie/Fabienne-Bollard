@@ -8,7 +8,7 @@
     <?php wp_head(); //Pour appeler le css ?>
 </head>
 <body>
-    <nav>
+    <nav class="navigation">
         <ul>
             <li><a href=""><img src="../wp-content/themes/usmb/img/logo.svg" alt="Logo représentant un papillon"></a></li>
             <li><a href="">Accueil</a></li>
