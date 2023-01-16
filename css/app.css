@@ -449,6 +449,36 @@ section.acc_section2 div article button {
   border: 0;
 }
 
+/********************\
+SECTION3
+\********************/
+section.acc_section3 {
+  margin-top: 90px;
+}
+section.acc_section3 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+section.acc_section3 > div article img {
+  width: 485px;
+  height: 140px;
+}
+section.acc_section3 > div article h4 {
+  width: 317px;
+  height: 29px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+section.acc_section3 > div article p {
+  width: 326px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
 div.sticker {
   background-color: #0000ff;
 }

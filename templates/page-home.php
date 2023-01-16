@@ -141,41 +141,43 @@ $txt_slide_3 = get_field("txt_slide_3");
             </article>
         </div>
     </section>
-    <section>
+    <section class="acc_section3">
         <h2><?php the_field("title_section_3"); ?></h2>
         <h3><?php the_field("tagline_section_3"); ?></h3>
-        <article>
-            <img src="" alt="">
-            <h4>M.N.R.I du Pr Masgutova</h4>
-            <p>La Méthode Neurosensorimotrice du Dr. Masgutova est une méthode manuelle douce qui permet de travailler sur&nbsp;:</p>
-            <ul>
-                <li>les troubles de l'<strong>attention</strong> ;</li>
-                <li>la <strong>coordination</strong> ;</li>
-                <li>la <strong>mémoire</strong> ;</li>
-                <li>la <strong>communication</strong>.</li>
-            </ul>
-        </article>
-        <article>
-            <img src="" alt="">
-            <h4>R.M.T.I du Dr Blomberg</h4>
-            <p>L'Entraînement International au Mouvement Rythmique du Dr. Blomberg est une méthode de développement moteur pour tous. Elle permet d’améliorer :</p>
-            <ul>
-                <li>la <strong>concentration</strong> ;</li>
-                <li>l'<strong>équilibre</strong> ;</li>
-                <li>la fonction <strong>cérébrale global</strong> ;</li>
-            </ul>
-        </article>
-        <article>
-            <img src="" alt="">
-            <h4>Brain ball de R.Pautonnier</h4>
-            <p>La méthode brain ball de R. Pautonnier développe :</p>
-            <ul>
-                <li>la <strong>concentration</strong> ;</li>
-                <li>la <strong>coordination</strong> gestuelle ;</li>
-                <li>l'<strong>attention</strong> ;</li>
-                <li>joue avec les <strong>sens</strong> (vue, ouïe, touché) ;</li>
-            </ul>
-        </article>
+        <div>
+            <article>
+                <img src="" alt="">
+                <h4>M.N.R.I du Pr Masgutova</h4>
+                <p>La Méthode Neurosensorimotrice du Dr. Masgutova est une méthode manuelle douce qui permet de travailler sur&nbsp;:</p>
+                <ul>
+                    <li>les troubles de l'<strong>attention</strong> ;</li>
+                    <li>la <strong>coordination</strong> ;</li>
+                    <li>la <strong>mémoire</strong> ;</li>
+                    <li>la <strong>communication</strong>.</li>
+                </ul>
+            </article>
+            <article>
+                <img src="" alt="">
+                <h4>R.M.T.I du Dr Blomberg</h4>
+                <p>L'Entraînement International au Mouvement Rythmique du Dr. Blomberg est une méthode de développement moteur pour tous. Elle permet d’améliorer :</p>
+                <ul>
+                    <li>la <strong>concentration</strong> ;</li>
+                    <li>l'<strong>équilibre</strong> ;</li>
+                    <li>la fonction <strong>cérébrale global</strong> ;</li>
+                </ul>
+            </article>
+            <article>
+                <img src="" alt="">
+                <h4>Brain ball de R.Pautonnier</h4>
+                <p>La méthode brain ball de R. Pautonnier développe :</p>
+                <ul>
+                    <li>la <strong>concentration</strong> ;</li>
+                    <li>la <strong>coordination</strong> gestuelle ;</li>
+                    <li>l'<strong>attention</strong> ;</li>
+                    <li>joue avec les <strong>sens</strong> (vue, ouïe, touché) ;</li>
+                </ul>
+            </article>
+        </div>
         <button><i></i><?php the_field("button_section_4"); ?></button>
 
         <!--cercle-->

@@ -434,3 +434,41 @@ section.acc_section2 {
         }
     }
 }
+
+/********************\
+SECTION3
+\********************/
+section.acc_section3 {
+    margin-top: 90px;
+
+    >div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+
+        article {
+            img {
+                width: 485px;
+                height: 140px;
+            }
+
+            h4 {
+                width: 317px;
+                height: 29px;
+
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+            }
+
+            p {
+                width: 326px;
+
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    }
+}
