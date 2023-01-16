@@ -12,6 +12,7 @@
         <p><a href="">Mentions légales</a> - <a href="">Politique de confidentialité</a> - <a href="">Plan du site</a></p>
         <p>&copy; <?php echo (date(format: "Y")); ?> Fabienne Bollard.</p>
     </footer>
+    <?php wp_footer(); //Pour appeler le css ?>
 </body>
 
 </html>
