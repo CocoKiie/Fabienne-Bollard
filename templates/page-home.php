@@ -53,17 +53,23 @@ $txt_slide_3 = get_field("txt_slide_3");
                 <button><i></i><?php the_field("button_i_reflexes"); ?></button>
             </div>
         </div>
-        <div class="carousel" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false, "wrapAround": true }'>
-            <div class="carousel-cell-displaynone">
+        <div class="caroussel" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false, "wrapAround": true }'>
+            <div class="carousel-cell">
                 <h4><?php the_field("title_slide_1"); ?></h4>
-                <p><?php the_field("txt_slide_1"); ?></p>
+                <div>
+                    <img src="" alt="">
+                    <p><?php the_field("txt_slide_1"); ?></p>
+                </div>
             </div>
-            <div class="carousel-cell-displaynone">
+            <div class="carousel-cell">
                 <h4><?php the_field("title_slide_2"); ?></h4>
-                <p><?php the_field("txt_slide_2"); ?></p>
+                <div>
+                    <img src="" alt="">
+                    <p><?php the_field("txt_slide_2"); ?></p>
+                </div>
             </div>
             <?php if ($title_slide_3 || $txt_slide_3) : ?>
-                <div class="carousel-cell-displaynone">
+                <div class="carousel-cell">
                     <?php if ($title_slide_3) : ?>
                         <h4><?php echo $title_slide_3; ?></h4>
                     <?php endif; ?>
@@ -78,8 +84,10 @@ $txt_slide_3 = get_field("txt_slide_3");
         <div></div>
 
         <!--Boutons slider-->
-        <button onclick="plusDivs(-1)">&#10094;</button>
-        <button onclick="plusDivs(1)">&#10095;</button>
+        <div class="button">
+            <button onclick="plusDivs(-1)">&#10094;</button>
+            <button onclick="plusDivs(1)">&#10095;</button>
+        </div>
         <script>
             var slideIndex = 1;
             showDivs(slideIndex);
@@ -90,7 +98,7 @@ $txt_slide_3 = get_field("txt_slide_3");
 
             function showDivs(n) {
                 var i;
-                var x = document.getElementsByClassName("mySlides");
+                var x = document.getElementsByClassName("carousel-cell");
                 if (n > x.length) {
                     slideIndex = 1
                 }
