@@ -10,11 +10,11 @@
 <body>
     <nav>
         <ul>
-            <li><a href=""><img src="../img/logo-fabienne_bollard.svg" alt="Logo représentant un papillon"></a></li>
+            <li><a href=""><img src="../wp-content/themes/usmb/img/logo.svg" alt="Logo représentant un papillon"></a></li>
             <li><a href="">Accueil</a></li>
             <li><a href="">Concept</a></li>
             <li><a href="">Pourquoi&nbsp;consulter&nbsp;?</a></li>
-            <li>Mes prestations
+            <li><i></i>Mes prestations
                 <ul>
                     <li><a href="">Séances individuelles</a></li>
                     <li><a href="">Ateliers collectifs</a></li>
