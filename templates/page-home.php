@@ -6,29 +6,31 @@
 //Chargement du header
 get_header();
 
-$title_slide_3=get_field("title_slide_3");
-$txt_slide_3=get_field("txt_slide_3");
+$image1 = get_field("image1");
+$image2 = get_field("image2");
+$title_slide_3 = get_field("title_slide_3");
+$txt_slide_3 = get_field("txt_slide_3");
 ?>
 
 <header class="accueil">
-    <div>
-        <h1>L'Éducation Neurosensorielle et&nbsp;Motrice</h1>
-        <h2>Un accompagnement <strong>personnalisé</strong> vers<br>votre <strong><?php the_field("accroche"); ?></strong></h2>
-        <button><i></i><?php the_field("rdv"); ?></button>
+    <div class="acc_header">
+        <div>
+            <h1>L'Éducation Neurosensorielle et&nbsp;Motrice</h1>
+            <h2>Un accompagnement <strong>personnalisé</strong> vers<br>votre <strong><?php the_field("accroche"); ?></strong></h2>
+            <button><i></i><?php the_field("rdv"); ?></button>
+        </div>
+        <div>
+            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" alt="<?php echo ($image["alt"]) ?>" loading="lazy">
+            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" alt="<?php echo ($image["alt"]) ?>" loading="lazy">
+        </div>
     </div>
-    <div>
-        <img src="" alt="Image d'une jeune fille dans un champs de coquelicots" loading="lazy">
-        <img src="" alt="Image de personnes en rendez-vous dans un cabinet" loading="lazy">
-    </div>
-    <div>
         <p><?php the_field("scroll"); ?></p>
-        <img src="../../img/" alt="flèche vers le bas" loading="lazy">
-    </div>
+        <img src="../wp-content/themes/usmb/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
 
     <!--cercle-->
-    <div></div>
-    <div></div>
-    <div></div>
+    <div class="cercle1"></div>
+    <div class="cercle2"></div>
+    <div class="cercle3"></div>
 </header>
 <main>
     <section>
@@ -56,14 +58,14 @@ $txt_slide_3=get_field("txt_slide_3");
                 <p><?php the_field("txt_slide_2"); ?></p>
             </div>
             <?php if ($title_slide_3 || $txt_slide_3) : ?>
-            <div class="carousel-cell-displaynone">
-                <?php if ($title_slide_3) : ?>
-                    <h4><?php echo $title_slide_3; ?></h4>
-                <?php endif; ?>
-                <?php if ($txt_slide_3) : ?>
-                    <p><?php echo $txt_slide_3; ?></p>
-                <?php endif; ?>
-            </div>
+                <div class="carousel-cell-displaynone">
+                    <?php if ($title_slide_3) : ?>
+                        <h4><?php echo $title_slide_3; ?></h4>
+                    <?php endif; ?>
+                    <?php if ($txt_slide_3) : ?>
+                        <p><?php echo $txt_slide_3; ?></p>
+                    <?php endif; ?>
+                </div>
             <?php endif; ?>
         </div>
 
