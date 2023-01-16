@@ -4,7 +4,6 @@
   font-weight: 500;
   color: black;
   margin: 0;
-  text-decoration: none;
 }
 
 /********************\
@@ -19,7 +18,11 @@ nav.navigation {
   display: flex;
   justify-content: center;
   background-color: #ffffff;
+  box-shadow: 0px 4px 10px -5px rgba(0, 0, 0, 0.15);
   z-index: 100;
+}
+nav.navigation a {
+  text-decoration: none;
 }
 nav.navigation li:nth-child(1) {
   margin-right: auto;
@@ -122,6 +125,7 @@ header.accueil div.acc_header h2 strong {
 header.accueil div > img {
   max-width: 293px;
   min-height: 456px;
+  border-radius: 2px;
 }
 header.accueil div > img:nth-of-type(2) {
   transform: rotate(20deg);
@@ -134,12 +138,14 @@ header.accueil button {
   gap: 15px;
   border: 0;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 21px;
   cursor: pointer;
   background: #1CACE1;
   border-radius: 90px;
   margin-top: 56px;
+  transition: 0.3s;
 }
 header.accueil button i {
   background-image: url("../img/calendar.svg");
@@ -149,6 +155,11 @@ header.accueil button i {
   width: 20px;
   height: 20px;
 }
+header.accueil button:hover {
+  scale: 110%;
+  margin-left: 10px;
+  transition: 0.3s;
+}
 header.accueil p {
   margin-top: 25px;
 }
@@ -156,7 +167,7 @@ header.accueil p + img {
   display: inline-block;
   width: 17px;
   animation: downArrow 0.7s ease-out infinite alternate;
-  margin-top: -2px;
+  margin-top: 3px;
 }
 @keyframes downArrow {
   0% {
@@ -174,6 +185,7 @@ header.accueil div.cercle1 {
   border-radius: 50%;
   width: 246px;
   height: 246px;
+  z-index: -10;
 }
 header.accueil div.cercle2 {
   position: absolute;
@@ -192,6 +204,100 @@ header.accueil div.cercle3 {
   border-radius: 50%;
   width: 77px;
   height: 77px;
+}
+
+/********************\
+SECTION1
+\********************/
+main section h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  margin-left: 131px;
+  color: #1CACE1;
+}
+main section h3 {
+  font-family: "Handlee";
+  font-size: 40px;
+  line-height: 112%;
+  margin: 5px 0 0 131px;
+}
+
+main section.acc_section1 video {
+  width: 664px;
+  height: 403px;
+  margin-top: 30px;
+  border-radius: 2px;
+}
+main section.acc_section1 video p {
+  font-size: 16px;
+  width: 664px;
+}
+main section.acc_section1 video + div {
+  margin: 30px auto 0 auto;
+}
+main section.acc_section1 video + div div > i {
+  background-image: url("../img/arrow.png");
+  display: inline-block;
+  background-size: contain;
+  width: 48.03px;
+  height: 53.76px;
+  transform: rotate(-7.86deg);
+}
+main section.acc_section1 video + div div > p {
+  width: 488px;
+  height: 117px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+main section.acc_section1 video + div div > p strong {
+  font-size: 28px;
+}
+main section.acc_section1 video + div div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+main section.acc_section1 video + div div i {
+  margin-top: -28px;
+}
+main section.acc_section1 video + div div + p {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+main section.acc_section1 video + div button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 56px auto 0 auto;
+  gap: 10px;
+  background: #F77E4B;
+  border: 0;
+  border-radius: 90px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+main section.acc_section1 video + div button i {
+  background-image: url("../img/informations.svg");
+  display: inline-block;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}
+main section.acc_section1 h3 + div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 88px;
 }
 
 div.sticker {

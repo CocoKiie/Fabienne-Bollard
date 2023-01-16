@@ -53,7 +53,7 @@ header.accueil {
     div>img {
         max-width: 293px;
         min-height: 456px;
-
+        border-radius: 2px;
     }
 
     div>img:nth-of-type(2) {
@@ -69,12 +69,14 @@ header.accueil {
 
         border: 0;
         color: white;
-        font-size: 20px;
+        font-size: 16px;
+        font-weight: 500;
         line-height: 21px;
         cursor: pointer;
         background: #1CACE1;
         border-radius: 90px;
         margin-top: 56px;
+        transition: 0.3s;
 
         i {
             background-image: url("../img/calendar.svg");
@@ -85,7 +87,14 @@ header.accueil {
             height: 20px;
         }
     }
-    p{
+
+    button:hover {
+        scale: 110%;
+        margin-left: 10px;
+        transition: 0.3s;
+    }
+
+    p {
         margin-top: 25px;
     }
 
@@ -93,7 +102,7 @@ header.accueil {
         display: inline-block;
         width: 17px;
         animation: downArrow 0.7s ease-out infinite alternate;
-        margin-top: -2px;
+        margin-top: 3px;
     }
 
     @keyframes downArrow {
@@ -114,6 +123,7 @@ header.accueil {
         border-radius: 50%;
         width: 246px;
         height: 246px;
+        z-index: -10;
     }
 
     div.cercle2 {
@@ -134,5 +144,121 @@ header.accueil {
         border-radius: 50%;
         width: 77px;
         height: 77px;
+    }
+}
+
+/********************\
+SECTION1
+\********************/
+main section {
+    h2 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        margin-left: 131px;
+
+        color: #1CACE1;
+    }
+
+    h3 {
+        font-family: 'Handlee';
+        font-size: 40px;
+        line-height: 112%;
+        margin: 5px 0 0 131px;
+    }
+}
+
+main section.acc_section1 {
+    video {
+        width: 664px;
+        height: 403px;
+        margin-top: 30px;
+        border-radius: 2px;
+
+        p {
+            font-size: 16px;
+            width: 664px;
+        }
+    }
+
+    video+div {
+        margin: 30px auto 0 auto;
+
+        div>i {
+            background-image: url("../img/arrow.png");
+            display: inline-block;
+            background-size: contain;
+            width: 48.03px;
+            height: 53.76px;
+
+            transform: rotate(-7.86deg);
+        }
+
+        div>p {
+            width: 488px;
+            height: 117px;
+
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+
+            text-align: center;
+            letter-spacing: 0.03em;
+
+            strong {
+                font-size: 28px;
+            }
+        }
+
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+
+            i{
+                margin-top: -28px;
+            }
+        }
+
+        div+p{
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px 20px;
+            margin:56px auto 0 auto;
+            gap: 10px;
+
+            background: #F77E4B;
+            border: 0;
+            border-radius: 90px;
+            color: white;
+            cursor: pointer;
+
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 21px;
+
+            i {
+                background-image: url("../img/informations.svg");
+                display: inline-block;
+                background-size: contain;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    h3+div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 88px;
     }
 }

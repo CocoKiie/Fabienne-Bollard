@@ -24,8 +24,8 @@ $txt_slide_3 = get_field("txt_slide_3");
             <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" alt="<?php echo ($image["alt"]) ?>" loading="lazy">
         </div>
     </div>
-        <p><?php the_field("scroll"); ?></p>
-        <img src="../wp-content/themes/usmb/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
+    <p><?php the_field("scroll"); ?></p>
+    <img src="../wp-content/themes/usmb/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
 
     <!--cercle-->
     <div class="cercle1"></div>
@@ -33,20 +33,25 @@ $txt_slide_3 = get_field("txt_slide_3");
     <div class="cercle3"></div>
 </header>
 <main>
-    <section>
+    <section class="acc_section1">
         <h2><?php the_field("title_section_1"); ?></h2>
         <h3><?php the_field("tagline_section_1"); ?></h3>
-        <video controls preload="metadata" poster="image_poster.png">
-            <source src="/media/cc0-videos/flower.webm" type="video/webm">
-            <source src="/media/cc0-videos/flower.mp4" type="video/mp4">
-            <p>Votre navigateur ne prend pas en compte la vidéo.
-                Vous pouvez la télécharger au format <a href="/media/cc0-videos/flower.mp4">MP4</a></p>
-        </video>
         <div>
-            <p><strong>Être consultante en <abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>* c'est</strong>
-                <?php the_field("def_job"); ?></p>
-            <p><dfn id="E.N.M.">*<abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>&nbsp;=&nbsp;Éducation Neurosensorielle et&nbsp;Motrice</dfn></p>
-            <button><i></i><?php the_field("button_i_reflexes"); ?></button>
+            <video controls preload="metadata" poster="image_poster.png">
+                <source src="/media/cc0-videos/flower.webm" type="video/webm">
+                <source src="/media/cc0-videos/flower.mp4" type="video/mp4">
+                <p>Votre navigateur ne prend pas en compte la vidéo.
+                    Vous pouvez la télécharger au format <a href="/media/cc0-videos/flower.mp4">MP4</a></p>
+            </video>
+            <div>
+                <div>
+                    <i></i>
+                    <p><strong>Être consultante en <abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>* c'est</strong>
+                        <?php the_field("def_job"); ?></p>
+                </div>
+                <p><dfn id="E.N.M.">*<abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>&nbsp;=&nbsp;Éducation Neurosensorielle et&nbsp;Motrice</dfn></p>
+                <button><i></i><?php the_field("button_i_reflexes"); ?></button>
+            </div>
         </div>
         <div class="carousel" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false, "wrapAround": true }'>
             <div class="carousel-cell-displaynone">
