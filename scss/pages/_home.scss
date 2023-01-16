@@ -1,0 +1,32 @@
+/********************\
+HEADER
+\********************/
+h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+header.accueil {
+    h2 {
+        width: 606px;
+        height: 227px;
+
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 75px;
+    }
+
+    h2>strong {
+        width: 606px;
+        height: 227px;
+
+        font-family: 'Handlee';
+        font-size: 63px;
+        line-height: 75px;
+
+        background-image: url("../../img/cabinet-zen_portrait.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

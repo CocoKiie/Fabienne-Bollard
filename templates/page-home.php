@@ -10,10 +10,10 @@ $title_slide_3=get_field("title_slide_3");
 $txt_slide_3=get_field("txt_slide_3");
 ?>
 
-<header>
+<header class="accueil">
     <div>
         <h1>L'Éducation Neurosensorielle et&nbsp;Motrice</h1>
-        <h2>Un accompagnement <strong>personnalisé</strong> vers votre <strong><?php the_field("accroche"); ?></strong></h2>
+        <h2>Un accompagnement <strong>personnalisé</strong> vers<br>votre <strong><?php the_field("accroche"); ?></strong></h2>
         <button><i></i><?php the_field("rdv"); ?></button>
     </div>
     <div>
