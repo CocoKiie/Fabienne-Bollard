@@ -3,15 +3,16 @@
   font-family: "Montserrat";
   font-weight: 500;
   color: black;
+  margin: 0;
   text-decoration: none;
 }
 
 /********************\
 NAVIGATION
 \********************/
-nav {
+nav.navigation {
   position: sticky;
-  top: 0;
+  top: 32px;
   left: 0;
   width: 100%;
   height: 100px;
@@ -20,37 +21,32 @@ nav {
   background-color: #ffffff;
   z-index: 100;
 }
-
-li:nth-child(1) {
+nav.navigation li:nth-child(1) {
   margin-right: auto;
 }
-
-ul {
+nav.navigation ul {
   display: flex;
   flex-direction: row;
-  padding: 0px;
+  padding: 0;
+  margin: 0;
   gap: 35px;
   width: 90%;
-  height: 100%;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   list-style: none;
 }
-
-nav > ul > li {
+nav.navigation > ul > li {
   cursor: pointer;
   display: flex;
   align-items: center;
   position: relative;
   height: 100%;
 }
-
-nav > ul li:hover {
+nav.navigation > ul li:hover {
   background-color: red;
 }
-
-nav > ul > li > ul {
+nav.navigation > ul > li > ul {
   display: none;
   position: absolute;
   bottom: 0;
@@ -59,18 +55,15 @@ nav > ul > li > ul {
   transform: translate(0, 100%);
   background-color: blue;
 }
-nav > ul > li > ul li a {
+nav.navigation > ul > li > ul li a {
   white-space: nowrap;
 }
-
-nav > ul > li:hover > ul {
+nav.navigation > ul > li:hover > ul {
   display: block;
 }
-
-nav ul > li > i {
+nav.navigation > ul > li > i {
   animation: rotationFleche 0.2s linear forwards;
 }
-
 @keyframes rotationFleche {
   0% {
     transform: rotate(0deg);
@@ -79,26 +72,41 @@ nav ul > li > i {
     transform: rotate(90deg);
   }
 }
+
 /********************\
 HEADER
 \********************/
 h1 {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 29px;
+  margin: 0;
 }
 
+header.accueil {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+}
 header.accueil div.acc_header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  padding: 0px;
+  gap: 85px;
 }
 header.accueil div.acc_header h2 {
   width: 606px;
   height: 227px;
   font-weight: 400;
   font-size: 50px;
-  line-height: 75px;
+  line-height: 67px;
+  margin: 0;
 }
 header.accueil div.acc_header h2 strong {
   width: 606px;
@@ -111,9 +119,12 @@ header.accueil div.acc_header h2 strong {
   background-size: 100%;
   background-position: center;
 }
-header.accueil img {
+header.accueil div > img {
   max-width: 293px;
   min-height: 456px;
+}
+header.accueil div > img:nth-of-type(2) {
+  transform: rotate(20deg);
 }
 header.accueil button {
   display: flex;
@@ -123,11 +134,12 @@ header.accueil button {
   gap: 15px;
   border: 0;
   color: white;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 21px;
   cursor: pointer;
   background: #1CACE1;
   border-radius: 90px;
+  margin-top: 56px;
 }
 header.accueil button i {
   background-image: url("../img/calendar.svg");
@@ -136,6 +148,50 @@ header.accueil button i {
   background-size: contain;
   width: 20px;
   height: 20px;
+}
+header.accueil p {
+  margin-top: 25px;
+}
+header.accueil p + img {
+  display: inline-block;
+  width: 17px;
+  animation: downArrow 0.7s ease-out infinite alternate;
+  margin-top: -2px;
+}
+@keyframes downArrow {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0.8em);
+  }
+}
+header.accueil div.cercle1 {
+  position: absolute;
+  left: 90.5%;
+  top: 1vh;
+  border: 1px solid #F77E4B;
+  border-radius: 50%;
+  width: 246px;
+  height: 246px;
+}
+header.accueil div.cercle2 {
+  position: absolute;
+  left: -5.3vw;
+  top: 65vh;
+  background: #1CACE1;
+  border-radius: 50%;
+  width: 191px;
+  height: 191px;
+}
+header.accueil div.cercle3 {
+  position: absolute;
+  left: 4vw;
+  top: 82vh;
+  border: 1px solid #F77E4B;
+  border-radius: 50%;
+  width: 77px;
+  height: 77px;
 }
 
 div.sticker {
