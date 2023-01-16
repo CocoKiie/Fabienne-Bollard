@@ -1,12 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
 /********************\
 NAVIGATION
 \********************/
-* {
-  color: black;
-  text-decoration: none;
-  font-family: Nexa;
-}
-
 nav {
   position: sticky;
   top: 0;
@@ -50,10 +52,15 @@ nav > ul li:hover {
 
 nav > ul > li > ul {
   display: none;
-  position: relative;
-  margin-top: 100px;
-  margin-left: -10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  transform: translate(0, 100%);
   background-color: blue;
+}
+nav > ul > li > ul li a {
+  white-space: nowrap;
 }
 
 nav > ul > li:hover > ul {
@@ -81,22 +88,54 @@ h1 {
   line-height: 29px;
 }
 
-header.accueil h2 {
+header.accueil div.acc_header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+header.accueil div.acc_header h2 {
   width: 606px;
   height: 227px;
   font-weight: 400;
   font-size: 50px;
   line-height: 75px;
 }
-header.accueil h2 > strong {
+header.accueil div.acc_header h2 strong {
   width: 606px;
   height: 227px;
   font-family: "Handlee";
   font-size: 63px;
   line-height: 75px;
-  background-image: url("../../img/cabinet-zen_portrait.jpg");
+  background-image: url("../img/hilight.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  background-position: center;
+}
+header.accueil img {
+  max-width: 293px;
+  min-height: 456px;
+}
+header.accueil button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 15px;
+  border: 0;
+  color: white;
+  font-size: 17px;
+  line-height: 21px;
+  cursor: pointer;
+  background: #1CACE1;
+  border-radius: 90px;
+}
+header.accueil button i {
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
 }
 
 div.sticker {
