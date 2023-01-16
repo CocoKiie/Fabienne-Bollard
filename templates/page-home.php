@@ -8,6 +8,9 @@ get_header();
 
 $image1 = get_field("image1");
 $image2 = get_field("image2");
+$imageMoteur = get_field("bloc_moteur");
+$imageEmotion = get_field("bloc_emotionnal");
+$imageCognitif = get_field("bloc_cognitif");
 $title_slide_3 = get_field("title_slide_3");
 $txt_slide_3 = get_field("txt_slide_3");
 ?>
@@ -20,11 +23,11 @@ $txt_slide_3 = get_field("txt_slide_3");
             <button><i></i><?php the_field("rdv"); ?></button>
         </div>
         <div>
-            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" alt="<?php echo ($image["alt"]) ?>" loading="lazy">
-            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" alt="<?php echo ($image["alt"]) ?>" loading="lazy">
+            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" alt="<?php echo ($image1["alt"]) ?>" loading="lazy">
+            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" alt="<?php echo ($image2["alt"]) ?>" loading="lazy">
         </div>
     </div>
-    <p><?php the_field("scroll"); ?></p>
+    <p><a href="#decouverte"><?php the_field("scroll"); ?></a></p>
     <img src="../wp-content/themes/usmb/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
 
     <!--cercle-->
@@ -33,7 +36,7 @@ $txt_slide_3 = get_field("txt_slide_3");
     <div class="cercle3"></div>
 </header>
 <main>
-    <section class="acc_section1">
+    <section class="acc_section1" id="decouverte">
         <h2><?php the_field("title_section_1"); ?></h2>
         <h3><?php the_field("tagline_section_1"); ?></h3>
         <div>
@@ -53,7 +56,7 @@ $txt_slide_3 = get_field("txt_slide_3");
                 <button><i></i><?php the_field("button_i_reflexes"); ?></button>
             </div>
         </div>
-        <div class="caroussel" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false, "wrapAround": true }'>
+        <div class="caroussel">
             <div class="carousel-cell">
                 <h4><?php the_field("title_slide_1"); ?></h4>
                 <div>
@@ -80,12 +83,11 @@ $txt_slide_3 = get_field("txt_slide_3");
             <?php endif; ?>
         </div>
 
-        <!--Compteur-->
-        <div></div>
-
         <!--Boutons slider-->
         <div class="button">
             <button onclick="plusDivs(-1)">&#10094;</button>
+            <!--Compteur-->
+            <div>1 sur 2</div>
             <button onclick="plusDivs(1)">&#10095;</button>
         </div>
         <script>
@@ -112,34 +114,32 @@ $txt_slide_3 = get_field("txt_slide_3");
             }
         </script>
 
-        <!--fleche-->
-        <span></span>
-        <span></span>
-
         <!--cercle-->
         <div></div>
     </section>
-    <section>
+    <section class="acc_section2">
         <h2><?php the_field("title_section_2"); ?></h2>
         <h3><?php the_field("tagline_section_2"); ?><br>je vous accompagne pour lever vos blocages</h3>
-        <article>
-            <h4>Moteurs & posturaux</h4>
-            <img src="" alt="">
-            <p><?php the_field("exemples_moteur"); ?></p>
-            <button><i></i><?php the_field("button_section_2"); ?></button>
-        </article>
-        <article>
-            <h4>Émotionnels</h4>
-            <img src="" alt="">
-            <p><?php the_field("exemples_emotion"); ?></p>
-            <button><i></i><?php the_field("button_section_2"); ?></button>
-        </article>
-        <article>
-            <h4>Cognitifs</h4>
-            <img src="" alt="">
-            <p><?php the_field("exemples_cognitif"); ?></p>
-            <button><i></i><?php the_field("button_section_2"); ?></button>
-        </article>
+        <div>
+            <article>
+                <h4>Moteurs<br>& posturaux</h4>
+                <img src="<?php echo ($imageMoteur["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageMoteur["alt"]) ?>">
+                <p><?php the_field("exemples_moteur"); ?></p>
+                <button><i></i><?php the_field("button_section_2"); ?></button>
+            </article>
+            <article>
+                <h4>Émotionnels</h4>
+                <img src="<?php echo ($imageEmotion["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageEmotion["alt"]) ?>">
+                <p><?php the_field("exemples_emotion"); ?></p>
+                <button><i></i><?php the_field("button_section_2"); ?></button>
+            </article>
+            <article>
+                <h4>Cognitifs</h4>
+                <img src="<?php echo ($imageCognitif["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageCognitif["alt"]) ?>">
+                <p><?php the_field("exemples_cognitif"); ?></p>
+                <button><i></i><?php the_field("button_section_2"); ?></button>
+            </article>
+        </div>
     </section>
     <section>
         <h2><?php the_field("title_section_3"); ?></h2>
