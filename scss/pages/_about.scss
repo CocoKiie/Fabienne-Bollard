@@ -207,6 +207,80 @@ section.abt_section1 {
 /********************\
 SECTION2
 \********************/
-section.abt_section2{
+section.abt_section2 {
     margin-top: 140px;
+}
+
+/********************\
+SECTION2
+\********************/
+section.abt_section3 {
+    margin-top: 140px;
+
+    >div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 40px;
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 20px;
+            justify-content: center;
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 32px;
+                width: 446px;
+
+                strong {
+                    font-weight: 600;
+                }
+            }
+
+            img {
+                width: 598.09px;
+                height: 281.24px;
+                border-radius: 2px;
+            }
+        }
+    }
+
+    // div.cercle4 {
+    //     position: absolute;
+    //     width: 163px;
+    //     height: 163px;
+    //     left: 1147px;
+    //     top: 2975px;
+
+    //     border-radius: 50%;
+    //     background: #1CACE1;
+    // }
+
+    // div.cercle5 {
+    //     position: absolute;
+    //     width: 131px;
+    //     height: 131px;
+    //     left: 607px;
+    //     top: 3212px;
+
+    //     border-radius: 50%;
+    //     background: #F77E4B;
+    // }
+
+    // div.cercle6 {
+    //     position: absolute;
+    //     width: 41px;
+    //     height: 41px;
+    //     left: 612px;
+    //     top: 3308px;
+
+    //     border-radius: 50%;
+    //     border: 1px solid #1CACE1;
+    // }
 }

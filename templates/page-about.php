@@ -10,7 +10,9 @@ $title_valeur = get_field("title_value");
 $photos = get_field("photos_intro");
 $image1 = $photos["image1"];
 $image2 = $photos["image2"];
+
 $image_value = get_field("img_value");
+$image_perso = get_field("image_perso");
 ?>
 
 <header class="about">
@@ -74,15 +76,21 @@ $image_value = get_field("img_value");
                 Pouvoir <b>accompagner</b>, <b>apaiser</b> et <b>résoudre</b> les difficultés de chacun, c'est ce qui me plaît dans mon métier :)</p>
         </div>
     </section>
-    <section>
+    <section class="abt_section3">
         <h3>Coté perso</h3>
         <div>
-            <img src="" alt="">
-
-            <!--cercle-->
-            <div></div>
-            <div></div>
+            <div>
+                <p>J’ai 49 ans et deux garçons âgés de 16 et 18 ans.</p>
+                <p>J’ai <strong>grandi au cœur de la nature</strong> que j’aime profondément et qui me ressource.</p>
+                <p>Je suis épicurienne, j’aime <strong>profiter de la vie</strong> à deux ou entre amis, voyager, découvrir, rire, partager… :)</p>
+            </div>
+            <img src="<?php echo ($image_perso["sizes"]["medium_large"]); ?>" alt="">
         </div>
+
+        <!--cercle-->
+        <div class="cercle4"></div>
+        <div class="cercle5"></div>
+        <div class="cercle6"></div>
     </section>
 </main>
 

@@ -740,6 +740,42 @@ section.abt_section2 {
 }
 
 /********************\
+SECTION2
+\********************/
+section.abt_section3 {
+  margin-top: 140px;
+}
+section.abt_section3 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+section.abt_section3 > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  justify-content: center;
+}
+section.abt_section3 > div > div p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  width: 446px;
+}
+section.abt_section3 > div > div p strong {
+  font-weight: 600;
+}
+section.abt_section3 > div > div img {
+  width: 598.09px;
+  height: 281.24px;
+  border-radius: 2px;
+}
+
+/********************\
 HEADER
 \********************/
 h1 {
