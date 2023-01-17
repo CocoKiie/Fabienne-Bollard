@@ -1,0 +1,76 @@
+/********************\
+404 MAIN
+\********************/
+main section.erreur404 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-bottom: 60px;
+
+    div:nth-of-type(1) {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        width: 564px;
+        height: 302px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 0px 35px -10px rgba(0, 0, 0, 0.18);
+        border-radius: 200px;
+
+        p {
+            font-weight: 500;
+            font-size: 250px;
+            line-height: 305px;
+            padding: 20px;
+
+            strong {
+                font-family: 'Handlee';
+                line-height: 334px;
+            }
+        }
+    }
+
+    div:nth-of-type(2) {
+        >p {
+            font-weight: 400;
+            font-size: 80px;
+            line-height: 98px;
+            width: 370px;
+
+            strong {
+                font-family: 'Handlee';
+                font-size: 80px;
+                line-height: 107px;
+            }
+        }
+
+        button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 4px 11px;
+            gap: 20px;
+            font-size: 18px;
+
+            background: #1CACE1;
+            border-radius: 200px;
+            border: 0;
+            cursor: pointer;
+            color: #FFFFFF;
+
+            i {
+                background-image: url("../img/informations.svg");
+                display: inline-block;
+                background-size: contain;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
