@@ -13,6 +13,12 @@ $imageMoteur = get_field("bloc_moteur");
 $imageEmotion = get_field("bloc_emotionnal");
 $imageCognitif = get_field("bloc_cognitif");
 
+$images_method = get_field("images_method");
+$image_mnri = $images_method["image_mnri"];
+$image_rmti = $images_method["image_rmti"];
+$image_brainball = $images_method["image_brainball"];
+
+
 $img_slides = get_field("images_slider");
 $img_slide_1 = $img_slides["image_slide_1"];
 @$img_slide_2 = $img_slides["image_slide_2"];
@@ -181,19 +187,19 @@ $txt_slide_6 = get_field("txt_slide_6");
         <div>
             <article>
                 <h4>Moteurs<br>& posturaux</h4>
-                <img src="<?php echo ($imageMoteur["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageMoteur["alt"]) ?>">
+                <img src="<?php echo ($imageMoteur["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageMoteur["alt"]) ?>" loading="lazy">
                 <p><?php the_field("exemples_moteur"); ?></p>
                 <button><?php the_field("button_section_2"); ?><i></i></button>
             </article>
             <article>
                 <h4>Émotionnels</h4>
-                <img src="<?php echo ($imageEmotion["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageEmotion["alt"]) ?>">
+                <img src="<?php echo ($imageEmotion["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageEmotion["alt"]) ?>" loading="lazy">
                 <p><?php the_field("exemples_emotion"); ?></p>
                 <button><?php the_field("button_section_2"); ?><i></i></button>
             </article>
             <article>
                 <h4>Cognitifs</h4>
-                <img src="<?php echo ($imageCognitif["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageCognitif["alt"]) ?>">
+                <img src="<?php echo ($imageCognitif["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageCognitif["alt"]) ?>" loading="lazy">
                 <p><?php the_field("exemples_cognitif"); ?></p>
                 <button><?php the_field("button_section_2"); ?><i></i></button>
             </article>
@@ -204,7 +210,7 @@ $txt_slide_6 = get_field("txt_slide_6");
         <h3><?php the_field("tagline_section_3"); ?></h3>
         <div>
             <article>
-                <img src="" alt="">
+                <img src="<?php echo ($image_mnri["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
                 <div>
                     <h4>M.N.R.I du Pr Masgutova</h4>
                     <p>La Méthode Neurosensorimotrice du Dr. Masgutova est une méthode manuelle douce qui permet de travailler sur&nbsp;:</p>
@@ -217,7 +223,7 @@ $txt_slide_6 = get_field("txt_slide_6");
                 </div>
             </article>
             <article>
-                <img src="" alt="">
+                <img src="<?php echo ($image_rmti["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
                 <div>
                     <h4>R.M.T.I du Dr Blomberg</h4>
                     <p>L'Entraînement International au Mouvement Rythmique du Dr. Blomberg est une méthode de développement moteur pour tous. Elle permet d’améliorer :</p>
@@ -229,7 +235,7 @@ $txt_slide_6 = get_field("txt_slide_6");
                 </div>
             </article>
             <article>
-                <img src="" alt="">
+                <img src="<?php echo ($image_brainball["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
                 <div>
                     <h4>Brain ball de R.Pautonnier</h4>
                     <p>La méthode brain ball de R. Pautonnier développe :</p>
