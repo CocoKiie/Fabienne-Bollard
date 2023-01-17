@@ -7,25 +7,28 @@
 get_header();
 
 $title_valeur = get_field("title_value");
+$photos = get_field("photos_intro");
+$image1 = $photos["image1"];
+$image2 = $photos["image2"];
 ?>
 
-<header>
-    <div>
-        <img src="" alt="Image d'une jeune fille dans un champs de coquelicots">
-        <img src="" alt="Image de personnes en rendez-vous dans un cabinet">
-    </div>
-    <div>
-        <h1>A propos de moi</h1>
-        <h2><strong>Fabienne Bollard</strong></h2>
-        <p>Consultante en <dfn>Éducation Neurosensorielle et Motrice (<abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>)</dfn> depuis <?php the_field("exp_years"); ?>, en profession libérale.</p>
+<header class="about">
+    <div class="abt_header">
+        <div>
+            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" alt="Image d'une jeune fille dans un champs de coquelicots">
+            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" alt="Image de personnes en rendez-vous dans un cabinet">
+        </div>
+        <div>
+            <h1>A propos de moi</h1>
+            <h2><strong>Fabienne Bollard</strong></h2>
+            <p>Consultante en <dfn>Éducation Neurosensorielle et Motrice (<abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>)</dfn> depuis <strong><?php the_field("exp_years"); ?></strong>, en profession libérale.</p>
+        </div>
     </div>
     <div>
         <p><?php the_field("scroll_message"); ?></p>
-        <img src="../../img/" alt="flèche vers le bas">
+        <img src="../wp-content/themes/usmb/img/arrow.svg" alt="flèche vers le bas">
     </div>
 
-    <!--soulignement-->
-    <span></span>
     <!--cercle-->
     <div></div>
     <div></div>
