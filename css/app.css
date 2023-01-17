@@ -555,6 +555,109 @@ section.acc_section5 {
 /********************\
 HEADER
 \********************/
+header.about {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+}
+header.about div.abt_header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0px;
+  gap: 100px;
+}
+header.about div.abt_header h2 {
+  width: 606px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 67px;
+  margin: 0;
+}
+header.about div.abt_header h2 strong {
+  width: 606px;
+  height: 227px;
+  font-family: "Handlee";
+  font-size: 63px;
+  line-height: 75px;
+  background-image: url("../img/hilight.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+header.about div.abt_header p {
+  width: 574px;
+  height: 114px;
+  margin-top: 45px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 157.9%;
+  letter-spacing: 0.03em;
+}
+header.about div.abt_header p strong {
+  font-weight: 700;
+}
+header.about div > img {
+  max-width: 293px;
+  min-height: 456px;
+  border-radius: 2px;
+  position: relative;
+  margin-top: 30px;
+}
+header.about div > img:nth-of-type(2) {
+  transform: rotate(20deg);
+  z-index: -1;
+  margin-left: -70px;
+  scale: 0.9;
+}
+header.about button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 15px;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  cursor: pointer;
+  background: #1CACE1;
+  border-radius: 90px;
+  margin-top: 56px;
+  transition: 0.3s;
+}
+header.about button i {
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+header.about p + img {
+  display: inline-block;
+  width: 17px;
+  animation: downArrow 0.7s ease-out infinite alternate;
+  margin-top: 3px;
+}
+@keyframes downArrow {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0.8em);
+  }
+}
+
+/********************\
+HEADER
+\********************/
 h1 {
   font-weight: 500;
   font-size: 18px;
@@ -844,6 +947,9 @@ main section.cct_section2 > div iframe {
   border-radius: 20px;
   width: 630px;
   height: 241px;
+}
+main section.cct_section2 > div ::marker {
+  color: #F77E4B;
 }
 main section.cct_section2 > div ul {
   padding: 0;
