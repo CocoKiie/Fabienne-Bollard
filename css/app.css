@@ -475,6 +475,7 @@ SECTION3
 \********************/
 section.acc_section3 {
   margin-top: 150px;
+  overflow: hidden;
 }
 section.acc_section3 > div {
   display: flex;
@@ -522,9 +523,9 @@ section.acc_section3 button {
   flex-direction: row;
   align-items: center;
   padding: 10px 20px;
-  margin: 50px auto 0 auto;
+  margin: 90px auto 0 auto;
   gap: 10px;
-  background: #F77E4B;
+  background-color: #F77E4B;
   border: 0;
   border-radius: 90px;
   color: white;
@@ -540,12 +541,33 @@ section.acc_section3 button i {
   width: 20px;
   height: 20px;
 }
+section.acc_section3 div.cercle4 {
+  position: absolute;
+  width: 375px;
+  height: 375px;
+  right: -13vw;
+  top: 2550px;
+  z-index: -1;
+  background-color: #F77E4B;
+  border-radius: 50%;
+}
+section.acc_section3 span {
+  position: absolute;
+  right: 0px;
+  top: 470vh;
+  width: 500px;
+  height: 50px;
+  background-image: url("../img/hilight.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 /********************\
 SECTION4
 \********************/
 section.acc_section5 {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 
 div.sticker {
@@ -555,5 +577,46 @@ div.sticker {
 /********************\
 FOOTER
 \********************/
+footer {
+  width: 100%;
+  background-image: url("../img/cabinet_zen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+footer > div img {
+  border-radius: 50%;
+  width: 325px;
+  height: 325px;
+}
+footer > div button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 50px auto 0 auto;
+  gap: 10px;
+  background-color: #1CACE1;
+  border: 0;
+  border-radius: 90px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+footer > div button i {
+  background-image: url("../img/informations.svg");
+  display: inline-block;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
 
 /*# sourceMappingURL=app.css.map */

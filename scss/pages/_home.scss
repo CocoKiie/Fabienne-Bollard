@@ -463,6 +463,7 @@ SECTION3
 \********************/
 section.acc_section3 {
     margin-top: 150px;
+    overflow: hidden;
 
     >div {
         display: flex;
@@ -523,10 +524,10 @@ section.acc_section3 {
         flex-direction: row;
         align-items: center;
         padding: 10px 20px;
-        margin: 50px auto 0 auto;
+        margin: 90px auto 0 auto;
         gap: 10px;
 
-        background: #F77E4B;
+        background-color: #F77E4B;
         border: 0;
         border-radius: 90px;
         color: white;
@@ -544,11 +545,36 @@ section.acc_section3 {
             height: 20px;
         }
     }
+
+    div.cercle4 {
+        position: absolute;
+        width: 375px;
+        height: 375px;
+        right: -13vw;
+        top: 2550px;
+        z-index: -1;
+
+        background-color: #F77E4B;
+        border-radius: 50%;
+    }
+
+    span {
+        position: absolute;
+        right: 0px;
+        top: 470vh;
+        width: 500px;
+        height: 50px;
+
+        background-image: url("../img/hilight.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 /********************\
 SECTION4
 \********************/
-section.acc_section5{
-    margin-top: 100px;
+section.acc_section5 {
+    margin: 100px 0;
 }

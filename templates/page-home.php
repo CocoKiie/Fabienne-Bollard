@@ -187,7 +187,10 @@ $txt_slide_3 = get_field("txt_slide_3");
         <button><i></i><?php the_field("button_section_4"); ?></button>
 
         <!--cercle-->
-        <div></div>
+        <div class="cercle4"></div>
+
+        <!--Soulignment-->
+        <span></span>
 
     </section>
     <section class="acc_section5">
