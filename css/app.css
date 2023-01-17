@@ -78,6 +78,12 @@ nav.navigation > ul > li > i {
   }
 }
 
+button:hover {
+  scale: 110%;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
 /********************\
 HEADER
 \********************/
@@ -161,11 +167,6 @@ header.accueil button i {
   background-size: contain;
   width: 20px;
   height: 20px;
-}
-header.accueil button:hover {
-  scale: 110%;
-  margin-left: 10px;
-  transition: 0.3s;
 }
 header.accueil p + img {
   display: inline-block;
@@ -290,6 +291,7 @@ main section.acc_section1 video + div button {
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
+  transition: 0.3s;
 }
 main section.acc_section1 video + div button i {
   background-image: url("../img/informations.svg");
@@ -363,14 +365,28 @@ main section.acc_section1 div.button {
   align-items: center;
   margin-top: -50px;
   position: relative;
+  gap: 15px;
   z-index: 50;
+}
+main section.acc_section1 div.button span {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 3px;
+  border: 1px solid #1CACE1;
+  cursor: pointer;
+}
+main section.acc_section1 div.button .rempli {
+  background: #1CACE1;
+  color: #1CACE1;
 }
 main section.acc_section1 div.button button {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 4px 11px;
-  margin: 0 20px;
+  margin: 0 10px;
   gap: 50px;
   font-size: 18px;
   background: #1CACE1;
@@ -378,6 +394,7 @@ main section.acc_section1 div.button button {
   border: 0;
   cursor: pointer;
   color: #FFFFFF;
+  transition: 0.3s;
 }
 main section.acc_section1 div.button button i {
   background-image: url("../img/informations.svg");
@@ -461,6 +478,7 @@ section.acc_section2 div article button {
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
+  transition: 0.3s;
 }
 section.acc_section2 div article button i {
   background-image: url("../img/informations.svg");
@@ -538,6 +556,7 @@ section.acc_section3 button {
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
+  transition: 0.3s;
 }
 section.acc_section3 button i {
   background-image: url("../img/informations.svg");
@@ -618,6 +637,7 @@ footer > div > div > button {
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
+  transition: 0.3s;
 }
 footer > div > div > button i {
   background-image: url("../img/informations.svg");

@@ -21,11 +21,11 @@ $image_brainball = $images_method["image_brainball"];
 
 $img_slides = get_field("images_slider");
 $img_slide_1 = $img_slides["image_slide_1"];
-@$img_slide_2 = $img_slides["image_slide_2"];
-@$img_slide_3 = $img_slides["image_slide_3"];
-@$img_slide_4 = $img_slides["image_slide_4"];
-@$img_slide_5 = $img_slides["image_slide_5"];
-@$img_slide_6 = $img_slides["image_slide_6"];
+@$img_slide_2 = $img_slides["image_slider_2"];
+@$img_slide_3 = $img_slides["image_slider_3"];
+@$img_slide_4 = $img_slides["image_slider_4"];
+@$img_slide_5 = $img_slides["image_slider_5"];
+@$img_slide_6 = $img_slides["image_slider_6"];
 
 $title_slide_3 = get_field("title_slide_3");
 $txt_slide_3 = get_field("txt_slide_3");
@@ -42,7 +42,7 @@ $txt_slide_6 = get_field("txt_slide_6");
         <div>
             <h1>L'Éducation Neurosensorielle et&nbsp;Motrice</h1>
             <h2>Un accompagnement <strong>personnalisé</strong> vers<br>votre <strong><?php the_field("accroche"); ?></strong></h2>
-            <button><i></i><?php the_field("rdv"); ?></button>
+            <button aria-label="Prendre contact avec Fabienne Bollard"><i></i><?php the_field("rdv"); ?></button>
         </div>
         <div>
             <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" alt="<?php echo ($image1["alt"]) ?>" loading="lazy">
@@ -75,7 +75,7 @@ $txt_slide_6 = get_field("txt_slide_6");
                         <?php the_field("def_job"); ?></p>
                 </div>
                 <p><dfn id="E.N.M.">*<abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>&nbsp;=&nbsp;Éducation Neurosensorielle et&nbsp;Motrice</dfn></p>
-                <button><i></i><?php the_field("button_i_reflexes"); ?></button>
+                <button aria-label="Voir plus d'informations sur les réflexes archaïques"><i></i><?php the_field("button_i_reflexes"); ?></button>
             </div>
         </div>
         <div class="caroussel">
@@ -149,10 +149,25 @@ $txt_slide_6 = get_field("txt_slide_6");
 
         <!--Boutons slider-->
         <div class="button">
-            <button onclick="plusDivs(-1)">&#10094;</button>
+            <button aria-label="Voir la suite du contenu" onclick="plusDivs(-1)">&#10094;</button>
             <!--Compteur-->
-            <div>1 sur 2</div>
-            <button onclick="plusDivs(1)">&#10095;</button>
+            <div>
+                <span class="dots" onclick="currentDiv(1)"></span>
+                <span class="dots" onclick="currentDiv(2)"></span>
+                <?php if ($title_slide_3 || $txt_slide_3) : ?>
+                    <span class="dots" onclick="currentDiv(2)"></span>
+                <?php endif; ?>
+                <?php if ($title_slide_4 || $txt_slide_4) : ?>
+                    <span class="dots" onclick="currentDiv(2)"></span>
+                <?php endif; ?>
+                <?php if ($title_slide_5 || $txt_slide_5) : ?>
+                    <span class="dots" onclick="currentDiv(2)"></span>
+                <?php endif; ?>
+                <?php if ($title_slide_6 || $txt_slide_6) : ?>
+                    <span class="dots" onclick="currentDiv(2)"></span>
+                <?php endif; ?>
+            </div>
+            <button aria-label="Voir la suite du contenu" onclick="plusDivs(1)">&#10095;</button>
         </div>
         <script>
             var slideIndex = 1;
@@ -162,19 +177,29 @@ $txt_slide_6 = get_field("txt_slide_6");
                 showDivs(slideIndex += n);
             }
 
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+
             function showDivs(n) {
                 var i;
                 var x = document.getElementsByClassName("carousel-cell");
+                var dots = document.getElementsByClassName("dots");
+
                 if (n > x.length) {
                     slideIndex = 1
                 }
                 if (n < 1) {
                     slideIndex = x.length
                 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" rempli", "");
+                }
                 for (i = 0; i < x.length; i++) {
                     x[i].style.display = "none";
                 }
                 x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " rempli";
             }
         </script>
 
@@ -189,19 +214,19 @@ $txt_slide_6 = get_field("txt_slide_6");
                 <h4>Moteurs<br>& posturaux</h4>
                 <img src="<?php echo ($imageMoteur["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageMoteur["alt"]) ?>" loading="lazy">
                 <p><?php the_field("exemples_moteur"); ?></p>
-                <button><?php the_field("button_section_2"); ?><i></i></button>
+                <button aria-label="Voir les blocages moteurs et posturaux que Fabienne Bollard traite"><?php the_field("button_section_2"); ?><i></i></button>
             </article>
             <article>
                 <h4>Émotionnels</h4>
                 <img src="<?php echo ($imageEmotion["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageEmotion["alt"]) ?>" loading="lazy">
                 <p><?php the_field("exemples_emotion"); ?></p>
-                <button><?php the_field("button_section_2"); ?><i></i></button>
+                <button aria-label="Voir les blocages émotionnels que Fabienne Bollard traite"><?php the_field("button_section_2"); ?><i></i></button>
             </article>
             <article>
                 <h4>Cognitifs</h4>
                 <img src="<?php echo ($imageCognitif["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageCognitif["alt"]) ?>" loading="lazy">
                 <p><?php the_field("exemples_cognitif"); ?></p>
-                <button><?php the_field("button_section_2"); ?><i></i></button>
+                <button aria-label="Voir les blocages cognitifs que Fabienne Bollard traite"><?php the_field("button_section_2"); ?><i></i></button>
             </article>
         </div>
     </section>
@@ -248,7 +273,7 @@ $txt_slide_6 = get_field("txt_slide_6");
                     <div>
             </article>
         </div>
-        <button><i></i><?php the_field("button_section_4"); ?></button>
+        <button aria-label="Voir pkus d'informations sur les 3 méthodes pratiquées par Fabienne Bollard"><i></i><?php the_field("button_section_4"); ?></button>
 
         <!--Soulignment-->
         <span></span>
