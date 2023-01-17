@@ -10,6 +10,7 @@ $title_valeur = get_field("title_value");
 $photos = get_field("photos_intro");
 $image1 = $photos["image1"];
 $image2 = $photos["image2"];
+$image_value = get_field("img_value");
 ?>
 
 <header class="about">
@@ -24,38 +25,38 @@ $image2 = $photos["image2"];
             <p>Consultante en <dfn>Éducation Neurosensorielle et Motrice (<abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>)</dfn> depuis <strong><?php the_field("exp_years"); ?></strong>, en profession libérale.</p>
         </div>
     </div>
-    <div>
-        <p><?php the_field("scroll_message"); ?></p>
-        <img src="../wp-content/themes/usmb/img/arrow.svg" alt="flèche vers le bas">
-    </div>
+    <p><?php the_field("scroll_message"); ?></p>
+    <img src="../wp-content/themes/usmb/img/arrow.svg" alt="flèche vers le bas">
 
     <!--cercle-->
-    <div></div>
-    <div></div>
-    <div></div>
+    <div class="cercle1"></div>
+    <div class="cercle2"></div>
+    <div class="cercle3"></div>
 </header>
 <main>
-    <aside>
-        <p>Afin d’imager ce métier au nom barbare on pourrait le traduire par <strong>“ostéopathe du système nerveux”</strong>, une idée de mon fils.</p>
+    <aside class="abt_aside">
+        <p>Afin d’imager ce métier au nom barbare on pourrait le traduire par <strong>“ostéopathe du système nerveux”</strong>,<br>une idée de mon fils.</p>
 
         <!--cercle-->
         <div></div>
 
     </aside>
-    <section>
-        <div>
-            <img src="" alt="">
-            <?php if ($title_valeur) : ?>
-                <h3><?php echo $title_valeur; ?></h3>
-            <?php endif; ?>
-            <p>Toujours à l'<strong>écoute</strong> et <strong>bienveillante</strong>, je vous accompagne pour vous permettre de <strong>lever vos blocages et vous épanouir</strong>.<br>
-                En respectant vos préférences, je vous propose un suivi entièrement <strong>personnalisé</strong> et <strong>adapté</strong> à votre organisation, votre emploi du temps.</p>
+    <section class="abt_section1">
+        <div class="abt_card">
+            <img src="<?php echo ($image_value["sizes"]["medium_large"]); ?>" alt="">
+            <div>
+                <?php if ($title_valeur) : ?>
+                    <h3><?php echo $title_valeur; ?></h3>
+                <?php endif; ?>
+                <p>Toujours à l'<strong>écoute</strong> et <strong>bienveillante</strong>, je vous accompagne pour vous permettre de <strong>lever vos blocages et vous épanouir</strong>.<br><br>
+                    En respectant vos préférences, je vous propose un suivi entièrement <strong>personnalisé</strong> et <strong>adapté</strong> à votre organisation, votre emploi du temps.</p>
+            </div>
         </div>
         <!--soulignment-->
         <span></span>
 
     </section>
-    <section>
+    <section class="abt_section2">
         <h3>Mon histoire</h3>
         <div>
             <img src="" alt="">
