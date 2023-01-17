@@ -16,8 +16,7 @@
             <p>&copy; <?php echo (date(format: "Y")); ?> Fabienne Bollard.</p>
         </div>
     </footer>
-    <?php wp_footer(); //Pour appeler le css 
-    ?>
+    <?php wp_footer(); //Pour appeler le css ?>
     </body>
 
     </html>
