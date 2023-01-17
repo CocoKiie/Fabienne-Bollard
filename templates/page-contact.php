@@ -52,28 +52,30 @@ $arg_localisation3 = get_field("arg_localisation_3");
             </fieldset>
         </form>
     </section>
-    <section>
+    <section class="cct_section2">
         <h3>Localisation</h3>
-        <?php if ($arg_localisation1 || $localisation || $arg_localisation2 || $arg_localisation3) : ?>
-            <ul>
-                <?php if ($localisation) : ?>
-                    <li><?php echo $localisation; ?></li>
-                <?php endif; ?>
-                <?php if ($arg_localisation1) : ?>
-                    <li><?php echo $arg_localisation1; ?></li>
-                <?php endif; ?>
-                <?php if ($arg_localisation2) : ?>
-                    <li><?php echo $arg_localisation2; ?></li>
-                <?php endif; ?>
-                <?php if ($arg_localisation3) : ?>
-                    <li><?php echo $arg_localisation3; ?></li>
-                <?php endif; ?>
-            </ul>
-        <?php endif; ?>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2774.3869758717196!2d6.0740369!3d45.9435508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b84455fd16ea1%3A0xca6ee41c7f2d9480!2s464%20Rte%20des%20Pr%C3%A9s%20Rollier%2C%2074330%20Sillingy!5e0!3m2!1sfr!2sfr!4v1673972335245!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div>
+            <?php if ($arg_localisation1 || $localisation || $arg_localisation2 || $arg_localisation3) : ?>
+                <ul>
+                    <?php if ($localisation) : ?>
+                        <li><?php echo $localisation; ?></li>
+                    <?php endif; ?>
+                    <?php if ($arg_localisation1) : ?>
+                        <li><?php echo $arg_localisation1; ?></li>
+                    <?php endif; ?>
+                    <?php if ($arg_localisation2) : ?>
+                        <li><?php echo $arg_localisation2; ?></li>
+                    <?php endif; ?>
+                    <?php if ($arg_localisation3) : ?>
+                        <li><?php echo $arg_localisation3; ?></li>
+                    <?php endif; ?>
+                </ul>
+            <?php endif; ?>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2774.3869758717196!2d6.0740369!3d45.9435508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b84455fd16ea1%3A0xca6ee41c7f2d9480!2s464%20Rte%20des%20Pr%C3%A9s%20Rollier%2C%2074330%20Sillingy!5e0!3m2!1sfr!2sfr!4v1673972335245!5m2!1sfr!2sfr" width="630" height="241" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </section>
 </main>
-<footer>
+<footer class="cct-footer">
     <p><a href="">Mentions légales</a> - <a href="">Politique de confidentialité</a> - <a href="">Plan du site</a></p>
     <p>&copy; <?php echo (date(format: "Y")); ?> Fabienne Bollard.</p>
 </footer>

@@ -167,7 +167,11 @@ main section.cct_section1 {
                 display: flex;
                 flex-direction: row;
                 align-items: flex-start;
-                gap: 5px;
+                gap: 10px;
+
+                a {
+                    font-weight: 400;
+                }
 
                 i {
                     display: inline-block;
@@ -191,5 +195,151 @@ main section.cct_section1 {
             }
         }
     }
-    form
+
+    form {
+        width: 710px;
+        height: 720px;
+
+        fieldset {
+            border: 1px solid black;
+            border-radius: 2px;
+
+            legend {
+                font-family: 'Handlee';
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 0.095em;
+            }
+
+            input,
+            label {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+            }
+
+            div.wpforms-field-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 38px;
+
+                >div.wpforms-field {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    border: 0;
+
+                    input {
+                        width: 260px;
+                        height: 30px;
+                        background: transparent;
+                        border: none;
+                        border-bottom: 1px solid black;
+                        margin: 8px 0;
+                        font-weight: 500;
+                        font-size: 17px;
+                        font-size: 16px;
+                        border-radius: 2px;
+                    }
+                }
+
+                >div.wpforms-field:nth-child(n+3) {
+
+                    input,
+                    textarea {
+                        width: 575px;
+                        border: none;
+                        margin: 8px 0;
+                    }
+
+                    input {
+                        border-bottom: 1px solid black;
+                    }
+
+                    textarea {
+                        height: 100px;
+                    }
+                }
+
+                input:focus,
+                textarea:focus {
+                    outline-style: none;
+                    box-shadow: none;
+                    background-color: white !important;
+                }
+
+                input::placeholder,
+                textarea::placeholder {
+                    color: black;
+                    opacity: 0.3;
+                }
+            }
+        }
+
+        div.wpforms-field-description{
+            font-size: 10px;
+            opacity: 0.5;
+            font-weight: 400;
+        }
+
+        div>button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px 20px;
+            gap: 10px;
+
+            background-color: #1CACE1;
+            border: 0;
+            border-radius: 90px;
+            color: white;
+            cursor: pointer;
+
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 21px;
+            transition: 0.3s;
+            margin: 25px auto 0 auto;
+        }
+    }
+}
+
+/********************\
+SECTION2
+\********************/
+main section.cct_section2{
+    margin-top: 100px;
+
+    >div{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 50px;
+
+        iframe{
+            border-radius: 20px;
+            width: 630px;
+            height: 241px;
+        }
+    }
+}
+
+/********************\
+FOOTER
+\********************/
+footer.cct-footer{
+    margin-top: 100px;
+    padding: 25px 0;
+    p{
+        color: white;
+
+        a{
+            color: white;
+            text-decoration: underline;
+        }
+    }
 }
