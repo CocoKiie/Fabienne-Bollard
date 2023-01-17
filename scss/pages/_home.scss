@@ -116,37 +116,6 @@ header.accueil {
             -webkit-transform: translateY(0.8em);
         }
     }
-
-    div.cercle1 {
-        position: absolute;
-        right: -50px;
-        top: -70px;
-        border: 1px solid #F77E4B;
-        border-radius: 50%;
-        width: 246px;
-        height: 246px;
-        z-index: -10;
-    }
-
-    div.cercle2 {
-        position: absolute;
-        left: -5.3vw;
-        top: 65vh;
-        background: #1CACE1;
-        border-radius: 50%;
-        width: 191px;
-        height: 191px;
-    }
-
-    div.cercle3 {
-        position: absolute;
-        left: 4vw;
-        top: 82vh;
-        border: 1px solid #F77E4B;
-        border-radius: 50%;
-        width: 77px;
-        height: 77px;
-    }
 }
 
 /********************\
@@ -247,7 +216,6 @@ main section.acc_section1 {
             font-weight: 500;
             font-size: 16px;
             line-height: 21px;
-            transition: 0.3s;
 
             i {
                 background-image: url("../img/informations.svg");
@@ -369,7 +337,6 @@ main section.acc_section1 {
             border: 0;
             cursor: pointer;
             color: #FFFFFF;
-            transition: 0.3s;
 
             i {
                 background-image: url("../img/informations.svg");
@@ -464,7 +431,6 @@ section.acc_section2 {
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 21px;
-                transition: 0.3s;
 
                 i {
                     background-image: url("../img/informations.svg");
@@ -562,7 +528,6 @@ section.acc_section3 {
         font-weight: 500;
         font-size: 16px;
         line-height: 21px;
-        transition: 0.3s;
 
         i {
             background-image: url("../img/informations.svg");
