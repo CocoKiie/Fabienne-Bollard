@@ -281,6 +281,7 @@ main section.acc_section1 {
 
         .carousel-cell {
             display: none;
+            counter-increment: carousel-cell;
         }
 
         div {
@@ -465,10 +466,16 @@ section.acc_section3 {
     margin-top: 150px;
     overflow: hidden;
 
+    >h2, >h3{
+        text-align: center;
+        margin: 0;
+    }
+
     >div {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        flex-wrap: wrap;
         align-items: baseline;
         margin-top: 50px;
 
@@ -544,18 +551,6 @@ section.acc_section3 {
             width: 20px;
             height: 20px;
         }
-    }
-
-    div.cercle4 {
-        position: absolute;
-        width: 375px;
-        height: 375px;
-        right: -13vw;
-        top: 2550px;
-        z-index: -1;
-
-        background-color: #F77E4B;
-        border-radius: 50%;
     }
 
     span {

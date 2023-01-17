@@ -8,11 +8,27 @@ get_header();
 
 $image1 = get_field("image1");
 $image2 = get_field("image2");
+
 $imageMoteur = get_field("bloc_moteur");
 $imageEmotion = get_field("bloc_emotionnal");
 $imageCognitif = get_field("bloc_cognitif");
+
+$img_slides = get_field("images_slider");
+$img_slide_1 = $img_slides["image_slide_1"];
+@$img_slide_2 = $img_slides["image_slide_2"];
+@$img_slide_3 = $img_slides["image_slide_3"];
+@$img_slide_4 = $img_slides["image_slide_4"];
+@$img_slide_5 = $img_slides["image_slide_5"];
+@$img_slide_6 = $img_slides["image_slide_6"];
+
 $title_slide_3 = get_field("title_slide_3");
 $txt_slide_3 = get_field("txt_slide_3");
+$title_slide_4 = get_field("title_slide_4");
+$txt_slide_4 = get_field("txt_slide_4");
+$title_slide_5 = get_field("title_slide_5");
+$txt_slide_5 = get_field("txt_slide_5");
+$title_slide_6 = get_field("title_slide_6");
+$txt_slide_6 = get_field("txt_slide_6");
 ?>
 
 <header class="accueil">
@@ -60,14 +76,14 @@ $txt_slide_3 = get_field("txt_slide_3");
             <div class="carousel-cell">
                 <h4><?php the_field("title_slide_1"); ?></h4>
                 <div>
-                    <img src="" alt="">
+                    <img src="<?php echo ($img_slide_1["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
                     <p><?php the_field("txt_slide_1"); ?></p>
                 </div>
             </div>
             <div class="carousel-cell">
                 <h4><?php the_field("title_slide_2"); ?></h4>
                 <div>
-                    <img src="" alt="">
+                    <img src="<?php echo ($img_slide_2["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
                     <p><?php the_field("txt_slide_2"); ?></p>
                 </div>
             </div>
@@ -77,7 +93,49 @@ $txt_slide_3 = get_field("txt_slide_3");
                         <h4><?php echo $title_slide_3; ?></h4>
                     <?php endif; ?>
                     <?php if ($txt_slide_3) : ?>
-                        <p><?php echo $txt_slide_3; ?></p>
+                        <div>
+                            <img src="<?php echo ($img_slide_3["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
+                            <p><?php echo $txt_slide_3; ?></p>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
+            <?php if ($title_slide_4 || $txt_slide_4) : ?>
+                <div class="carousel-cell">
+                    <?php if ($title_slide_4) : ?>
+                        <h4><?php echo $title_slide_4; ?></h4>
+                    <?php endif; ?>
+                    <?php if ($txt_slide_4) : ?>
+                        <div>
+                            <img src="<?php echo ($img_slide_4["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
+                            <p><?php echo $txt_slide_4; ?></p>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
+            <?php if ($title_slide_5 || $txt_slide_5) : ?>
+                <div class="carousel-cell">
+                    <?php if ($title_slide_5) : ?>
+                        <h4><?php echo $title_slide_5; ?></h4>
+                    <?php endif; ?>
+                    <?php if ($txt_slide_5) : ?>
+                        <div>
+                            <img src="<?php echo ($img_slide_5["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
+                            <p><?php echo $txt_slide_5; ?></p>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
+            <?php if ($title_slide_6 || $txt_slide_6) : ?>
+                <div class="carousel-cell">
+                    <?php if ($title_slide_6) : ?>
+                        <h4><?php echo $title_slide_6; ?></h4>
+                    <?php endif; ?>
+                    <?php if ($txt_slide_6) : ?>
+                        <div>
+                            <img src="<?php echo ($img_slide_6["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
+                            <p><?php echo $txt_slide_4; ?></p>
+                        </div>
                     <?php endif; ?>
                 </div>
             <?php endif; ?>
@@ -185,9 +243,6 @@ $txt_slide_3 = get_field("txt_slide_3");
             </article>
         </div>
         <button><i></i><?php the_field("button_section_4"); ?></button>
-
-        <!--cercle-->
-        <div class="cercle4"></div>
 
         <!--Soulignment-->
         <span></span>
