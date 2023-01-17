@@ -125,19 +125,19 @@ $txt_slide_3 = get_field("txt_slide_3");
                 <h4>Moteurs<br>& posturaux</h4>
                 <img src="<?php echo ($imageMoteur["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageMoteur["alt"]) ?>">
                 <p><?php the_field("exemples_moteur"); ?></p>
-                <button><i></i><?php the_field("button_section_2"); ?></button>
+                <button><?php the_field("button_section_2"); ?><i></i></button>
             </article>
             <article>
                 <h4>Émotionnels</h4>
                 <img src="<?php echo ($imageEmotion["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageEmotion["alt"]) ?>">
                 <p><?php the_field("exemples_emotion"); ?></p>
-                <button><i></i><?php the_field("button_section_2"); ?></button>
+                <button><?php the_field("button_section_2"); ?><i></i></button>
             </article>
             <article>
                 <h4>Cognitifs</h4>
                 <img src="<?php echo ($imageCognitif["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageCognitif["alt"]) ?>">
                 <p><?php the_field("exemples_cognitif"); ?></p>
-                <button><i></i><?php the_field("button_section_2"); ?></button>
+                <button><?php the_field("button_section_2"); ?><i></i></button>
             </article>
         </div>
     </section>
@@ -147,35 +147,41 @@ $txt_slide_3 = get_field("txt_slide_3");
         <div>
             <article>
                 <img src="" alt="">
-                <h4>M.N.R.I du Pr Masgutova</h4>
-                <p>La Méthode Neurosensorimotrice du Dr. Masgutova est une méthode manuelle douce qui permet de travailler sur&nbsp;:</p>
-                <ul>
-                    <li>les troubles de l'<strong>attention</strong> ;</li>
-                    <li>la <strong>coordination</strong> ;</li>
-                    <li>la <strong>mémoire</strong> ;</li>
-                    <li>la <strong>communication</strong>.</li>
-                </ul>
+                <div>
+                    <h4>M.N.R.I du Pr Masgutova</h4>
+                    <p>La Méthode Neurosensorimotrice du Dr. Masgutova est une méthode manuelle douce qui permet de travailler sur&nbsp;:</p>
+                    <ul>
+                        <li>les troubles de l'<strong>attention</strong> ;</li>
+                        <li>la <strong>coordination</strong> ;</li>
+                        <li>la <strong>mémoire</strong> ;</li>
+                        <li>la <strong>communication</strong>.</li>
+                    </ul>
+                </div>
             </article>
             <article>
                 <img src="" alt="">
-                <h4>R.M.T.I du Dr Blomberg</h4>
-                <p>L'Entraînement International au Mouvement Rythmique du Dr. Blomberg est une méthode de développement moteur pour tous. Elle permet d’améliorer :</p>
-                <ul>
-                    <li>la <strong>concentration</strong> ;</li>
-                    <li>l'<strong>équilibre</strong> ;</li>
-                    <li>la fonction <strong>cérébrale global</strong> ;</li>
-                </ul>
+                <div>
+                    <h4>R.M.T.I du Dr Blomberg</h4>
+                    <p>L'Entraînement International au Mouvement Rythmique du Dr. Blomberg est une méthode de développement moteur pour tous. Elle permet d’améliorer :</p>
+                    <ul>
+                        <li>la <strong>concentration</strong> ;</li>
+                        <li>l'<strong>équilibre</strong> ;</li>
+                        <li>la fonction <strong>cérébrale global</strong> ;</li>
+                    </ul>
+                </div>
             </article>
             <article>
                 <img src="" alt="">
-                <h4>Brain ball de R.Pautonnier</h4>
-                <p>La méthode brain ball de R. Pautonnier développe :</p>
-                <ul>
-                    <li>la <strong>concentration</strong> ;</li>
-                    <li>la <strong>coordination</strong> gestuelle ;</li>
-                    <li>l'<strong>attention</strong> ;</li>
-                    <li>joue avec les <strong>sens</strong> (vue, ouïe, touché) ;</li>
-                </ul>
+                <div>
+                    <h4>Brain ball de R.Pautonnier</h4>
+                    <p>La méthode brain ball de R. Pautonnier développe :</p>
+                    <ul>
+                        <li>la <strong>concentration</strong> ;</li>
+                        <li>la <strong>coordination</strong> gestuelle ;</li>
+                        <li>l'<strong>attention</strong> ;</li>
+                        <li>joue avec les <strong>sens</strong> (vue, ouïe, touché) ;</li>
+                    </ul>
+                    <div>
             </article>
         </div>
         <button><i></i><?php the_field("button_section_4"); ?></button>
@@ -184,7 +190,7 @@ $txt_slide_3 = get_field("txt_slide_3");
         <div></div>
 
     </section>
-    <section>
+    <section class="acc_section5">
         <h2><?php the_field("title_section_4"); ?></h2>
         <h3><?php the_field("tagline_section_4"); ?></h3>
 
