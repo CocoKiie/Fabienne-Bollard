@@ -21,8 +21,8 @@ $image_age = get_field("image_âge");
             <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" alt="Image de personnes en rendez-vous dans un cabinet">
         </div>
         <div>
-            <h1>Les séances individuelles</h1>
-            <h2>Vous êtes <strong>unique</strong>, votre <strong>accompagnement</strong> l'est aussi</h2>
+            <h1><?php the_field("title_page"); ?></h1>
+            <h2><?php the_field("tagline_page"); ?></h2>
         </div>
     </div>
     <img src="../wp-content/themes/usmb/img/arrow.svg" alt="flèche vers le bas">
@@ -34,25 +34,41 @@ $image_age = get_field("image_âge");
 </header>
 <main>
     <section class="cab_section1">
-        <h3>Combien de temps dure l’accompagnement&nbsp;?</h3>
+        <h3><?php the_field("title_section_1"); ?></h3>
         <div>
-            <img src="" alt="">
-            <p><?php the_field("duree_accompagnement"); ?></p>
+            <img src="<?php echo ($image_accompagnment["sizes"]["medium_large"]); ?>" alt="">
+            <div><?php the_field("duree_accompagnement"); ?></div>
         </div>
 
         <!--soulignement-->
         <span></span>
     </section>
-    <section>
-        <h3>Mes séances d'adaptent</h3>
-        <h4><i></i>A votre âge</h4>
-        <h4><i></i>A vos besoins</h4>
-    </section>
-    <section>
-        <h3>Moyens de paiement</h3>
+    <section class="cab_section2">
         <div>
-            <div><img src="" alt=""></div>
+            <div>
+                <h3><?php the_field("title_section_2"); ?></h3>
+                <h4><i></i><?php the_field("sub_title_section_3"); ?></h4>
+                <div><?php the_field("besoins_age"); ?></div>
+            </div>
+            <img src="<?php echo ($image_age["sizes"]["medium_large"]); ?>" alt="">
+        </div>
+        <div>
+            <div>
+                <h4><i></i><?php the_field("sub_title_section_3-2"); ?></h4>
+                <div><?php the_field("besoins_individuels"); ?></div>
+            </div>
+            <img src="<?php echo ($image_besoins["sizes"]["medium_large"]); ?>" alt="">
+        </div>
 
+        <!--cercle-->
+        <div></div>
+        <div></div>
+    </section>
+    <section class="cab_section3">
+        <h3><?php the_field("title_section_3"); ?></h3>
+        <div>
+            <div><img src="<?php echo ($illustration_paiement["sizes"]["medium_large"]); ?>" alt=""></div>
+            <div><?php the_field("paragraphe_paiement"); ?></div>
         </div>
     </section>
 </main>

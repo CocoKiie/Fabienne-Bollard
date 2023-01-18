@@ -1489,6 +1489,179 @@ SECTION1
 section.cab_section1 h3 {
   width: 400px;
 }
+section.cab_section1 > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding: 50px 0;
+}
+section.cab_section1 > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+section.cab_section1 > div > div p {
+  width: 600px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 33px;
+  letter-spacing: 0.02em;
+}
+section.cab_section1 > div > div p strong {
+  font-weight: 600;
+}
+section.cab_section1 span {
+  width: 500px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  margin: 0;
+  background-image: url("../img/hilight.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/********************\
+SECTION2
+\********************/
+section.cab_section2 {
+  margin-top: 150px;
+  position: relative;
+}
+section.cab_section2 h3 {
+  margin: 0;
+}
+section.cab_section2 h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 70px;
+}
+section.cab_section2 h4 i {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: #F77E4B;
+}
+section.cab_section2 > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 100px;
+}
+section.cab_section2 > div:nth-child(1) > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 25px;
+}
+section.cab_section2 > div:nth-child(1) > div > div p {
+  width: 480px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 33px;
+  letter-spacing: 0.02em;
+}
+section.cab_section2 > div:nth-child(1) > div > div p strong {
+  font-weight: 600;
+}
+section.cab_section2 > div:nth-child(2) {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  gap: 200px;
+}
+section.cab_section2 > div:nth-child(2) > div h4 {
+  margin: 0;
+}
+section.cab_section2 > div:nth-child(2) > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 25px;
+}
+section.cab_section2 > div:nth-child(2) > div > div p {
+  width: 600px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 33px;
+  letter-spacing: 0.02em;
+}
+section.cab_section2 > div:nth-child(2) > div > div p strong {
+  font-weight: 600;
+}
+section.cab_section2 > div:nth-child(2) > div > div p a {
+  text-decoration: underline;
+}
+section.cab_section2 > div:nth-child(3) {
+  position: absolute;
+  width: 191px;
+  height: 191px;
+  right: 197px;
+  top: 330px;
+  border-radius: 50%;
+  background: #F77E4B;
+  z-index: -1;
+}
+section.cab_section2 > div:nth-child(4) {
+  position: absolute;
+  width: 191px;
+  height: 191px;
+  right: 50px;
+  top: 380px;
+  border-radius: 50%;
+  border: 1px solid #1CACE1;
+}
+
+/********************\
+SECTION3
+\********************/
+section.cab_section3 {
+  margin-top: 200px;
+}
+section.cab_section3 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  padding: 50px 0 100px 0;
+}
+section.cab_section3 > div > div:nth-child(1) {
+  padding: 43px 127px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 35px -10px rgba(0, 0, 0, 0.18);
+  border-radius: 200px;
+}
+section.cab_section3 > div > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+section.cab_section3 > div > div:nth-child(2) p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  width: 540px;
+}
+section.cab_section3 > div > div:nth-child(2) p strong {
+  font-weight: 600;
+}
 
 /********************\
 404 MAIN
