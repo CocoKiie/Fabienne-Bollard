@@ -76,7 +76,7 @@ $image_perso = get_field("image_perso");
                 Pouvoir <b>accompagner</b>, <b>apaiser</b> et <b>résoudre</b> les difficultés de chacun, c'est ce qui me plaît dans mon métier :)</p>
         </div>
     </section>
-    <section class="abt_section3">
+    <section class="abt_section3 cst">
         <h3>Coté perso</h3>
         <div>
             <div>

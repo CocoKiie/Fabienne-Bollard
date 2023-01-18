@@ -78,10 +78,9 @@ header.consultation {
 /********************\
 SECTION1
 \********************/
-main section>div {
+main section.cst > div {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
     gap: 40px;
     width: 80%;

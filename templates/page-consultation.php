@@ -37,7 +37,7 @@ $num_explication_cognitif = 0;
 <main>
     <!--SECTION 1 EMOTION-->
     <?php if (have_rows('blocages_emotion')) : ?>
-        <section class="cst_section1">
+        <section class="cst_section1 cst">
             <h2>Blocages émotionnels</h2>
             <div>
                 <?php while (have_rows('blocages_emotion')) : the_row(); ?>
@@ -119,7 +119,7 @@ $num_explication_cognitif = 0;
 
         <!--SECTION 2 MOTEURS ET POSTURAUX-->
         <?php if (have_rows('blocages_moteur')) : ?>
-            <section class="cst_section1" id="decouverte">
+            <section class="cst_section1 cst" id="decouverte">
                 <h2>Blocages émotionnels</h2>
                 <div>
                     <?php while (have_rows('blocages_moteur')) : the_row(); ?>
@@ -203,7 +203,7 @@ $num_explication_cognitif = 0;
 
             <!--SECTION 3 COGNITIF-->
             <?php if (have_rows('blocages_cognitif')) : ?>
-                <section class="cst_section1" id="decouverte">
+                <section class="cst_section1 cst" id="decouverte">
                     <h2>Blocages émotionnels</h2>
                     <div>
                         <?php while (have_rows('blocages_cognitif')) : the_row(); ?>
