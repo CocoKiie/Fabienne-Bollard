@@ -26,7 +26,6 @@
                 <ul>
                     <li><a href="">Séances individuelles</a></li>
                     <li><a href="">Ateliers collectifs</a></li>
-                    <li><a href="">Tarifs</a></li>
                 </ul>
             </li>
             <li><a href="">A&nbsp;propos&nbsp;de&nbsp;moi</a></li>
