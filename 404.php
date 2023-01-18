@@ -14,9 +14,9 @@ get_header();
         </div>
 
         <!--cercle-->
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="cercle1"></div>
+        <div class="cercle2"></div>
+        <div class="cercle3"></div>
     </section>
 </main>
 

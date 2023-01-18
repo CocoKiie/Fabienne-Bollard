@@ -360,7 +360,7 @@ main section.acc_section1 div.button button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 4px 11px;
+  padding: 10px 20px;
   margin: 0 10px;
   gap: 50px;
   font-size: 18px;
@@ -1100,7 +1100,7 @@ main section.erreur404 {
   align-items: center;
   justify-content: center;
   gap: 100px;
-  padding-bottom: 60px;
+  padding: 70px 0;
 }
 main section.erreur404 div:nth-of-type(1) {
   margin-top: 50px;
@@ -1139,7 +1139,7 @@ main section.erreur404 div:nth-of-type(2) button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 4px 11px;
+  padding: 10px 20px;
   gap: 20px;
   font-size: 18px;
   background: #1CACE1;
@@ -1147,6 +1147,7 @@ main section.erreur404 div:nth-of-type(2) button {
   border: 0;
   cursor: pointer;
   color: #FFFFFF;
+  margin-top: 40px;
 }
 main section.erreur404 div:nth-of-type(2) button i {
   background-image: url("../img/informations.svg");
@@ -1154,6 +1155,21 @@ main section.erreur404 div:nth-of-type(2) button i {
   background-size: contain;
   width: 20px;
   height: 20px;
+}
+main section.erreur404 div.cercle1 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 750px;
+  top: 260px;
+  border-radius: 50%;
+  background: #F77E4B;
+}
+main section.erreur404 div.cercle2 {
+  top: 500px;
+}
+main section.erreur404 div.cercle3 {
+  top: 630px;
 }
 
 /********************\
