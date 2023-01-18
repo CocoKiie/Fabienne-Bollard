@@ -70,6 +70,10 @@ $image_age = get_field("image_âge");
             <div><img src="<?php echo ($illustration_paiement["sizes"]["medium_large"]); ?>" alt=""></div>
             <div><?php the_field("paragraphe_paiement"); ?></div>
         </div>
+
+        <!--cercle-->
+        <div></div>
+        <div></div>
     </section>
 </main>
 

@@ -1632,6 +1632,7 @@ SECTION3
 \********************/
 section.cab_section3 {
   margin-top: 200px;
+  position: relative;
 }
 section.cab_section3 > div {
   display: flex;
@@ -1661,6 +1662,28 @@ section.cab_section3 > div > div:nth-child(2) p {
 }
 section.cab_section3 > div > div:nth-child(2) p strong {
   font-weight: 600;
+}
+section.cab_section3 > div:nth-child(3) {
+  position: absolute;
+  width: 78px;
+  height: 78px;
+  left: 500px;
+  top: 70px;
+  padding: 0;
+  border-radius: 50%;
+  background: #1CACE1;
+  z-index: -1;
+}
+section.cab_section3 > div:nth-child(4) {
+  position: absolute;
+  width: 115px;
+  height: 115px;
+  left: 212px;
+  padding: 0;
+  top: 300px;
+  border-radius: 50%;
+  background: #F77E4B;
+  z-index: -1;
 }
 
 /********************\
