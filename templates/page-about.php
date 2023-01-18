@@ -61,17 +61,17 @@ $image_perso = get_field("image_perso");
     <section class="abt_section2">
         <h3>Mon histoire</h3>
         <div>
-            <img src="" alt="">
+            <span></span>
             <p><strong>Professeur des écoles durant 17 ans</strong> en maternelle et en élémentaire.<br>
                 J’étais <b>passionnée</b> par mon métier. Accompagner les enfants à <b>besoins spécifiques</b> était ce que j’aimais particulièrement mais j’ai souvent été confrontée à des blocages et ne pas pouvoir les sortir de leurs difficultés m’a beaucoup frustrée.</p>
         </div>
         <div>
-            <img src="" alt="">
-            <p>C'est mon second fils né avec une <b>anomalie cérébrale</b>, qui m'a amené à<strong>Changer de vie</strong><br>
+            <span></span>
+            <p>C'est mon second fils né avec une <b>anomalie cérébrale</b>, qui m'a amené à <strong>Changer de vie</strong>.<br>
                 En 2014, pour l’aider, j’ai entrepris de me former à des méthodes d’intégration des <b>réflexes archaïques</b>, non connues en France contrairement aux Etats-Unis et au Canada. Les progrès de mon fils ont été considérables sur tous les plans ! C’est maintenant un jeune homme “bien dans ses baskets”, autonome et qui sait ce qu’il veut.</p>
         </div>
         <div>
-            <img src="" alt="">
+            <span></span>
             <p><strong>Aujourd'hui</strong> je mène une vie riche humainement et intellectuellement qui me convient.<br>
                 Pouvoir <b>accompagner</b>, <b>apaiser</b> et <b>résoudre</b> les difficultés de chacun, c'est ce qui me plaît dans mon métier :)</p>
         </div>

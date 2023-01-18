@@ -209,19 +209,55 @@ SECTION2
 \********************/
 section.abt_section2 {
     margin-top: 140px;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+
+        span {
+            width: 15px;
+            height: 210px;
+            display: inline-block;
+
+            background: #F77E4B;
+            border-radius: 100px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            width: 820px;
+            letter-spacing: 0.02em;
+
+            strong{
+                font-size: 32px;
+                line-height: 130%;
+                font-family: 'Handlee';
+                color: #1CACE1;
+            }
+
+            b{
+                font-weight: 600;
+            }
+        }
+    }
 }
 
 /********************\
 SECTION2
 \********************/
 section.abt_section3 {
-    margin-top: 140px;
+    margin: 140px 0;
 
     >div {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-top: 40px;
 
         >div {
@@ -229,7 +265,7 @@ section.abt_section3 {
             flex-direction: column;
             align-items: flex-start;
             padding: 0px;
-            gap: 20px;
+            gap: 30px;
             justify-content: center;
 
             p {
@@ -251,36 +287,39 @@ section.abt_section3 {
         }
     }
 
-    // div.cercle4 {
-    //     position: absolute;
-    //     width: 163px;
-    //     height: 163px;
-    //     left: 1147px;
-    //     top: 2975px;
+    div.cercle4 {
+        position: absolute;
+        width: 163px;
+        height: 163px;
+        left: 1275px;
+        top: 2875px;
 
-    //     border-radius: 50%;
-    //     background: #1CACE1;
-    // }
+        border-radius: 50%;
+        background: #1CACE1;
+        z-index: -1;
+    }
 
-    // div.cercle5 {
-    //     position: absolute;
-    //     width: 131px;
-    //     height: 131px;
-    //     left: 607px;
-    //     top: 3212px;
+    div.cercle5 {
+        position: absolute;
+        width: 131px;
+        height: 131px;
+        left: 740px;
+        top: 3090px;
 
-    //     border-radius: 50%;
-    //     background: #F77E4B;
-    // }
+        border-radius: 50%;
+        background: #F77E4B;
+        z-index: -1;
+    }
 
-    // div.cercle6 {
-    //     position: absolute;
-    //     width: 41px;
-    //     height: 41px;
-    //     left: 612px;
-    //     top: 3308px;
+    div.cercle6 {
+        position: absolute;
+        width: 41px;
+        height: 41px;
+        left: 730px;
+        top: 3180px;
 
-    //     border-radius: 50%;
-    //     border: 1px solid #1CACE1;
-    // }
+        border-radius: 50%;
+        border: 1px solid #1CACE1;
+        z-index: -1;
+    }
 }
