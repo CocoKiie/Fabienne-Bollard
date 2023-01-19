@@ -5,6 +5,21 @@
 
 //Chargement du header
 get_header();
+
+$identite = get_field("identite");
+$nom_web = $identite["nom"];
+$address_web = $identite["adresse_web"];
+$proprietaire = $identite["proprietaire"];
+$responsable_pub = $identite["responsable_pub"];
+$address_entreprise = $identite["localisation"];
+$hebergeur = $identite["hebergeur"];
+$phone = $identite["phone"];
+$mail = $identite["mail"];
+
+$credits = get_field("credits");
+$photos = $credits["credits_photos"];
+$icon = $credits["credits_icons"];
+
 ?>
 <main class="legalite">
     <section>
@@ -12,7 +27,7 @@ get_header();
         <h2>Politique de confidentialité</h2>
         <article>
             <h3>A. Informations de contact</h3>
-            <p>Ce site est dirigé par Fabienne Bollard.</p>
+            <p>Ce site est dirigé par <?php echo $proprietaire ?>.</p>
             <p>Adresse : 464 Route des Près Rollier - 74330 Sillingy</p>
             <p>Téléphone : 06 87 80 04 11</p>
             <p>Mail : fabienne.bollard74@gmail.com</p>
@@ -43,11 +58,11 @@ get_header();
             <h3>Identité</h3>
             <p>Nom du site web : Fabienne Bollard</p>
             <p>Adresse du site : www.fabiennebollard.fr</p>
-            <p>Propriétaire du Site et Responsable de Publication : Fabienne Bollard - <a href="mailto:fabienne.bollard74@gmail.com">fabienne.bollard74@gmail.com</a></p>
+            <p>Propriétaire du Site et Responsable de Publication : <?php echo $proprietaire ?> - fabienne.bollard74@gmail.com</p>
             <p>Hébergement : OVH (2 rue Kellermann - 59100 Roubaix - France)</p>
             <h4>Entreprise : </h4>
             <p>Fabienne Bollard – RCS / SIREN / TVA ?</p>
-            <p>06 87 80 04 11 – <a href="mailto:fabienne.bollard74@gmail.com">fabienne.bollard74@gmail.com</a></p>
+            <p>06 87 80 04 11 – fabienne.bollard74@gmail.com</p>
             <p>464 Route des Près Rollier, 74330 Sillingy</p>
         </article>
         <article>
@@ -86,7 +101,7 @@ get_header();
             <p>Ux designeuse : Helena Kam Makon</p>
             <p>Développeuse web : Laurie Perbet</p>
             <p>Chef de projet : Nathan Coutelier</p>
-            <p>(Réalisé dans le cadre du BUT MMI à l'IUT de Chambéry - <a href="iut-chy.univ-smb.fr">iut-chy.univ-smb.fr</a>)</p>
+            <p>-> Réalisé dans le cadre de la formation BUT MMI(Métier du Multimédia et de l'Internet) à l'IUT de Chambéry - <a href="iut-chy.univ-smb.fr">iut-chy.univ-smb.fr</a>)</p>
         </article>
         <aside>
             <svg width="896" height="161" fill="none" xmlns="http://www.w3.org/2000/svg">
