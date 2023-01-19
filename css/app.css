@@ -339,7 +339,7 @@ main section.acc_section1 div.button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: -50px;
+  margin-top: -70px;
   position: relative;
   gap: 15px;
   z-index: 50;
@@ -360,8 +360,8 @@ main section.acc_section1 div.button .rempli {
 main section.acc_section1 div.button button {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  padding: 10px 20px;
+  align-items: flex-start;
+  padding: 10px 17px;
   margin: 0 10px;
   gap: 50px;
   font-size: 18px;

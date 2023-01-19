@@ -18,7 +18,21 @@ $image_mnri = $images_method["image_mnri"];
 $image_rmti = $images_method["image_rmti"];
 $image_brainball = $images_method["image_brainball"];
 
+//Les methodes
+$mnri = get_field("methode_mnri");
+$paragraphe_mnri = $mnri["paragraphe_mnri"];
+$titre_mnri = $mnri["title_mnri"];
 
+$rmti = get_field("methode_rmti");
+$paragraphe_rmti = $rmti["paragraphe_rmti"];
+$titre_rmti = $rmti["title_rmti"];
+
+$brainball = get_field("methode_mnri");
+$paragraphe_brainball = $brainball["paragraphe_mnri"];
+$titre_brainball = $brainball["title_mnri"];
+
+//SLIDER
+//Image
 $img_slides = get_field("images_slider");
 $img_slide_1 = $img_slides["image_slide_1"];
 @$img_slide_2 = $img_slides["image_slider_2"];
@@ -26,7 +40,7 @@ $img_slide_1 = $img_slides["image_slide_1"];
 @$img_slide_4 = $img_slides["image_slider_4"];
 @$img_slide_5 = $img_slides["image_slider_5"];
 @$img_slide_6 = $img_slides["image_slider_6"];
-
+//Texte
 $title_slide_3 = get_field("title_slide_3");
 $txt_slide_3 = get_field("txt_slide_3");
 $title_slide_4 = get_field("title_slide_4");
@@ -40,8 +54,8 @@ $txt_slide_6 = get_field("txt_slide_6");
 <header class="accueil">
     <div class="acc_header">
         <div>
-            <h1>L'Éducation Neurosensorielle et&nbsp;Motrice</h1>
-            <h2>Un accompagnement <strong>personnalisé</strong> vers<br>votre <strong><?php the_field("accroche"); ?></strong></h2>
+            <h1><?php the_field("title_page"); ?></h1>
+            <?php the_field("accroche"); ?>
             <button aria-label="Prendre contact avec Fabienne Bollard"><i></i><?php the_field("rdv"); ?></button>
         </div>
         <div>
@@ -237,39 +251,22 @@ $txt_slide_6 = get_field("txt_slide_6");
             <article>
                 <img src="<?php echo ($image_mnri["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
                 <div>
-                    <h4>M.N.R.I du Pr Masgutova</h4>
-                    <p>La Méthode Neurosensorimotrice du Dr. Masgutova est une méthode manuelle douce qui permet de travailler sur&nbsp;:</p>
-                    <ul>
-                        <li>les troubles de l'<strong>attention</strong> ;</li>
-                        <li>la <strong>coordination</strong> ;</li>
-                        <li>la <strong>mémoire</strong> ;</li>
-                        <li>la <strong>communication</strong>.</li>
-                    </ul>
+                    <h4><?php echo $titre_mnri; ?></h4>
+                    <?php echo $paragraphe_mnri; ?>
                 </div>
             </article>
             <article>
                 <img src="<?php echo ($image_rmti["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
                 <div>
-                    <h4>R.M.T.I du Dr Blomberg</h4>
-                    <p>L'Entraînement International au Mouvement Rythmique du Dr. Blomberg est une méthode de développement moteur pour tous. Elle permet d’améliorer :</p>
-                    <ul>
-                        <li>la <strong>concentration</strong> ;</li>
-                        <li>l'<strong>équilibre</strong> ;</li>
-                        <li>la fonction <strong>cérébrale global</strong> ;</li>
-                    </ul>
+                    <h4><?php echo $titre_rmti; ?></h4>
+                    <?php echo $paragraphe_rmti; ?>
                 </div>
             </article>
             <article>
                 <img src="<?php echo ($image_brainball["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
                 <div>
-                    <h4>Brain ball de R.Pautonnier</h4>
-                    <p>La méthode brain ball de R. Pautonnier développe :</p>
-                    <ul>
-                        <li>la <strong>concentration</strong> ;</li>
-                        <li>la <strong>coordination</strong> gestuelle ;</li>
-                        <li>l'<strong>attention</strong> ;</li>
-                        <li>joue avec les <strong>sens</strong> (vue, ouïe, touché) ;</li>
-                    </ul>
+                    <h4><?php echo $titre_brainball; ?></h4>
+                    <?php echo $paragraphe_brainball; ?>
                     <div>
             </article>
         </div>
