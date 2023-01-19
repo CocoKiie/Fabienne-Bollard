@@ -170,15 +170,21 @@ section.abt_section1 {
                 width: 425px;
                 margin: 0;
             }
-
-            p {
-                width: 425px;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 32px;
-
-                strong {
-                    font-weight: 600;
+            >div{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+                
+                p {
+                    width: 425px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 32px;
+    
+                    strong {
+                        font-weight: 600;
+                    }
                 }
             }
         }
@@ -202,7 +208,7 @@ section.abt_section1 {
 SECTION2
 \********************/
 section.abt_section2 {
-    margin-top: 140px;
+    margin: 140px 0 150px 0;
 
     div {
         display: flex;
@@ -239,82 +245,5 @@ section.abt_section2 {
                 font-weight: 600;
             }
         }
-    }
-}
-
-/********************\
-SECTION2
-\********************/
-section.abt_section3 {
-    margin: 140px 0;
-
-    >div {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 40px;
-
-        >div {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 0px;
-            gap: 30px;
-            justify-content: center;
-
-            p {
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 32px;
-                width: 446px;
-
-                strong {
-                    font-weight: 600;
-                }
-            }
-
-            img {
-                width: 598.09px;
-                height: 281.24px;
-                border-radius: 2px;
-            }
-        }
-    }
-
-    div.cercle4 {
-        position: absolute;
-        width: 163px;
-        height: 163px;
-        left: 1275px;
-        top: 2875px;
-
-        border-radius: 50%;
-        background: #1CACE1;
-        z-index: -1;
-    }
-
-    div.cercle5 {
-        position: absolute;
-        width: 131px;
-        height: 131px;
-        left: 740px;
-        top: 3090px;
-
-        border-radius: 50%;
-        background: #F77E4B;
-        z-index: -1;
-    }
-
-    div.cercle6 {
-        position: absolute;
-        width: 41px;
-        height: 41px;
-        left: 730px;
-        top: 3180px;
-
-        border-radius: 50%;
-        border: 1px solid #1CACE1;
-        z-index: -1;
     }
 }

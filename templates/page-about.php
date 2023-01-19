@@ -22,8 +22,8 @@ $image_perso = get_field("image_perso");
             <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" alt="Image de personnes en rendez-vous dans un cabinet">
         </div>
         <div>
-            <h1>A propos de moi</h1>
-            <h2><strong>Fabienne Bollard</strong></h2>
+            <h1><?php the_field("title_page"); ?></h1>
+            <h2><?php the_field("tagline_page"); ?></h2>
             <p>Consultante en <dfn>Éducation Neurosensorielle et Motrice (<abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>)</dfn> depuis <strong><?php the_field("exp_years"); ?></strong>, en profession libérale.</p>
         </div>
     </div>
@@ -49,8 +49,7 @@ $image_perso = get_field("image_perso");
                 <?php if ($title_valeur) : ?>
                     <h3><?php echo $title_valeur; ?></h3>
                 <?php endif; ?>
-                <p>Toujours à l'<strong>écoute</strong> et <strong>bienveillante</strong>, je vous accompagne pour vous permettre de <strong>lever vos blocages et vous épanouir</strong>.<br><br>
-                    En respectant vos préférences, je vous propose un suivi entièrement <strong>personnalisé</strong> et <strong>adapté</strong> à votre organisation, votre emploi du temps.</p>
+                <div><?php the_field("paragraphe_valeurs"); ?></div>
             </div>
         </div>
         <!--soulignment-->
@@ -74,22 +73,6 @@ $image_perso = get_field("image_perso");
             <p><strong>Aujourd'hui</strong> je mène une vie riche humainement et intellectuellement qui me convient.<br>
                 Pouvoir <b>accompagner</b>, <b>apaiser</b> et <b>résoudre</b> les difficultés de chacun, c'est ce qui me plaît dans mon métier :)</p>
         </div>
-    </section>
-    <section class="abt_section3 cst">
-        <h3>Coté perso</h3>
-        <div>
-            <div>
-                <p>J’ai 49 ans et deux garçons âgés de 16 et 18 ans.</p>
-                <p>J’ai <strong>grandi au cœur de la nature</strong> que j’aime profondément et qui me ressource.</p>
-                <p>Je suis épicurienne, j’aime <strong>profiter de la vie</strong> à deux ou entre amis, voyager, découvrir, rire, partager… :)</p>
-            </div>
-            <img src="<?php echo ($image_perso["sizes"]["medium_large"]); ?>" alt="">
-        </div>
-
-        <!--cercle-->
-        <div class="cercle4"></div>
-        <div class="cercle5"></div>
-        <div class="cercle6"></div>
     </section>
 </main>
 
