@@ -19,8 +19,8 @@ $num_explication_cognitif = 0;
 <header class="consultation">
     <div class="cst_header">
         <div>
-            <h1>Pourquoi consulter&nbsp;?</h1>
-            <h2>La stimulation de vos <strong>réflexes archaïques</strong> permet de pallier <strong>divers blocages</strong></h2>
+            <h1><?php the_field("title_page"); ?></h1>
+            <?php the_field("tagline_page"); ?>
         </div>
         <div>
             <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" alt="<?php echo ($image1["alt"]) ?>" loading="lazy">
