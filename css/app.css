@@ -29,6 +29,7 @@ nav.navigation {
 }
 nav.navigation a {
   text-decoration: none;
+  display: inline-block;
 }
 nav.navigation li:nth-child(1) {
   margin-right: auto;
@@ -52,20 +53,26 @@ nav.navigation > ul > li {
   position: relative;
   height: 100%;
 }
-nav.navigation > ul li:hover {
-  background-color: red;
+nav.navigation li:hover, nav.navigation li:hover > a {
+  color: #1CACE1;
+  text-decoration: underline;
 }
 nav.navigation > ul > li > ul {
   display: none;
   position: absolute;
-  bottom: 0;
-  width: 100%;
+  bottom: 30px;
+  width: 150px;
   left: 0;
   transform: translate(0, 100%);
-  background-color: blue;
+  background-color: white;
+  border: 2px solid #1CACE1;
 }
 nav.navigation > ul > li > ul li a {
-  white-space: nowrap;
+  max-width: 120px;
+  padding: 5px 0;
+}
+nav.navigation > ul > li > ul li:nth-child(2) a {
+  margin-top: 10px;
 }
 nav.navigation > ul > li:hover > ul {
   display: block;
