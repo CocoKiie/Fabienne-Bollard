@@ -1,0 +1,215 @@
+/********************\
+HEADER
+\********************/
+header.ateliers {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+
+    div.atl_header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0px;
+        gap: 150px;
+
+        h2 {
+            width: 606px;
+
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 67px;
+            margin: 0;
+
+            strong {
+                width: 606px;
+                height: 227px;
+
+                font-family: 'Handlee';
+                font-size: 63px;
+                line-height: 75px;
+
+                background-image: url("../img/hilight.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center;
+            }
+        }
+    }
+
+
+    div>img {
+        max-width: 293px;
+        min-height: 456px;
+        border-radius: 2px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    div>img:nth-of-type(2) {
+        transform: rotate(20deg);
+        z-index: -1;
+        margin-left: -70px;
+        scale: 0.9;
+    }
+
+    >img {
+        display: inline-block;
+        width: 17px;
+        animation: downArrow 0.7s ease-out infinite alternate;
+        margin-top: 8px;
+    }
+
+    @keyframes downArrow {
+        0% {
+            -webkit-transform: translateY(0);
+        }
+
+        100% {
+            -webkit-transform: translateY(0.6em);
+        }
+    }
+}
+
+/********************\
+SECTION1
+\********************/
+main section.atl_section1 {
+    position: relative;
+
+
+    >div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        padding: 50px 0;
+
+        img {
+            border-radius: 2px;
+        }
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+
+            p {
+                width: 600px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 33px;
+                letter-spacing: 0.02em;
+
+                strong {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px;
+        margin: 30px auto 0 auto;
+        gap: 10px;
+
+        background: #F77E4B;
+        border: 0;
+        border-radius: 90px;
+        color: white;
+        cursor: pointer;
+
+        font-weight: 500;
+        font-size: 16px;
+        transition: 0.3s;
+        line-height: 21px;
+
+        i {
+            background-image: url("../img/informations.svg");
+            display: inline-block;
+            background-size: contain;
+            width: 20px;
+            height: 20px;
+        }
+
+    }
+
+    >div.cercle {
+        position: absolute;
+        display: inline-block;
+        padding: 0;
+        width: 191px;
+        height: 191px;
+        left: 160px;
+        top: 450px;
+        z-index: -1;
+        border-radius: 50%;
+        background: #F77E4B;
+    }
+}
+
+/********************\
+SECTION2
+\********************/
+section.atl_section2 {
+    margin: 150px 0;
+    position: relative;
+
+
+    >div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        padding: 50px 0;
+
+        img {
+            border-radius: 2px;
+        }
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+
+            p {
+                width: 600px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 33px;
+                letter-spacing: 0.02em;
+
+                strong {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    span {
+        width: 500px;
+        height: 50px;
+        position: absolute;
+        right: 0;
+        margin: 0;
+
+        background-image: url("../img/hilight.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
