@@ -123,11 +123,11 @@ SECTION1
 \********************/
 main section {
     h2 {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 29px;
         text-transform: uppercase;
         margin-left: 131px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
 
         color: #1CACE1;
     }
@@ -215,6 +215,7 @@ main section.acc_section1 {
 
             font-weight: 500;
             font-size: 16px;
+            transition: 0.3s;
             line-height: 21px;
 
             i {
@@ -308,7 +309,7 @@ main section.acc_section1 {
         gap: 15px;
         z-index: 50;
 
-        span{
+        span {
             width: 10px;
             height: 10px;
             display: inline-block;
@@ -318,7 +319,7 @@ main section.acc_section1 {
             cursor: pointer;
         }
 
-        .rempli{
+        .rempli {
             background: #1CACE1;
             color: #1CACE1;
         }
@@ -451,7 +452,8 @@ section.acc_section3 {
     margin-top: 150px;
     overflow: hidden;
 
-    >h2, >h3{
+    >h2,
+    >h3 {
         text-align: center;
         margin: 0;
     }
