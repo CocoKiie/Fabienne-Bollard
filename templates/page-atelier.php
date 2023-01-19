@@ -16,14 +16,14 @@ $image_section2 = get_field("image_section2");
     <div class="atl_header">
         <div>
             <h1><?php the_field("title_page"); ?></h1>
-            <h2><?php the_field("tagline_page"); ?></strong></h2>
+            <?php the_field("tagline_page"); ?>
         </div>
         <div>
             <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" alt="<?php echo ($image1["alt"]) ?>" loading="lazy">
             <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" alt="<?php echo ($image2["alt"]) ?>" loading="lazy">
         </div>
     </div>
-    <img src="../wp-content/themes/usmb/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
 
     <!--cercle-->
     <div class="cercle1"></div>

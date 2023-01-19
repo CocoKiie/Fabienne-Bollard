@@ -7,28 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo (get_the_title()); ?></title>
     <?php wp_head(); //Pour appeler le css 
+    $logo = get_field('logo_couleur', 'option');
     ?>
 </head>
 
 <body>
     <nav class="navigation" role="navigation">
         <ul>
-            <li><a href=""><img src="../wp-content/themes/usmb/img/logo.svg" alt="Logo représentant un papillon"></a></li>
-            <li><a href="">Accueil</a></li>
-            <li><i></i>Concept
+            <li><a href="/"><img src="<?php echo ($logo["sizes"]["medium_large"]); ?>" alt="Logo représentant un papillon" loading="lazy"></a></li>
+            <li><a href="/"><?php the_field('accueil', 'option'); ?></a></li>
+            <li><i></i><?php the_field('menu2', 'option'); ?>
                 <ul>
-                    <li><a href="">Les réflexes archaïques</a></li>
-                    <li><a href="">Les méthodes de travail</a></li>
+                    <li><a href="/reflexes-archaiques"><?php the_field('menu3', 'option'); ?></a></li>
+                    <li><a href="/methodes"><?php the_field('menu4', 'option'); ?></a></li>
                 </ul>
             </li>
-            <li><a href="">Pourquoi&nbsp;consulter&nbsp;?</a></li>
-            <li><i></i>Mes prestations
+            <li><a href="/pourquoi-consulter"><?php the_field('menu5', 'option'); ?></a></li>
+            <li><i></i><?php the_field('menu6', 'option'); ?>
                 <ul>
-                    <li><a href="">Séances individuelles</a></li>
-                    <li><a href="">Ateliers collectifs</a></li>
+                    <li><a href="/seances"><?php the_field('menu7', 'option'); ?></a></li>
+                    <li><a href="/ateliers"><?php the_field('menu8', 'option'); ?></a></li>
                 </ul>
             </li>
-            <li><a href="">A&nbsp;propos&nbsp;de&nbsp;moi</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="/a-propos-de-moi"><?php the_field('menu9', 'option'); ?></a></li>
+            <li><a href="/contact"><?php the_field('menu10', 'option'); ?></a></li>
         </ul>
     </nav>

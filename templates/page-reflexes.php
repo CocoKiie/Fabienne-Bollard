@@ -25,7 +25,7 @@ $image_3 = get_field("image_section3");
             <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" alt="<?php echo ($image2["alt"]) ?>" loading="lazy">
         </div>
     </div>
-    <img src="../wp-content/themes/usmb/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
 
     <!--cercle-->
     <div class="cercle1"></div>

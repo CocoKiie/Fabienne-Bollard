@@ -27,7 +27,7 @@ $arg_localisation3 = get_field("arg_localisation_3");
             <img src="<?php echo ($img2["sizes"]["medium_large"]); ?>" alt="<?php echo ($image1["alt"]) ?>" alt="Image du cabinet">
         </div>
     </div>
-    <img src="../wp-content/themes/usmb/img/arrow.svg" alt="flèche vers le bas">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
 
     <!--cercle-->
     <div class="cercle1"></div>

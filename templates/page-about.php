@@ -27,7 +27,7 @@ $image_perso = get_field("image_perso");
             <p>Consultante en <dfn>Éducation Neurosensorielle et Motrice (<abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>)</dfn> depuis <strong><?php the_field("exp_years"); ?></strong>, en profession libérale.</p>
         </div>
     </div>
-    <img src="../wp-content/themes/usmb/img/arrow.svg" alt="flèche vers le bas">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
 
     <!--cercle-->
     <div class="cercle1"></div>

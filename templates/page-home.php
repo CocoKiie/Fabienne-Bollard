@@ -64,7 +64,7 @@ $txt_slide_6 = get_field("txt_slide_6");
         </div>
     </div>
     <p><a href="#decouverte"><?php the_field("scroll"); ?></a></p>
-    <img src="../wp-content/themes/usmb/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
 
     <!--cercle-->
     <div class="cercle1"></div>

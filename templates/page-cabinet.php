@@ -25,7 +25,7 @@ $image_age = get_field("image_âge");
             <h2><?php the_field("tagline_page"); ?></h2>
         </div>
     </div>
-    <img src="../wp-content/themes/usmb/img/arrow.svg" alt="flèche vers le bas">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
 
     <!--cercle-->
     <div class="cercle1"></div>
