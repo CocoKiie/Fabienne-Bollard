@@ -1966,21 +1966,21 @@ section.mtd_section > div > div h4 {
   font-size: 20px;
   line-height: 29px;
 }
-section.mtd_section > div > div > div {
+section.mtd_section > div > div div {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-section.mtd_section > div > div > div p {
+section.mtd_section > div > div div p {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   width: 670px;
 }
-section.mtd_section > div > div > div p strong {
-  font-weight: 600px;
+section.mtd_section > div > div div p strong {
+  font-weight: 600;
 }
-section.mtd_section > div > div > div p a {
+section.mtd_section > div > div div p a {
   text-decoration: underline;
 }
 
@@ -2024,7 +2024,7 @@ section.mtd_section2 > div.cercle2 {
 SECTION 3
 \********************/
 section.mtd_section3 {
-  margin: 50px 0 200px 0;
+  margin: 100px 0 200px 0;
 }
 section.mtd_section3 span {
   position: absolute;
