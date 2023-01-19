@@ -73,13 +73,7 @@ header.about {
         scale: 0.9;
     }
 
-    >p {
-        width: 120px;
-        text-align: center;
-        margin-top: -25px;
-    }
-
-    p+img {
+    >img {
         display: inline-block;
         width: 17px;
         animation: downArrow 0.7s ease-out infinite alternate;

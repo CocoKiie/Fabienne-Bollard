@@ -27,7 +27,6 @@ $image_perso = get_field("image_perso");
             <p>Consultante en <dfn>Éducation Neurosensorielle et Motrice (<abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>)</dfn> depuis <strong><?php the_field("exp_years"); ?></strong>, en profession libérale.</p>
         </div>
     </div>
-    <p><?php the_field("scroll_message"); ?></p>
     <img src="../wp-content/themes/usmb/img/arrow.svg" alt="flèche vers le bas">
 
     <!--cercle-->
