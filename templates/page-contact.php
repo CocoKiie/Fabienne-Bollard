@@ -19,8 +19,8 @@ $arg_localisation3 = get_field("arg_localisation_3");
 <header class="contact">
     <div class="heading">
         <div>
-            <h1>Contact</h1>
-            <h2>N'hésitez pas à me <strong>contacter</strong> et ensemble évaluons vos <strong>besoins</strong></h2>
+            <h1><?php the_field("title_page"); ?></h1>
+            <?php the_field("tagline_contact"); ?>
         </div>
         <div>
             <img src="<?php echo ($img1["sizes"]["medium_large"]); ?>" alt="<?php echo ($image1["alt"]) ?>" alt="Image de deux personnes se donnant la main">
@@ -38,22 +38,22 @@ $arg_localisation3 = get_field("arg_localisation_3");
     <section class="cct_section1">
         <div>
             <img src="../wp-content/themes/usmb/img/fabi_portrait_fun.jpg" alt="Portrait de Fabienne Bollard">
-            <h3>Informations pratiques</h3>
+            <h3><?php the_field("title_section_1"); ?></h3>
             <ul>
-                <li><i></i><a href="tel:0687800411">06.87.80.04.11</a></li>
+                <li><i></i><a href="tel:0687800411">06 87 80 04 11</a></li>
                 <li><i></i><a href="https://goo.gl/maps/KojEJXZsCiJk8ePd6" target="_blank">464 Route des Près Rollier<br>Zone de Grand Epagny<br>74330 Sillingy</a></li>
                 <li><i></i><a href="mailto:fabienne.bollard74@gmail.com">fabienne.bollard74@gmail.com</a></li>
             </ul>
         </div>
         <form method="post">
             <fieldset>
-                <legend>Formulaire de contact</legend>
+                <legend><?php the_field("legend_form"); ?></legend>
                 <?php echo do_shortcode('[wpforms id="164" title="false"]'); ?>
             </fieldset>
         </form>
     </section>
     <section class="cct_section2">
-        <h3>Localisation</h3>
+        <h3><?php the_field("title_section_2"); ?></h3>
         <div>
             <?php if ($arg_localisation1 || $localisation || $arg_localisation2 || $arg_localisation3) : ?>
                 <ul>
