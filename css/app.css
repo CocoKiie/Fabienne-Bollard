@@ -1860,12 +1860,178 @@ section.atl_section2 > div > div p {
 section.atl_section2 > div > div p strong {
   font-weight: 600;
 }
+section.atl_section2 > div > div p a {
+  text-decoration: underline;
+}
 section.atl_section2 span {
   width: 500px;
   height: 50px;
   position: absolute;
   right: 0;
   margin: 0;
+  background-image: url("../img/hilight.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/********************\
+HEADER
+\********************/
+header.methodes {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+}
+header.methodes div.mtd_header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0px;
+  gap: 85px;
+}
+header.methodes div.mtd_header h2 {
+  width: 606px;
+  height: 227px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 67px;
+  margin: 0;
+}
+header.methodes div.mtd_header h2 strong {
+  width: 606px;
+  height: 227px;
+  font-family: "Handlee";
+  font-size: 63px;
+  line-height: 75px;
+  background-image: url("../img/hilight.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+header.methodes div > img {
+  max-width: 293px;
+  min-height: 456px;
+  border-radius: 2px;
+  position: relative;
+  margin-top: 30px;
+}
+header.methodes div > img:nth-of-type(2) {
+  transform: rotate(20deg);
+  z-index: -1;
+  margin-left: -70px;
+  scale: 0.9;
+}
+header.methodes > img {
+  display: inline-block;
+  width: 17px;
+  animation: downArrow 0.7s ease-out infinite alternate;
+  margin-top: 3px;
+}
+@keyframes downArrow {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0.8em);
+  }
+}
+
+/********************\
+SECTION
+\********************/
+section.mtd_section {
+  position: relative;
+}
+section.mtd_section > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 70px;
+  margin: 50px 0 0 131px;
+}
+section.mtd_section > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+section.mtd_section > div > div h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+}
+section.mtd_section > div > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+section.mtd_section > div > div > div p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  width: 670px;
+}
+section.mtd_section > div > div > div p strong {
+  font-weight: 600px;
+}
+section.mtd_section > div > div > div p a {
+  text-decoration: underline;
+}
+
+/********************\
+SECTION 1
+\********************/
+/********************\
+SECTION 2
+\********************/
+section.mtd_section2 {
+  margin-top: 100px;
+}
+section.mtd_section2 > div {
+  flex-direction: row-reverse;
+  margin: 50px 0 0 131px;
+  justify-content: flex-end;
+}
+section.mtd_section2 > div.cercle1 {
+  position: absolute;
+  width: 191px;
+  height: 191px;
+  right: -50px;
+  top: 200px;
+  border-radius: 50%;
+  border: 1px solid #F77E4B;
+}
+section.mtd_section2 > div.cercle2 {
+  position: absolute;
+  width: 191px;
+  height: 191px;
+  right: -80px;
+  left: auto;
+  top: 300px;
+  margin: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #1CACE1;
+}
+
+/********************\
+SECTION 3
+\********************/
+section.mtd_section3 {
+  margin: 50px 0 200px 0;
+}
+section.mtd_section3 span {
+  position: absolute;
+  right: 0px;
+  top: 650px;
+  width: 500px;
+  height: 50px;
   background-image: url("../img/hilight.png");
   background-repeat: no-repeat;
   background-size: cover;
