@@ -1,0 +1,54 @@
+/********************\
+LEGALITE
+\********************/
+main.legalite section {
+    h1 {
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 75px;
+        margin-left: 131px;
+        margin-top: 50px;
+    }
+
+    h2{
+        font-size: 32px;
+        margin-left: 131px;
+        margin-top: 100px;
+    }
+
+    h3{
+        margin-top: 40px;
+        font-size: 36px;
+        margin-left: 131px;
+    }
+
+    h4{
+        margin-top: 20px;
+        font-size: 20px;
+        margin-left: 131px;
+    }
+
+    h5{
+        margin-top: 10px;
+        font-size: 16px;
+        margin-left: 131px;
+    }
+
+    p{
+        margin-top: 10px;
+        width: 80%;
+        margin-left: 131px;
+    }
+
+    ul{
+        margin-left: 131px;
+    }
+
+    aside{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0;
+    }
+}
