@@ -1873,7 +1873,7 @@ header.methodes div > img:nth-of-type(2) {
 header.methodes > img {
   display: inline-block;
   width: 17px;
-  animation: downArrow 0.7s ease-out infinite alternate;
+  animation: downArrow 0.7s ease-out infinite;
   margin-top: 3px;
 }
 @keyframes downArrow {
