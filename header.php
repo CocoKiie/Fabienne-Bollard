@@ -9,6 +9,34 @@
     <?php wp_head(); //Pour appeler le css 
     $logo = get_field('logo_couleur', 'option');
     ?>
+    <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri() ?>/img/favicon.svg" />
+    <style>
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: white;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #F77E4B;
+            border-radius: 3px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d66231;
+        }
+
+        /* Thin Scrollbar */
+        :root {
+            scrollbar-color: #F77E4B white !important;
+            scrollbar-width: auto !important;
+        }
+    </style>
 </head>
 
 <body>
