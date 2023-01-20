@@ -56,7 +56,7 @@ $txt_slide_6 = get_field("txt_slide_6");
         <div>
             <h1><?php the_field("title_page"); ?></h1>
             <?php the_field("accroche"); ?>
-            <button aria-label="Prendre contact avec Fabienne Bollard" onclick="<?php the_field('links_rdv', 'option'); ?>"><i></i><?php the_field("rdv"); ?></button>
+            <button aria-label="Prendre contact avec Fabienne Bollard" onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i><?php the_field("rdv"); ?></button>
         </div>
         <div>
             <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" alt="<?php echo ($image1["alt"]) ?>" loading="lazy">
@@ -89,7 +89,7 @@ $txt_slide_6 = get_field("txt_slide_6");
                         <?php the_field("def_job"); ?></p>
                 </div>
                 <p><dfn id="E.N.M.">*<abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>&nbsp;=&nbsp;Éducation Neurosensorielle et&nbsp;Motrice</dfn></p>
-                <button aria-label="Voir plus d'informations sur les réflexes archaïques" onclick="<?php the_field('links_reflexes', 'option'); ?>"><i></i><?php the_field("button_i_reflexes"); ?></button>
+                <button aria-label="Voir plus d'informations sur les réflexes archaïques" onclick="location.href='<?php the_field('links_reflexes', 'option'); ?>'"><i></i><?php the_field("button_i_reflexes"); ?></button>
             </div>
         </div>
         <div class="caroussel">
@@ -228,19 +228,19 @@ $txt_slide_6 = get_field("txt_slide_6");
                 <h4>Moteurs<br>& posturaux</h4>
                 <img src="<?php echo ($imageMoteur["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageMoteur["alt"]) ?>" loading="lazy">
                 <p><?php the_field("exemples_moteur"); ?></p>
-                <button aria-label="Voir les blocages moteurs et posturaux que Fabienne Bollard traite" onclick="<?php the_field('links_consultation', 'option'); ?>"><?php the_field("button_section_2");?><i></i></button>
+                <button aria-label="Voir les blocages moteurs et posturaux que Fabienne Bollard traite" onclick="location.href='<?php the_field('links_consultation', 'option'); ?>'"><?php the_field("button_section_2");?><i></i></button>
             </article>
             <article>
                 <h4>Émotionnels</h4>
                 <img src="<?php echo ($imageEmotion["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageEmotion["alt"]) ?>" loading="lazy">
                 <p><?php the_field("exemples_emotion"); ?></p>
-                <button aria-label="Voir les blocages émotionnels que Fabienne Bollard traite" onclick="<?php the_field('links_consultation', 'option'); ?>"><?php the_field("button_section_2"); ?><i></i></button>
+                <button aria-label="Voir les blocages émotionnels que Fabienne Bollard traite" onclick="location.href='<?php the_field('links_consultation', 'option'); ?>'"><?php the_field("button_section_2"); ?><i></i></button>
             </article>
             <article>
                 <h4>Cognitifs</h4>
                 <img src="<?php echo ($imageCognitif["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageCognitif["alt"]) ?>" loading="lazy">
                 <p><?php the_field("exemples_cognitif"); ?></p>
-                <button aria-label="Voir les blocages cognitifs que Fabienne Bollard traite" onclick="<?php the_field('links_consultation', 'option'); ?>"><?php the_field("button_section_2"); ?><i></i></button>
+                <button aria-label="Voir les blocages cognitifs que Fabienne Bollard traite" onclick="location.href='<?php the_field('links_consultation', 'option'); ?>'"><?php the_field("button_section_2"); ?><i></i></button>
             </article>
         </div>
     </section>
@@ -270,7 +270,7 @@ $txt_slide_6 = get_field("txt_slide_6");
                     <div>
             </article>
         </div>
-        <button aria-label="Voir pkus d'informations sur les 3 méthodes pratiquées par Fabienne Bollard" onclick="<?php the_field('links_methodes', 'option'); ?>"><i></i><?php the_field("button_section_4"); ?></button>
+        <button aria-label="Voir pkus d'informations sur les 3 méthodes pratiquées par Fabienne Bollard" onclick="location.href='<?php the_field('links_methodes', 'option'); ?>'"><i></i><?php the_field("button_section_4"); ?></button>
 
         <!--Soulignment-->
         <span></span>

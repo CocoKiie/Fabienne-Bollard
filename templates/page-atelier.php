@@ -40,7 +40,7 @@ $image_section2 = get_field("image_section2");
                 <?php the_field("paragraphe_section1"); ?>
             </div>
         </div>
-        <button onclick="<?php the_field('links_rdv', 'option'); ?>"><i></i><?php the_field("cta"); ?></button>
+        <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i><?php the_field("cta"); ?></button>
 
         <!--cercle-->
         <div class="cercle"></div>

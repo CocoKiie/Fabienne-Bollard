@@ -10,7 +10,7 @@ get_header();
         </div>
         <div>
             <p>Page <strong>indisponible</strong></p>
-            <button onclick="<?php the_field('links_rdv', 'option'); ?>"><i></i>Retour sur la page d'accueil</button>
+            <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Retour sur la page d'accueil</button>
         </div>
 
         <!--cercle-->
