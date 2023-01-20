@@ -28,9 +28,9 @@ $icon = $credits["credits_icons"];
         <article>
             <h3>A. Informations de contact</h3>
             <p>Ce site est dirigé par <?php echo $proprietaire ?>.</p>
-            <p>Adresse : 464 Route des Près Rollier - 74330 Sillingy</p>
-            <p>Téléphone : 06 87 80 04 11</p>
-            <p>Mail : fabienne.bollard74@gmail.com</p>
+            <p>Adresse : <?php echo $address_entreprise ?></p>
+            <p>Téléphone : <?php echo $phone ?></p>
+            <p>Mail : <?php echo $mail ?></p>
         </article>
         <article>
             <h3>B. Formulaire de contact</h3>
@@ -56,14 +56,14 @@ $icon = $credits["credits_icons"];
         <h2>Mentions Légales</h2>
         <article>
             <h3>Identité</h3>
-            <p>Nom du site web : Fabienne Bollard</p>
-            <p>Adresse du site : www.fabiennebollard.fr</p>
-            <p>Propriétaire du Site et Responsable de Publication : <?php echo $proprietaire ?> - fabienne.bollard74@gmail.com</p>
-            <p>Hébergement : OVH (2 rue Kellermann - 59100 Roubaix - France)</p>
+            <p>Nom du site web : <?php echo $nom_web ?></p>
+            <p>Adresse du site : <?php echo $address_web ?></p>
+            <p>Propriétaire du Site et Responsable de Publication : <?php echo $proprietaire ?> - <?php echo $mail ?> <?php if($responsable_pub): echo " / ".$responsable_pub; endif; ?></p>
+            <p>Hébergement : <?php echo $hebergeur ?></p>
             <h4>Entreprise : </h4>
             <p>Fabienne Bollard – RCS / SIREN / TVA ?</p>
-            <p>06 87 80 04 11 – fabienne.bollard74@gmail.com</p>
-            <p>464 Route des Près Rollier, 74330 Sillingy</p>
+            <p><?php echo $phone ?> – <?php echo $mail ?></p>
+            <p><?php echo $address_entreprise ?></p>
         </article>
         <article>
             <h3>Conditions d'utilisations</h3>
@@ -90,13 +90,9 @@ $icon = $credits["credits_icons"];
         <article>
             <h3>Crédits</h3>
             <h4>a) Photos</h4>
-            <p>Freepik (<a href="fr.freepik.com">fr.freepik.com</a>) : myfault1, 8photo, artursafronovvvv, rawpixel.com, freepik</p>
-            <p>Pexels (<a href="www.pexels.com/fr-fr">www.pexels.com</a>)</p>
-            <p>Fabienne Bollard</p>
+            <?php echo $photos ?>
             <h4>b) Icônes</h4>
-            <p>The Noun Project (<a href="www.thenounproject.com/">www.thenounproject.com</a>)</p>
-            <p>Flaticon (<a href="www.flaticon.com/fr/">www.flaticon.com/fr</a>) : Noplubery </p>
-            <p>Nathan Coutelier</p>
+            <?php echo $icon ?>
             <h4>c) Design et Code du site web</h4>
             <p>Ux designeuse : Helena Kam Makon</p>
             <p>Développeuse web : Laurie Perbet</p>
