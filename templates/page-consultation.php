@@ -76,7 +76,7 @@ $num_explication_cognitif = 0;
                             <img src="<?php echo $image_adulte['url']; ?>" alt="">
                             <div>
                                 <p><?php the_sub_field('explications_adultes'); ?></p>
-                                <button><i></i>Prendre rendez-vous</button>
+                                <button onclick="<?php the_field('links_rdv', 'option'); ?>"><i></i>Prendre rendez-vous</button>
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ $num_explication_cognitif = 0;
                             <img src="<?php echo $image_enfant['url']; ?>" alt="">
                             <div>
                                 <p><?php the_sub_field('explications_enfants'); ?></p>
-                                <button><i></i>Prendre rendez-vous</button>
+                                <button onclick="<?php the_field('links_rdv', 'option'); ?>"><i></i>Prendre rendez-vous</button>
                             </div>
                         </div>
                     </div>
@@ -106,7 +106,7 @@ $num_explication_cognitif = 0;
                             <img src="<?php echo $image_baby['url']; ?>" alt="">
                             <div>
                                 <p><?php the_sub_field('explications_baby'); ?></p>
-                                <button><i></i>Prendre rendez-vous</button>
+                                <button onclick="<?php the_field('links_rdv', 'option'); ?>"><i></i>Prendre rendez-vous</button>
                             </div>
                         </div>
                     </div>
@@ -159,7 +159,7 @@ $num_explication_cognitif = 0;
                                 <img src="<?php echo $image_adulte['url']; ?>" alt="">
                                 <div>
                                     <p><?php the_sub_field('explications_adultes'); ?></p>
-                                    <button><i></i>Prendre rendez-vous</button>
+                                    <button onclick="<?php the_field('links_rdv', 'option'); ?>"><i></i>Prendre rendez-vous</button>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +174,7 @@ $num_explication_cognitif = 0;
                                 <img src="<?php echo $image_enfant['url']; ?>" alt="">
                                 <div>
                                     <p><?php the_sub_field('explications_enfants'); ?></p>
-                                    <button><i></i>Prendre rendez-vous</button>
+                                    <button onclick="<?php the_field('links_rdv', 'option'); ?>"><i></i>Prendre rendez-vous</button>
                                 </div>
                             </div>
                         </div>
@@ -189,7 +189,7 @@ $num_explication_cognitif = 0;
                                 <img src="<?php echo $image_baby['url']; ?>" alt="">
                                 <div>
                                     <p><?php the_sub_field('explications_baby'); ?></p>
-                                    <button><i></i>Prendre rendez-vous</button>
+                                    <button onclick="<?php the_field('links_rdv', 'option'); ?>"><i></i>Prendre rendez-vous</button>
                                 </div>
                             </div>
                         </div>
@@ -243,7 +243,7 @@ $num_explication_cognitif = 0;
                                     <img src="<?php echo $image_adulte['url']; ?>" alt="">
                                     <div>
                                         <p><?php the_sub_field('explications_adultes'); ?></p>
-                                        <button><i></i>Prendre rendez-vous</button>
+                                        <button onclick="<?php the_field('links_rdv', 'option'); ?>"><i></i>Prendre rendez-vous</button>
                                     </div>
                                 </div>
                             </div>
@@ -257,7 +257,7 @@ $num_explication_cognitif = 0;
                                     <img src="<?php echo $image_adulte['url']; ?>" alt="">
                                     <div>
                                         <p><?php the_sub_field('explications_adultes'); ?></p>
-                                        <button><i></i>Prendre rendez-vous</button>
+                                        <button onclick="<?php the_field('links_rdv', 'option'); ?>"><i></i>Prendre rendez-vous</button>
                                     </div>
                                 </div>
                                 <a href="javascript:void(0)" onclick="document.getElementById('explications_cognitif_enfant<?php echo $num_explication_cognitif; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
@@ -272,7 +272,7 @@ $num_explication_cognitif = 0;
                                     <img src="<?php echo $image_adulte['url']; ?>" alt="">
                                     <div>
                                         <p><?php the_sub_field('explications_adultes'); ?></p>
-                                        <button><i></i>Prendre rendez-vous</button>
+                                        <button onclick="<?php the_field('links_rdv', 'option'); ?>"><i></i>Prendre rendez-vous</button>
                                     </div>
                                 </div>
                                 <a href="javascript:void(0)" onclick="document.getElementById('explications_cognitif_baby<?php echo $num_explication_cognitif; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
