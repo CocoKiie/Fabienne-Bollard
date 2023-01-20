@@ -26,5 +26,13 @@ if( function_exists('acf_add_options_page') ) {
         'menu_title'    => 'Pied de page',
         'parent_slug'   => 'theme-general-settings',
     ));
-    
 }
+
+function register_my_menus() {
+    register_nav_menus(
+      array(
+        'Menu-principal' => __( 'Menu principal' ),
+       )
+     );
+   }
+   add_action( 'init', 'register_my_menus' );

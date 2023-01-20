@@ -17,47 +17,55 @@
 NAVIGATION
 \********************/
 nav.navigation {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 100px;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #ffffff;
   box-shadow: 0px 4px 10px -5px rgba(0, 0, 0, 0.15);
   z-index: 100;
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
-nav.navigation a {
+nav.navigation div {
+  top: 0;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  justify-content: flex-end;
+  width: 70%;
+}
+nav.navigation div a[aria-current=page] {
+  text-decoration: underline;
+}
+nav.navigation div a {
   text-decoration: none;
   display: inline-block;
 }
-nav.navigation li:nth-child(1) {
-  margin-right: auto;
-}
-nav.navigation ul {
+nav.navigation div ul {
   display: flex;
   flex-direction: row;
   padding: 0;
   margin: 0;
   gap: 35px;
-  width: 90%;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   list-style: none;
 }
-nav.navigation > ul > li {
+nav.navigation div > ul > li {
   cursor: pointer;
   display: flex;
   align-items: center;
   position: relative;
   height: 100%;
 }
-nav.navigation li:hover, nav.navigation li:hover > a {
+nav.navigation div li:hover,
+nav.navigation div li:hover > a {
   color: #1CACE1;
   text-decoration: underline;
 }
-nav.navigation > ul > li > ul {
+nav.navigation div > ul > li > ul {
   display: none;
   position: absolute;
   bottom: 30px;
@@ -67,26 +75,15 @@ nav.navigation > ul > li > ul {
   background-color: white;
   border: 2px solid #1CACE1;
 }
-nav.navigation > ul > li > ul li a {
+nav.navigation div > ul > li > ul li a {
   max-width: 120px;
   padding: 5px 0;
 }
-nav.navigation > ul > li > ul li:nth-child(2) a {
+nav.navigation div > ul > li > ul li:nth-child(2) a {
   margin-top: 10px;
 }
-nav.navigation > ul > li:hover > ul {
+nav.navigation div > ul > li:hover > ul {
   display: block;
-}
-nav.navigation > ul > li > i {
-  animation: rotationFleche 0.2s linear forwards;
-}
-@keyframes rotationFleche {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(90deg);
-  }
 }
 
 button:hover {

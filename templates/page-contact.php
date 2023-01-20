@@ -10,6 +10,8 @@ $photos = get_field("photos");
 $img1 = $photos["image1"];
 $img2 = $photos["image2"];
 
+$portrait = get_field("portrait");
+
 $localisation = get_field("localisation");
 $arg_localisation1 = get_field("arg_localisation_1");
 $arg_localisation2 = get_field("arg_localisation_2");
@@ -37,7 +39,7 @@ $arg_localisation3 = get_field("arg_localisation_3");
 <main>
     <section class="cct_section1">
         <div>
-            <img src="../wp-content/themes/usmb/img/fabi_portrait_fun.jpg" alt="Portrait de Fabienne Bollard">
+            <img src="<?php echo ($portrait["sizes"]["medium_large"]); ?>" alt="<?php echo ($image1["alt"]) ?>" alt="Portrait de Fabienne Bollard">
             <h3><?php the_field("title_section_1"); ?></h3>
             <ul>
                 <li><i></i><a href="tel:0687800411">06 87 80 04 11</a></li>

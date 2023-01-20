@@ -41,23 +41,6 @@
 
 <body>
     <nav class="navigation" role="navigation">
-        <ul>
-            <li><a href="/"><img src="<?php echo ($logo["sizes"]["medium_large"]); ?>" alt="Logo représentant un papillon" loading="lazy"></a></li>
-            <li><a href="/"><?php the_field('accueil', 'option'); ?></a></li>
-            <li><i></i><?php the_field('menu2', 'option'); ?>&nbsp;▼
-                <ul>
-                    <li><a href="/reflexes-archaiques"><?php the_field('menu3', 'option'); ?></a></li>
-                    <li><a href="/methodes"><?php the_field('menu4', 'option'); ?></a></li>
-                </ul>
-            </li>
-            <li><a href="/pourquoi-consulter"><?php the_field('menu5', 'option'); ?></a></li>
-            <li><i></i><?php the_field('menu6', 'option'); ?>&nbsp;▼
-                <ul>
-                    <li><a href="/seances"><?php the_field('menu7', 'option'); ?></a></li>
-                    <li><a href="/ateliers"><?php the_field('menu8', 'option'); ?></a></li>
-                </ul>
-            </li>
-            <li><a href="/a-propos-de-moi"><?php the_field('menu9', 'option'); ?></a></li>
-            <li><a href="/contact"><?php the_field('menu10', 'option'); ?></a></li>
-        </ul>
+    <a href="/"><img src="<?php echo ($logo["sizes"]["medium_large"]); ?>" alt="Logo représentant un papillon" loading="lazy"></a>
+    <?php wp_nav_menu( array( 'theme_location' => 'Menu-principal' ) );?>
     </nav>
