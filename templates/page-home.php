@@ -228,7 +228,7 @@ $txt_slide_6 = get_field("txt_slide_6");
                 <h4>Moteurs<br>& posturaux</h4>
                 <img src="<?php echo ($imageMoteur["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageMoteur["alt"]) ?>" loading="lazy">
                 <p><?php the_field("exemples_moteur"); ?></p>
-                <button aria-label="Voir les blocages moteurs et posturaux que Fabienne Bollard traite" onclick="location.href='<?php the_field('links_consultation', 'option'); ?>'"><?php the_field("button_section_2");?><i></i></button>
+                <button aria-label="Voir les blocages moteurs et posturaux que Fabienne Bollard traite" onclick="location.href='<?php the_field('links_consultation', 'option'); ?>'"><?php the_field("button_section_2"); ?><i></i></button>
             </article>
             <article>
                 <h4>Émotionnels</h4>
