@@ -61,7 +61,7 @@ $icon = $credits["credits_icons"];
             <p>Propriétaire du Site et Responsable de Publication : <?php echo $proprietaire ?> - <?php echo $mail ?> <?php if($responsable_pub): echo " / ".$responsable_pub; endif; ?></p>
             <p>Hébergement : <?php echo $hebergeur ?></p>
             <h4>Entreprise : </h4>
-            <p>Fabienne Bollard – RCS / SIREN / TVA ?</p>
+            <p>Fabienne Bollard – RC : MDNA 21893 / SIRET : 834 644 536 000 15</p>
             <p><?php echo $phone ?> – <?php echo $mail ?></p>
             <p><?php echo $address_entreprise ?></p>
         </article>
