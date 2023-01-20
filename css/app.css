@@ -1903,6 +1903,10 @@ section.mtd_section > div > div {
   flex-direction: column;
   align-items: center;
   gap: 50px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 35px -10px rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
 }
 section.mtd_section > div > div h4 {
   font-weight: 600;
