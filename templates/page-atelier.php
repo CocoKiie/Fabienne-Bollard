@@ -19,11 +19,11 @@ $image_section2 = get_field("image_section2");
             <?php the_field("tagline_page"); ?>
         </div>
         <div>
-            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" alt="<?php echo ($image1["alt"]) ?>" loading="lazy">
-            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" alt="<?php echo ($image2["alt"]) ?>" loading="lazy">
+            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" height="<?php echo ($image1["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image1["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image1["alt"]) ?>">
+            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" height="<?php echo ($image2["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image2["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image2["alt"]) ?>">
         </div>
     </div>
-    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" width="17" height="20" alt="flèche vers le bas" loading="lazy">
 
     <!--cercle-->
     <div class="cercle1"></div>
@@ -35,7 +35,7 @@ $image_section2 = get_field("image_section2");
         <h2><?php the_field("title_section1"); ?></h2>
         <h3><?php the_field("tagline_section1"); ?></h3>
         <div>
-            <img src="<?php echo ($image_section1["sizes"]["medium_large"]); ?>" alt="<?php echo ($image_section1["alt"]) ?>" loading="lazy">
+            <img src="<?php echo ($image_section1["sizes"]["medium_large"]); ?>" height="<?php echo ($image_section1["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_section1["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_section1["alt"]) ?>" loading="lazy">
             <div>
                 <?php the_field("paragraphe_section1"); ?>
             </div>
@@ -52,7 +52,7 @@ $image_section2 = get_field("image_section2");
             <div>
                 <?php the_field("paragraphe_section2"); ?>
             </div>
-            <img src="<?php echo ($image_section2["sizes"]["medium_large"]); ?>" alt="<?php echo ($image_section2["alt"]) ?>" loading="lazy">
+            <img src="<?php echo ($image_section2["sizes"]["medium_large"]); ?>" height="<?php echo ($image_section2["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_section2["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_section2["alt"]) ?>" loading="lazy">
         </div>
 
         <!--soulignment-->

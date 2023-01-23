@@ -17,15 +17,15 @@ $image_age = get_field("image_âge");
 <header class="cabinet">
     <div class="cab_header">
         <div>
-            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" alt="Image d'une jeune fille dans un champs de coquelicots">
-            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" alt="Image de personnes en rendez-vous dans un cabinet">
+            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" height="<?php echo ($image1["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image1["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image1["alt"]) ?>">
+            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" height="<?php echo ($image2["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image2["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image2["alt"]) ?>">
         </div>
         <div>
             <h1><?php the_field("title_page"); ?></h1>
             <h2><?php the_field("tagline_page"); ?></h2>
         </div>
     </div>
-    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" width="17" height="20" alt="flèche vers le bas" loading="lazy">
 
     <!--cercle-->
     <div class="cercle1"></div>
@@ -36,7 +36,7 @@ $image_age = get_field("image_âge");
     <section class="cab_section1">
         <h3><?php the_field("title_section_1"); ?></h3>
         <div>
-            <img src="<?php echo ($image_accompagnment["sizes"]["medium_large"]); ?>" alt="">
+            <img src="<?php echo ($image_accompagnment["sizes"]["medium_large"]); ?>" height="<?php echo ($image_accompagnment["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_accompagnment["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_accompagnment["alt"]) ?>">
             <div><?php the_field("duree_accompagnement"); ?></div>
         </div>
 
@@ -50,14 +50,14 @@ $image_age = get_field("image_âge");
                 <h4><i></i><?php the_field("sub_title_section_3"); ?></h4>
                 <div><?php the_field("besoins_age"); ?></div>
             </div>
-            <img src="<?php echo ($image_age["sizes"]["medium_large"]); ?>" alt="">
+            <img src="<?php echo ($image_age["sizes"]["medium_large"]); ?>" height="<?php echo ($image_age["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_age["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_age["alt"]) ?>">
         </div>
         <div>
             <div>
                 <h4><i></i><?php the_field("sub_title_section_3-2"); ?></h4>
                 <div><?php the_field("besoins_individuels"); ?></div>
             </div>
-            <img src="<?php echo ($image_besoins["sizes"]["medium_large"]); ?>" alt="">
+            <img src="<?php echo ($image_besoins["sizes"]["medium_large"]); ?>" height="<?php echo ($image_besoins["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_besoins["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_besoins["alt"]) ?>">
         </div>
 
         <!--cercle-->
@@ -67,7 +67,7 @@ $image_age = get_field("image_âge");
     <section class="cab_section3">
         <h3><?php the_field("title_section_3"); ?></h3>
         <div>
-            <div><img src="<?php echo ($illustration_paiement["sizes"]["medium_large"]); ?>" alt=""></div>
+            <div><img src="<?php echo ($illustration_paiement["sizes"]["medium_large"]); ?>" height="<?php echo ($illustration_paiement["sizes"]["medium_large-height"]) ?>" width="<?php echo ($illustration_paiement["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($illustration_paiement["alt"]) ?>"></div>
             <div><?php the_field("paragraphe_paiement"); ?></div>
         </div>
 

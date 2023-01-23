@@ -214,13 +214,8 @@ main section h3 {
 
 main section.acc_section1 video {
   width: 664px;
-  height: 403px;
   padding-top: 50px;
-  border-radius: 2px;
-}
-main section.acc_section1 video p {
-  font-size: 16px;
-  width: 664px;
+  border-radius: 5px;
 }
 main section.acc_section1 video + div {
   margin: 30px auto 0 auto;

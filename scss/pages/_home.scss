@@ -143,14 +143,8 @@ main section {
 main section.acc_section1 {
     video {
         width: 664px;
-        height: 403px;
         padding-top: 50px;
-        border-radius: 2px;
-
-        p {
-            font-size: 16px;
-            width: 664px;
-        }
+        border-radius: 5px;
     }
 
     video+div {

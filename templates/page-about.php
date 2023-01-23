@@ -18,8 +18,8 @@ $image_perso = get_field("image_perso");
 <header class="about">
     <div class="abt_header">
         <div>
-            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" alt="Image d'une jeune fille dans un champs de coquelicots">
-            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" alt="Image de personnes en rendez-vous dans un cabinet">
+            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" height="<?php echo ($image1["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image1["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image1["alt"]) ?>">
+            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" height="<?php echo ($image2["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image2["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image2["alt"]) ?>">
         </div>
         <div>
             <h1><?php the_field("title_page"); ?></h1>
@@ -27,7 +27,7 @@ $image_perso = get_field("image_perso");
             <p>Consultante en <dfn>Éducation Neurosensorielle et Motrice (<abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>)</dfn> depuis <strong><?php the_field("exp_years"); ?></strong>, en profession libérale.</p>
         </div>
     </div>
-    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" width="17" height="20" alt="flèche vers le bas" loading="lazy">
 
     <!--cercle-->
     <div class="cercle1"></div>
@@ -44,7 +44,7 @@ $image_perso = get_field("image_perso");
     </aside>
     <section class="abt_section1">
         <div class="abt_card">
-            <img src="<?php echo ($image_value["sizes"]["medium_large"]); ?>" alt="">
+            <img src="<?php echo ($image_value["sizes"]["medium_large"]); ?>" height="<?php echo ($image_value["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_value["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_value["alt"]) ?>">
             <div>
                 <?php if ($title_valeur) : ?>
                     <h3><?php echo $title_valeur; ?></h3>

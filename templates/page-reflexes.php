@@ -82,7 +82,7 @@ $image_3 = get_field("image_section3");
     </section>
     <aside class="rfx_aside">
         <p><?php the_field("cta"); ?></p>
-        <button onclick="location.href='<?php echo get_stylesheet_directory_uri() ?>/pdf/reflexes-archaiques.pdf'"><i></i><?php the_field("cta_telechargement"); ?></button>
+        <button onclick="location.href='<?php the_field('pdf');?>"><i></i><?php the_field("cta_telechargement"); ?></button>
     </aside>
 </main>
 

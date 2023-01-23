@@ -25,11 +25,11 @@ $arg_localisation3 = get_field("arg_localisation_3");
             <?php the_field("tagline_contact"); ?>
         </div>
         <div>
-            <img src="<?php echo ($img1["sizes"]["medium_large"]); ?>" alt="<?php echo ($image1["alt"]) ?>" alt="Image de deux personnes se donnant la main">
-            <img src="<?php echo ($img2["sizes"]["medium_large"]); ?>" alt="<?php echo ($image1["alt"]) ?>" alt="Image du cabinet">
+            <img src="<?php echo ($img1["sizes"]["medium_large"]); ?>" height="<?php echo ($img1["sizes"]["medium_large-height"]) ?>" width="<?php echo ($img1["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($img1["alt"]) ?>">
+            <img src="<?php echo ($img2["sizes"]["medium_large"]); ?>" height="<?php echo ($img2["sizes"]["medium_large-height"]) ?>" width="<?php echo ($img2["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($img2["alt"]) ?>">
         </div>
     </div>
-    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" width="17" height="20" alt="flèche vers le bas" loading="lazy">
 
     <!--cercle-->
     <div class="cercle1"></div>
@@ -39,7 +39,7 @@ $arg_localisation3 = get_field("arg_localisation_3");
 <main>
     <section class="cct_section1">
         <div>
-            <img src="<?php echo ($portrait["sizes"]["medium_large"]); ?>" alt="<?php echo ($image1["alt"]) ?>" alt="Portrait de Fabienne Bollard">
+            <img src="<?php echo ($portrait["sizes"]["medium_large"]); ?>" alt="<?php echo ($portrait["alt"]) ?>" height="<?php echo ($portrait["sizes"]["medium_large-height"]) ?>" width="<?php echo ($portrait["sizes"]["medium_large-width"]) ?>">
             <h3><?php the_field("title_section_1"); ?></h3>
             <ul>
                 <li><i></i><a href="tel:0687800411">06 87 80 04 11</a></li>

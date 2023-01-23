@@ -49,6 +49,10 @@ $title_slide_5 = get_field("title_slide_5");
 $txt_slide_5 = get_field("txt_slide_5");
 $title_slide_6 = get_field("title_slide_6");
 $txt_slide_6 = get_field("txt_slide_6");
+
+//motion design
+$file_webp = get_field('video_webp');
+$file_mp4 = get_field('video_mp4');
 ?>
 
 <header class="accueil">
@@ -59,12 +63,12 @@ $txt_slide_6 = get_field("txt_slide_6");
             <button aria-label="Prendre contact avec Fabienne Bollard" onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i><?php the_field("rdv"); ?></button>
         </div>
         <div>
-            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" alt="<?php echo ($image1["alt"]) ?>" loading="lazy">
-            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" alt="<?php echo ($image2["alt"]) ?>" loading="lazy">
+            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" height="<?php echo ($image1["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image1["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image1["alt"]) ?>">
+            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" height="<?php echo ($image2["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image2["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image2["alt"]) ?>">
         </div>
     </div>
     <p><a href="#decouverte"><?php the_field("scroll"); ?></a></p>
-    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" width="17" height="20" alt="flèche vers le bas">
 
     <!--cercle-->
     <div class="cercle1"></div>
@@ -76,11 +80,10 @@ $txt_slide_6 = get_field("txt_slide_6");
         <h2><?php the_field("title_section_1"); ?></h2>
         <h3><?php the_field("tagline_section_1"); ?></h3>
         <div>
-            <video controls preload="metadata" poster="image_poster.png">
-                <source src="/media/cc0-videos/flower.webm" type="video/webm">
-                <source src="/media/cc0-videos/flower.mp4" type="video/mp4">
+            <video controls preload="metadata">
+                <source src="<?php echo $file_mp4['url']; ?>" type="video/mp4">
                 <p>Votre navigateur ne prend pas en compte la vidéo.
-                    Vous pouvez la télécharger au format <a href="/media/cc0-videos/flower.mp4">MP4</a></p>
+                    Vous pouvez la télécharger au format <a href="<?php echo $file_mp4['url']; ?>">MP4</a></p>
             </video>
             <div>
                 <div>
@@ -96,14 +99,14 @@ $txt_slide_6 = get_field("txt_slide_6");
             <div class="carousel-cell">
                 <h4><?php the_field("title_slide_1"); ?></h4>
                 <div>
-                    <img src="<?php echo ($img_slide_1["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
+                    <img src="<?php echo ($img_slide_1["sizes"]["medium_large"]); ?>" height="<?php echo ($img_slide_1["sizes"]["medium_large-height"]) ?>" width="<?php echo ($img_slide_1["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($img_slide_1["alt"]) ?>" loading="lazy">
                     <p><?php the_field("txt_slide_1"); ?></p>
                 </div>
             </div>
             <div class="carousel-cell">
                 <h4><?php the_field("title_slide_2"); ?></h4>
                 <div>
-                    <img src="<?php echo ($img_slide_2["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
+                    <img src="<?php echo ($img_slide_2["sizes"]["medium_large"]); ?>" height="<?php echo ($img_slide_2["sizes"]["medium_large-height"]) ?>" width="<?php echo ($img_slide_2["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($img_slide_2["alt"]) ?>" loading="lazy">
                     <p><?php the_field("txt_slide_2"); ?></p>
                 </div>
             </div>
@@ -114,7 +117,7 @@ $txt_slide_6 = get_field("txt_slide_6");
                     <?php endif; ?>
                     <?php if ($txt_slide_3) : ?>
                         <div>
-                            <img src="<?php echo ($img_slide_3["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
+                            <img src="<?php echo ($img_slide_3["sizes"]["medium_large"]); ?>" height="<?php echo ($img_slide_3["sizes"]["medium_large-height"]) ?>" width="<?php echo ($img_slide_3["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($img_slide_3["alt"]) ?>" loading="lazy">
                             <p><?php echo $txt_slide_3; ?></p>
                         </div>
                     <?php endif; ?>
@@ -127,7 +130,7 @@ $txt_slide_6 = get_field("txt_slide_6");
                     <?php endif; ?>
                     <?php if ($txt_slide_4) : ?>
                         <div>
-                            <img src="<?php echo ($img_slide_4["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
+                            <img src="<?php echo ($img_slide_4["sizes"]["medium_large"]); ?>" height="<?php echo ($img_slide_4["sizes"]["medium_large-height"]) ?>" width="<?php echo ($img_slide_4["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($img_slide_4["alt"]) ?>" loading="lazy">
                             <p><?php echo $txt_slide_4; ?></p>
                         </div>
                     <?php endif; ?>
@@ -140,7 +143,7 @@ $txt_slide_6 = get_field("txt_slide_6");
                     <?php endif; ?>
                     <?php if ($txt_slide_5) : ?>
                         <div>
-                            <img src="<?php echo ($img_slide_5["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
+                            <img src="<?php echo ($img_slide_5["sizes"]["medium_large"]); ?>" height="<?php echo ($img_slide_5["sizes"]["medium_large-height"]) ?>" width="<?php echo ($img_slide_5["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($img_slide_5["alt"]) ?>" loading="lazy">
                             <p><?php echo $txt_slide_5; ?></p>
                         </div>
                     <?php endif; ?>
@@ -153,7 +156,7 @@ $txt_slide_6 = get_field("txt_slide_6");
                     <?php endif; ?>
                     <?php if ($txt_slide_6) : ?>
                         <div>
-                            <img src="<?php echo ($img_slide_6["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
+                            <img src="<?php echo ($img_slide_6["sizes"]["medium_large"]); ?>" height="<?php echo ($img_slide_6["sizes"]["medium_large-height"]) ?>" width="<?php echo ($img_slide_6["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($img_slide_6["alt"]) ?>" loading="lazy">
                             <p><?php echo $txt_slide_4; ?></p>
                         </div>
                     <?php endif; ?>
@@ -226,19 +229,19 @@ $txt_slide_6 = get_field("txt_slide_6");
         <div>
             <article>
                 <h4>Moteurs<br>& posturaux</h4>
-                <img src="<?php echo ($imageMoteur["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageMoteur["alt"]) ?>" loading="lazy">
+                <img src="<?php echo ($imageMoteur["sizes"]["medium_large"]); ?>" height="<?php echo ($imageMoteur["sizes"]["medium_large-height"]) ?>" width="<?php echo ($imageMoteur["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($imageMoteur["alt"]) ?>" loading="lazy">
                 <p><?php the_field("exemples_moteur"); ?></p>
                 <button aria-label="Voir les blocages moteurs et posturaux que Fabienne Bollard traite" onclick="location.href='<?php the_field('links_consultation', 'option'); ?>'"><?php the_field("button_section_2"); ?><i></i></button>
             </article>
             <article>
                 <h4>Émotionnels</h4>
-                <img src="<?php echo ($imageEmotion["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageEmotion["alt"]) ?>" loading="lazy">
+                <img src="<?php echo ($imageEmotion["sizes"]["medium_large"]); ?>" height="<?php echo ($imageEmotion["sizes"]["medium_large-height"]) ?>" width="<?php echo ($imageEmotion["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($imageEmotion["alt"]) ?>" loading="lazy">
                 <p><?php the_field("exemples_emotion"); ?></p>
                 <button aria-label="Voir les blocages émotionnels que Fabienne Bollard traite" onclick="location.href='<?php the_field('links_consultation', 'option'); ?>'"><?php the_field("button_section_2"); ?><i></i></button>
             </article>
             <article>
                 <h4>Cognitifs</h4>
-                <img src="<?php echo ($imageCognitif["sizes"]["medium_large"]); ?>" alt="<?php echo ($imageCognitif["alt"]) ?>" loading="lazy">
+                <img src="<?php echo ($imageCognitif["sizes"]["medium_large"]); ?>" height="<?php echo ($imageCognitif["sizes"]["medium_large-height"]) ?>" width="<?php echo ($imageCognitif["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($imageCognitif["alt"]) ?>" loading="lazy">
                 <p><?php the_field("exemples_cognitif"); ?></p>
                 <button aria-label="Voir les blocages cognitifs que Fabienne Bollard traite" onclick="location.href='<?php the_field('links_consultation', 'option'); ?>'"><?php the_field("button_section_2"); ?><i></i></button>
             </article>
@@ -249,21 +252,21 @@ $txt_slide_6 = get_field("txt_slide_6");
         <h3><?php the_field("tagline_section_3"); ?></h3>
         <div>
             <article>
-                <img src="<?php echo ($image_mnri["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
+                <img src="<?php echo ($image_mnri["sizes"]["medium_large"]); ?>" height="<?php echo ($image_mnri["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_mnri["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_mnri["alt"]) ?>" loading="lazy">
                 <div>
                     <h4><?php echo $titre_mnri; ?></h4>
                     <?php echo $paragraphe_mnri; ?>
                 </div>
             </article>
             <article>
-                <img src="<?php echo ($image_rmti["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
+                <img src="<?php echo ($image_rmti["sizes"]["medium_large"]); ?>" height="<?php echo ($image_rmti["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_rmti["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_rmti["alt"]) ?>" loading="lazy">
                 <div>
                     <h4><?php echo $titre_rmti; ?></h4>
                     <?php echo $paragraphe_rmti; ?>
                 </div>
             </article>
             <article>
-                <img src="<?php echo ($image_brainball["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
+                <img src="<?php echo ($image_brainball["sizes"]["medium_large"]); ?>" height="<?php echo ($image_brainball["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_brainball["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_brainball["alt"]) ?>" loading="lazy">
                 <div>
                     <h4><?php echo $titre_brainball; ?></h4>
                     <?php echo $paragraphe_brainball; ?>

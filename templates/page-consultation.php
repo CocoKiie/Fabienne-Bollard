@@ -23,11 +23,11 @@ $num_explication_cognitif = 0;
             <?php the_field("tagline_page"); ?>
         </div>
         <div>
-            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" alt="<?php echo ($image1["alt"]) ?>" loading="lazy">
-            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" alt="<?php echo ($image2["alt"]) ?>" loading="lazy">
+        <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" height="<?php echo ($image1["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image1["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image1["alt"]) ?>">
+        <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" height="<?php echo ($image2["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image2["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image2["alt"]) ?>">
         </div>
     </div>
-    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" width="17" height="20" alt="flèche vers le bas" loading="lazy">
 
     <!--cercle-->
     <div class="cercle1"></div>
@@ -48,7 +48,7 @@ $num_explication_cognitif = 0;
                         $image = get_sub_field('image');
                         $num_emotion += 1;
                         ?>
-                        <img src="<?php echo $image['url']; ?>" alt="">
+                        <img src="<?php echo $image['url']; ?>" height="<?php echo ($image["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image["alt"]) ?>">
                         <div>
                             <p>Selectionnez votre profil</p>
                             <div>
@@ -73,7 +73,7 @@ $num_explication_cognitif = 0;
                         <h3><?php the_sub_field('question'); ?></h3>
                         <h4>Adulte</h4>
                         <div class="cst_content">
-                            <img src="<?php echo $image_adulte['url']; ?>" alt="">
+                            <img src="<?php echo $image_adulte['url']; ?>" height="<?php echo ($image_adulte["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_adulte["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_adulte["alt"]) ?>>
                             <div>
                                 <p><?php the_sub_field('explications_adultes'); ?></p>
                                 <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
@@ -88,7 +88,7 @@ $num_explication_cognitif = 0;
                         <h3><?php the_sub_field('question'); ?></h3>
                         <h4>Enfant</h4>
                         <div class="cst_content">
-                            <img src="<?php echo $image_enfant['url']; ?>" alt="">
+                            <img src="<?php echo $image_enfant['url']; ?>" height="<?php echo ($image_enfant["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_enfant["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_enfant["alt"]) ?>>
                             <div>
                                 <p><?php the_sub_field('explications_enfants'); ?></p>
                                 <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
@@ -103,7 +103,7 @@ $num_explication_cognitif = 0;
                         <h3><?php the_sub_field('question'); ?></h3>
                         <h4>Bébé</h4>
                         <div class="cst_content">
-                            <img src="<?php echo $image_baby['url']; ?>" alt="">
+                            <img src="<?php echo $image_baby['url']; ?>" height="<?php echo ($image_baby["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_baby["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_baby["alt"]) ?>>
                             <div>
                                 <p><?php the_sub_field('explications_baby'); ?></p>
                                 <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
@@ -131,7 +131,7 @@ $num_explication_cognitif = 0;
                             $num_moteur += 1;
                             ?>
 
-                            <img src="<?php echo $image['url']; ?>" alt="">
+                            <img src="<?php echo $image['url']; ?>" height="<?php echo ($image["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image["alt"]) ?>>
                             <div>
                                 <p>Selectionnez votre profil</p>
                                 <div>
@@ -156,7 +156,7 @@ $num_explication_cognitif = 0;
                             <h3><?php the_sub_field('question'); ?></h3>
                             <h4>Adulte</h4>
                             <div class="cst_content">
-                                <img src="<?php echo $image_adulte['url']; ?>" alt="">
+                                <img src="<?php echo $image_adulte['url']; ?>" height="<?php echo ($image_adulte["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_adulte["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_adulte["alt"]) ?>>
                                 <div>
                                     <p><?php the_sub_field('explications_adultes'); ?></p>
                                     <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
@@ -171,7 +171,7 @@ $num_explication_cognitif = 0;
                             <h3><?php the_sub_field('question'); ?></h3>
                             <h4>Enfant</h4>
                             <div class="cst_content">
-                                <img src="<?php echo $image_enfant['url']; ?>" alt="">
+                                <img src="<?php echo $image_enfant['url']; ?>" height="<?php echo ($image_enfant["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_enfant["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_enfant["alt"]) ?>>
                                 <div>
                                     <p><?php the_sub_field('explications_enfants'); ?></p>
                                     <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
@@ -186,7 +186,7 @@ $num_explication_cognitif = 0;
                             <h3><?php the_sub_field('question'); ?></h3>
                             <h4>Bébé</h4>
                             <div class="cst_content">
-                                <img src="<?php echo $image_baby['url']; ?>" alt="">
+                                <img src="<?php echo $image_baby['url']; ?>" height="<?php echo ($image_baby["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_baby["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_baby["alt"]) ?>>
                                 <div>
                                     <p><?php the_sub_field('explications_baby'); ?></p>
                                     <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
@@ -214,7 +214,7 @@ $num_explication_cognitif = 0;
                                 $image = get_sub_field('image');
                                 $num_cognitif += 1;
                                 ?>
-                                <img src="<?php echo $image['url']; ?>" alt="">
+                                <img src="<?php echo $image['url']; ?>" height="<?php echo ($image["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image["alt"]) ?>>
                                 <div>
                                     <p>Selectionnez votre profil</p>
                                     <div>
@@ -240,7 +240,7 @@ $num_explication_cognitif = 0;
                                 <h3><?php the_sub_field('question'); ?></h3>
                                 <h4>Adulte</h4>
                                 <div class="cst_content">
-                                    <img src="<?php echo $image_adulte['url']; ?>" alt="">
+                                    <img src="<?php echo $image_adulte['url']; ?>" height="<?php echo ($image_adulte["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_adulte["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_adulte["alt"]) ?>>
                                     <div>
                                         <p><?php the_sub_field('explications_adultes'); ?></p>
                                         <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
@@ -254,7 +254,7 @@ $num_explication_cognitif = 0;
                                 <h3><?php the_sub_field('question'); ?></h3>
                                 <h4>Enfant</h4>
                                 <div class="cst_content">
-                                    <img src="<?php echo $image_adulte['url']; ?>" alt="">
+                                    <img src="<?php echo $image_enfant['url']; ?>" height="<?php echo ($image_enfant["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_enfant["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_enfant["alt"]) ?>>
                                     <div>
                                         <p><?php the_sub_field('explications_adultes'); ?></p>
                                         <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
@@ -269,7 +269,7 @@ $num_explication_cognitif = 0;
                                 <h3><?php the_sub_field('question'); ?></h3>
                                 <h4>Bébé</h4>
                                 <div class="cst_content">
-                                    <img src="<?php echo $image_adulte['url']; ?>" alt="">
+                                    <img src="<?php echo $image_adulte['url']; ?>" height="<?php echo ($image_baby["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_baby["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_baby["alt"]) ?>>
                                     <div>
                                         <p><?php the_sub_field('explications_adultes'); ?></p>
                                         <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
