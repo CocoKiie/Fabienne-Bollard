@@ -44,8 +44,8 @@ header.ateliers {
 
 
     div>img {
-        max-width: 293px;
-        min-height: 456px;
+        width: 293px;
+        height: 456px;
         border-radius: 2px;
         position: relative;
         margin-top: 30px;
@@ -54,6 +54,8 @@ header.ateliers {
     div>img:nth-of-type(2) {
         transform: rotate(20deg);
         z-index: -1;
+        width: 290px;
+        height: 466px;
         margin-left: -70px;
         scale: 0.9;
     }
@@ -94,6 +96,8 @@ main section.atl_section1 {
 
         img {
             border-radius: 2px;
+            max-width: 700px;
+            max-height: 500px;
         }
 
         >div {
@@ -178,6 +182,8 @@ section.atl_section2 {
 
         img {
             border-radius: 2px;
+            max-width: 700px;
+            max-height: 500px;
         }
 
         >div {

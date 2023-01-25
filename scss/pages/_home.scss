@@ -58,8 +58,8 @@ header.accueil {
 
 
     div>img {
-        max-width: 293px;
-        min-height: 456px;
+        width: 293px;
+        height: 456px;
         border-radius: 2px;
         position: relative;
         margin-top: 30px;
@@ -68,6 +68,8 @@ header.accueil {
     div>img:nth-of-type(2) {
         transform: rotate(20deg);
         z-index: -1;
+        width: 290px;
+        height: 466px;
         margin-left: -70px;
         scale: 0.9;
     }

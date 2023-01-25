@@ -53,8 +53,8 @@ header.contact {
 
 
     div>img {
-        max-width: 293px;
-        min-height: 456px;
+        width: 293px;
+        height: 456px;
         border-radius: 2px;
         position: relative;
         margin-top: 30px;
@@ -63,6 +63,8 @@ header.contact {
     div>img:nth-of-type(2) {
         transform: rotate(20deg);
         z-index: -1;
+        width: 290px;
+        height: 466px;
         margin-left: -70px;
         scale: 0.9;
     }
@@ -139,7 +141,8 @@ main section.cct_section1 {
         align-items: center;
 
         img {
-            width: 302px;
+            max-width: 320px;
+            max-height: 320px;
         }
 
         >h3 {
@@ -319,7 +322,7 @@ main section.cct_section2 {
         font-size: 24px;
         line-height: 32px;
         letter-spacing: 0.095em;
-        margin :5px 0 0 11%;
+        margin: 5px 0 0 11%;
         width: 302px;
     }
 
@@ -337,7 +340,7 @@ main section.cct_section2 {
             height: 241px;
         }
 
-        ::marker{
+        ::marker {
             color: #F77E4B;
         }
 

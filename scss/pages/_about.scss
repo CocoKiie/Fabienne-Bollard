@@ -59,8 +59,8 @@ header.about {
 
 
     div>img {
-        max-width: 293px;
-        min-height: 456px;
+        width: 293px;
+        height: 456px;
         border-radius: 2px;
         position: relative;
         margin-top: 30px;
@@ -69,6 +69,8 @@ header.about {
     div>img:nth-of-type(2) {
         transform: rotate(20deg);
         z-index: -1;
+        width: 290px;
+        height: 466px;
         margin-left: -70px;
         scale: 0.9;
     }
@@ -152,8 +154,8 @@ section.abt_section1 {
         border-radius: 5px;
 
         img {
-            width: 546px;
-            height: 428px;
+            max-width: 600px;
+            max-height: 400px;
         }
 
         >div {
@@ -170,18 +172,19 @@ section.abt_section1 {
                 width: 425px;
                 margin: 0;
             }
-            >div{
+
+            >div {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
                 align-items: center;
-                
+
                 p {
                     width: 425px;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 32px;
-    
+
                     strong {
                         font-weight: 600;
                     }
@@ -234,14 +237,14 @@ section.abt_section2 {
             width: 820px;
             letter-spacing: 0.02em;
 
-            strong{
+            strong {
                 font-size: 32px;
                 line-height: 130%;
                 font-family: 'Handlee';
                 color: #1CACE1;
             }
 
-            b{
+            b {
                 font-weight: 600;
             }
         }

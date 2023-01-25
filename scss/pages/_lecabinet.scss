@@ -44,8 +44,8 @@ header.cabinet {
 
 
     div>img {
-        max-width: 293px;
-        min-height: 456px;
+        width: 293px;
+        height: 456px;
         border-radius: 2px;
         position: relative;
         margin-top: 30px;
@@ -54,6 +54,8 @@ header.cabinet {
     div>img:nth-of-type(2) {
         transform: rotate(20deg);
         z-index: -1;
+        width: 290px;
+        height: 466px;
         margin-left: -70px;
         scale: 0.9;
     }
@@ -92,6 +94,11 @@ section.cab_section1 {
         justify-content: center;
         gap: 70px;
         padding: 50px 0;
+
+        img {
+            max-width: 700px;
+            max-height: 500px;
+        }
 
         >div {
             display: flex;
@@ -163,6 +170,11 @@ section.cab_section2 {
         justify-content: center;
         gap: 100px;
 
+        img {
+            max-width: 600px;
+            max-height: 450px;
+        }
+
         >div {
             >div {
                 display: flex;
@@ -193,6 +205,11 @@ section.cab_section2 {
         justify-content: center;
         margin-top: 200px;
         gap: 200px;
+
+        img {
+            max-width: 500px;
+            max-height: 450px;
+        }
 
         >div {
             h4 {
@@ -267,6 +284,11 @@ section.cab_section3 {
             background: #FFFFFF;
             box-shadow: 0px 0px 35px -10px rgba(0, 0, 0, 0.18);
             border-radius: 200px;
+
+            img {
+                max-width: 300px;
+                max-height: 300px;
+            }
         }
 
         >div:nth-child(2) {
