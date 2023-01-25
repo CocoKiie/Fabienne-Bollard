@@ -5,9 +5,9 @@
             $portrait = get_field('portrait', 'option');
             ?>
 
-            <img src="<?php echo ($portrait["sizes"]["medium_large"]); ?>" alt="portrait de Fabienne Bollard" loading="lazy">
+            <img src="<?php echo ($portrait["sizes"]["medium_large"]); ?>" height="<?php echo ($portrait["sizes"]["medium_large-height"]) ?>" width="<?php echo ($portrait["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($portrait["alt"]) ?>" loading="lazy">
             <div>
-                <img src="<?php echo ($logo["sizes"]["medium_large"]); ?>" alt="logo de Fabienne Bollard" loading="lazy">
+                <img src="<?php echo ($logo["sizes"]["medium_large"]); ?>" height="<?php echo ($logo["sizes"]["medium_large-height"]) ?>" width="<?php echo ($logo["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($logo["alt"]) ?>" loading="lazy">
                 <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i><?php the_field('button_contact', 'option'); ?></button>
                 <ul>
                     <li><i></i><a title="Téléphoner à Fabienne Bollard" href="tel:0687800411">06 87 80 04 11</a></li>
