@@ -153,7 +153,7 @@ header.accueil div > img {
 header.accueil div > img:nth-of-type(2) {
   transform: rotate(20deg);
   z-index: -1;
-  width: 290px;
+  width: 260px;
   height: 466px;
   margin-left: -70px;
   scale: 0.9;
@@ -461,7 +461,7 @@ section.acc_section2 div article button {
   line-height: 21px;
 }
 section.acc_section2 div article button i {
-  background-image: url("../img/informations.svg");
+  background-image: url("../img/informationsi.svg");
   display: inline-block;
   background-size: contain;
   width: 20px;
@@ -1235,6 +1235,9 @@ main section.cst > div > article div > div button:hover {
   margin-left: 0;
 }
 
+main section.cst_section1 h2 {
+  color: black;
+}
 main section.cst_section1 div.explications > div.black_overlay {
   display: none;
   position: fixed;
@@ -1777,9 +1780,10 @@ main section.atl_section1 button {
   line-height: 21px;
 }
 main section.atl_section1 button i {
-  background-image: url("../img/informations.svg");
+  background-image: url("../img/calendar.svg");
   display: inline-block;
   background-size: contain;
+  background-repeat: no-repeat;
   width: 20px;
   height: 20px;
 }
@@ -2328,7 +2332,7 @@ aside.rfx_aside button {
   transition: 0.3s;
 }
 aside.rfx_aside button i {
-  background-image: url("../img/calendar.svg");
+  background-image: url("../img/download.svg");
   background-repeat: no-repeat;
   display: inline-block;
   background-size: contain;

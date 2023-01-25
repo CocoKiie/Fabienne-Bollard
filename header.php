@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo(get_the_title());?></title>
+    <meta name="google-site-verification" content="xpVwKTTHtp7Y22ZNDsChZCjtTCdDyAu1tYyjUKIxoyc" />
     <?php wp_head(); //Pour appeler le css 
     $logo = get_field('logo_couleur', 'option');
     ?>

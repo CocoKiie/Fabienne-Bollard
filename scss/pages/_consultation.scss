@@ -156,6 +156,11 @@ main section.cst > div {
 }
 
 main section.cst_section1 {
+
+    h2{
+        color: black;
+    }
+
     div.explications>div.black_overlay {
         display: none;
         position: fixed;

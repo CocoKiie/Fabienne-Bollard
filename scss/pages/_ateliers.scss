@@ -140,9 +140,10 @@ main section.atl_section1 {
         line-height: 21px;
 
         i {
-            background-image: url("../img/informations.svg");
+            background-image: url("../img/calendar.svg");
             display: inline-block;
             background-size: contain;
+            background-repeat: no-repeat;
             width: 20px;
             height: 20px;
         }
