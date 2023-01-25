@@ -52,9 +52,9 @@ $num_explication_cognitif = 0;
                         <div>
                             <p>Selectionnez votre profil</p>
                             <div>
-                                <button onclick="document.getElementById('explications_emotion_adulte<?php echo $num_emotion; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Adulte</button>
-                                <button onclick="document.getElementById('explications_emotion_enfant<?php echo $num_emotion; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Enfant</button>
-                                <button onclick="document.getElementById('explications_emotion_baby<?php echo $num_emotion; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Bébé</button>
+                                <button aria-label="Voir les explications du blocage lorsqu'on est un adulte" onclick="document.getElementById('explications_emotion_adulte<?php echo $num_emotion; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Adulte</button>
+                                <button aria-label="Voir les explications du blocage lorsqu'on est un enfant" onclick="document.getElementById('explications_emotion_enfant<?php echo $num_emotion; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Enfant</button>
+                                <button aria-label="Voir les explications du blocage lorsqu'on est un bébé" onclick="document.getElementById('explications_emotion_baby<?php echo $num_emotion; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Bébé</button>
                             </div>
                             <div>
                     </article>
@@ -73,10 +73,10 @@ $num_explication_cognitif = 0;
                         <h3><?php the_sub_field('question'); ?></h3>
                         <h4>Adulte</h4>
                         <div class="cst_content">
-                            <img src="<?php echo $image_adulte['url']; ?>" height="<?php echo ($image_adulte["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_adulte["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_adulte["alt"]) ?>>
+                            <img src="<?php echo $image_adulte['url']; ?>" height="<?php echo ($image_adulte["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_adulte["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_adulte["alt"]) ?>">
                             <div>
                                 <p><?php the_sub_field('explications_adultes'); ?></p>
-                                <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
+                                <button aria-label="Prendre rendez-vous avec Fabienne Bollard" onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
                             </div>
                         </div>
                     </div>
@@ -88,10 +88,10 @@ $num_explication_cognitif = 0;
                         <h3><?php the_sub_field('question'); ?></h3>
                         <h4>Enfant</h4>
                         <div class="cst_content">
-                            <img src="<?php echo $image_enfant['url']; ?>" height="<?php echo ($image_enfant["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_enfant["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_enfant["alt"]) ?>>
+                            <img src="<?php echo $image_enfant['url']; ?>" height="<?php echo ($image_enfant["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_enfant["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_enfant["alt"]) ?>">
                             <div>
                                 <p><?php the_sub_field('explications_enfants'); ?></p>
-                                <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
+                                <button aria-label="Prendre rendez-vous avec Fabienne Bollard" onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
                             </div>
                         </div>
                     </div>
@@ -103,10 +103,10 @@ $num_explication_cognitif = 0;
                         <h3><?php the_sub_field('question'); ?></h3>
                         <h4>Bébé</h4>
                         <div class="cst_content">
-                            <img src="<?php echo $image_baby['url']; ?>" height="<?php echo ($image_baby["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_baby["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_baby["alt"]) ?>>
+                            <img src="<?php echo $image_baby['url']; ?>" height="<?php echo ($image_baby["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_baby["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_baby["alt"]) ?>">
                             <div>
                                 <p><?php the_sub_field('explications_baby'); ?></p>
-                                <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
+                                <button aria-label="Prendre rendez-vous avec Fabienne Bollard" onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
                             </div>
                         </div>
                     </div>
@@ -131,13 +131,13 @@ $num_explication_cognitif = 0;
                             $num_moteur += 1;
                             ?>
 
-                            <img src="<?php echo $image['url']; ?>" height="<?php echo ($image["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image["alt"]) ?>>
+                            <img src="<?php echo $image['url']; ?>" height="<?php echo ($image["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image["alt"]) ?>">
                             <div>
                                 <p>Selectionnez votre profil</p>
                                 <div>
-                                    <button onclick="document.getElementById('explications_moteur_adulte<?php echo $num_moteur; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Adulte</button>
-                                    <button onclick="document.getElementById('explications_moteur_enfant<?php echo $num_moteur; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Enfant</button>
-                                    <button onclick="document.getElementById('explications_moteur_baby<?php echo $num_moteur; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Bébé</button>
+                                    <button aria-label="Voir les explications du blocage lorsqu'on est un adulte" onclick="document.getElementById('explications_moteur_adulte<?php echo $num_moteur; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Adulte</button>
+                                    <button aria-label="Voir les explications du blocage lorsqu'on est un enfant" onclick="document.getElementById('explications_moteur_enfant<?php echo $num_moteur; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Enfant</button>
+                                    <button aria-label="Voir les explications du blocage lorsqu'on est un bébé" onclick="document.getElementById('explications_moteur_baby<?php echo $num_moteur; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Bébé</button>
                                 </div>
                                 <div>
                         </article>
@@ -156,10 +156,10 @@ $num_explication_cognitif = 0;
                             <h3><?php the_sub_field('question'); ?></h3>
                             <h4>Adulte</h4>
                             <div class="cst_content">
-                                <img src="<?php echo $image_adulte['url']; ?>" height="<?php echo ($image_adulte["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_adulte["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_adulte["alt"]) ?>>
+                                <img src="<?php echo $image_adulte['url']; ?>" height="<?php echo ($image_adulte["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_adulte["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_adulte["alt"]) ?>">
                                 <div>
                                     <p><?php the_sub_field('explications_adultes'); ?></p>
-                                    <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
+                                    <button aria-label="Prendre rendez-vous avec Fabienne Bollard" onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
                                 </div>
                             </div>
                         </div>
@@ -171,10 +171,10 @@ $num_explication_cognitif = 0;
                             <h3><?php the_sub_field('question'); ?></h3>
                             <h4>Enfant</h4>
                             <div class="cst_content">
-                                <img src="<?php echo $image_enfant['url']; ?>" height="<?php echo ($image_enfant["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_enfant["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_enfant["alt"]) ?>>
+                                <img src="<?php echo $image_enfant['url']; ?>" height="<?php echo ($image_enfant["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_enfant["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_enfant["alt"]) ?>">
                                 <div>
                                     <p><?php the_sub_field('explications_enfants'); ?></p>
-                                    <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
+                                    <button aria-label="Prendre rendez-vous avec Fabienne Bollard" onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
                                 </div>
                             </div>
                         </div>
@@ -186,10 +186,10 @@ $num_explication_cognitif = 0;
                             <h3><?php the_sub_field('question'); ?></h3>
                             <h4>Bébé</h4>
                             <div class="cst_content">
-                                <img src="<?php echo $image_baby['url']; ?>" height="<?php echo ($image_baby["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_baby["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_baby["alt"]) ?>>
+                                <img src="<?php echo $image_baby['url']; ?>" height="<?php echo ($image_baby["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_baby["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_baby["alt"]) ?>">
                                 <div>
                                     <p><?php the_sub_field('explications_baby'); ?></p>
-                                    <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
+                                    <button aria-label="Prendre rendez-vous avec Fabienne Bollard" onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
                                 </div>
                             </div>
                         </div>
@@ -214,13 +214,13 @@ $num_explication_cognitif = 0;
                                 $image = get_sub_field('image');
                                 $num_cognitif += 1;
                                 ?>
-                                <img src="<?php echo $image['url']; ?>" height="<?php echo ($image["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image["alt"]) ?>>
+                                <img src="<?php echo $image['url']; ?>" height="<?php echo ($image["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image["alt"]) ?>">
                                 <div>
                                     <p>Selectionnez votre profil</p>
                                     <div>
-                                        <button onclick="document.getElementById('explications_cognitif_adulte<?php echo $num_cognitif; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Adulte</button>
-                                        <button onclick="document.getElementById('explications_cognitif_enfant<?php echo $num_cognitif; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Enfant</button>
-                                        <button onclick="document.getElementById('explications_cognitif_baby<?php echo $num_cognitif; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Bébé</button>
+                                        <button aria-label="Voir les explications du blocage lorsqu'on est un adulte" onclick="document.getElementById('explications_cognitif_adulte<?php echo $num_cognitif; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Adulte</button>
+                                        <button aria-label="Voir les explications du blocage lorsqu'on est un enfant" onclick="document.getElementById('explications_cognitif_enfant<?php echo $num_cognitif; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Enfant</button>
+                                        <button aria-label="Voir les explications du blocage lorsqu'on est un bébé" onclick="document.getElementById('explications_cognitif_baby<?php echo $num_cognitif; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Bébé</button>
                                     </div>
                                     <div>
                             </article>
@@ -240,10 +240,10 @@ $num_explication_cognitif = 0;
                                 <h3><?php the_sub_field('question'); ?></h3>
                                 <h4>Adulte</h4>
                                 <div class="cst_content">
-                                    <img src="<?php echo $image_adulte['url']; ?>" height="<?php echo ($image_adulte["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_adulte["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_adulte["alt"]) ?>>
+                                    <img src="<?php echo $image_adulte['url']; ?>" height="<?php echo ($image_adulte["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_adulte["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_adulte["alt"]) ?>">
                                     <div>
                                         <p><?php the_sub_field('explications_adultes'); ?></p>
-                                        <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
+                                        <button aria-label="Prendre rendez-vous avec Fabienne Bollard" onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
                                     </div>
                                 </div>
                             </div>
@@ -254,10 +254,10 @@ $num_explication_cognitif = 0;
                                 <h3><?php the_sub_field('question'); ?></h3>
                                 <h4>Enfant</h4>
                                 <div class="cst_content">
-                                    <img src="<?php echo $image_enfant['url']; ?>" height="<?php echo ($image_enfant["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_enfant["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_enfant["alt"]) ?>>
+                                    <img src="<?php echo $image_enfant['url']; ?>" height="<?php echo ($image_enfant["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_enfant["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_enfant["alt"]) ?>">
                                     <div>
                                         <p><?php the_sub_field('explications_adultes'); ?></p>
-                                        <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
+                                        <button aria-label="Prendre rendez-vous avec Fabienne Bollard" onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
                                     </div>
                                 </div>
                                 <a href="javascript:void(0)" onclick="document.getElementById('explications_cognitif_enfant<?php echo $num_explication_cognitif; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
@@ -269,10 +269,10 @@ $num_explication_cognitif = 0;
                                 <h3><?php the_sub_field('question'); ?></h3>
                                 <h4>Bébé</h4>
                                 <div class="cst_content">
-                                    <img src="<?php echo $image_adulte['url']; ?>" height="<?php echo ($image_baby["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_baby["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_baby["alt"]) ?>>
+                                    <img src="<?php echo $image_adulte['url']; ?>" height="<?php echo ($image_baby["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_baby["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_baby["alt"]) ?>">
                                     <div>
                                         <p><?php the_sub_field('explications_adultes'); ?></p>
-                                        <button onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
+                                        <button aria-label="Prendre rendez-vous avec Fabienne Bollard" onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
                                     </div>
                                 </div>
                                 <a href="javascript:void(0)" onclick="document.getElementById('explications_cognitif_baby<?php echo $num_explication_cognitif; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>

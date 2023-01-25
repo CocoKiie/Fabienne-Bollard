@@ -273,7 +273,7 @@ $file_mp4 = get_field('video_mp4');
                     <div>
             </article>
         </div>
-        <button aria-label="Voir pkus d'informations sur les 3 méthodes pratiquées par Fabienne Bollard" onclick="location.href='<?php the_field('links_methodes', 'option'); ?>'"><i></i><?php the_field("button_section_4"); ?></button>
+        <button aria-label="Voir plus d'informations sur les 3 méthodes pratiquées par Fabienne Bollard" onclick="location.href='<?php the_field('links_methodes', 'option'); ?>'"><i></i><?php the_field("button_section_4"); ?></button>
 
         <!--Soulignment-->
         <span></span>
