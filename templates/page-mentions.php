@@ -97,7 +97,7 @@ $icon = $credits["credits_icons"];
             <p>Ux designeuse : Helena Kam Makon</p>
             <p>Développeuse web : Laurie Perbet</p>
             <p>Chef de projet : Nathan Coutelier</p>
-            <p>-> Réalisé dans le cadre de la formation BUT MMI(Métier du Multimédia et de l'Internet) à l'IUT de Chambéry - <a href="iut-chy.univ-smb.fr">iut-chy.univ-smb.fr</a>)</p>
+            <p>-> Réalisé dans le cadre de la formation BUT MMI(Métier du Multimédia et de l'Internet) à l'IUT de Chambéry - <a title="Aller sur le site de l'IUT de Chambéry" href="iut-chy.univ-smb.fr">iut-chy.univ-smb.fr</a>)</p>
         </article>
         <aside>
             <svg width="896" height="161" fill="none" xmlns="http://www.w3.org/2000/svg">

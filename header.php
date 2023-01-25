@@ -41,7 +41,7 @@
 
 <body>
     <nav class="navigation" role="navigation">
-    <a href="/"><img src="<?php echo ($logo["sizes"]["medium_large"]); ?>" 
+    <a href="/" title="Retour sur la page d'accueil"><img src="<?php echo ($logo["sizes"]["medium_large"]); ?>" 
     height="<?php echo($logo["sizes"]["medium_large-height"])?>" 
     width="<?php echo($logo["sizes"]["medium_large-width"])?>"
     alt="<?php echo($logo["alt"])?>"></a>

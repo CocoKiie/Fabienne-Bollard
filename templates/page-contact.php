@@ -42,9 +42,9 @@ $arg_localisation3 = get_field("arg_localisation_3");
             <img src="<?php echo ($portrait["sizes"]["medium_large"]); ?>" alt="<?php echo ($portrait["alt"]) ?>" height="<?php echo ($portrait["sizes"]["medium_large-height"]) ?>" width="<?php echo ($portrait["sizes"]["medium_large-width"]) ?>">
             <h3><?php the_field("title_section_1"); ?></h3>
             <ul>
-                <li><i></i><a href="tel:0687800411">06 87 80 04 11</a></li>
-                <li><i></i><a href="https://goo.gl/maps/KojEJXZsCiJk8ePd6" target="_blank">464 Route des Près Rollier<br>Zone de Grand Epagny<br>74330 Sillingy</a></li>
-                <li><i></i><a href="mailto:fabienne.bollard74@gmail.com">fabienne.bollard74@gmail.com</a></li>
+                <li><i></i><a title="Téléphoner à Fabienne Bollard" href="tel:0687800411">06 87 80 04 11</a></li>
+                <li><i></i><a title="Voir la localisation du cabinet de Fabienne Bollard" href="https://goo.gl/maps/KojEJXZsCiJk8ePd6" target="_blank">464 Route des Près Rollier<br>Zone de Grand Epagny<br>74330 Sillingy</a></li>
+                <li><i></i><a title="Envoyer un mail à Fabienne Bollard" href="mailto:fabienne.bollard74@gmail.com">fabienne.bollard74@gmail.com</a></li>
             </ul>
         </div>
         <form method="post">
@@ -78,7 +78,7 @@ $arg_localisation3 = get_field("arg_localisation_3");
     </section>
 </main>
 <footer class="cct-footer">
-    <p><a href="/legalite">Légalités</a> - <a href="/sitemap.xml" target="_blank">Plan du site</a></p>
+    <p><a title="ALler sur la page des légalités du site web" href="/legalite">Légalités</a> - <a title="ALler sur la page Plan du site" href="/sitemap.xml" target="_blank">Plan du site</a></p>
     <p>&copy; <?php echo (date(format: "Y")); ?> Fabienne Bollard.</p>
 </footer>
 <?php wp_footer(); //Pour appeler le css 

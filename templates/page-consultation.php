@@ -69,7 +69,7 @@ $num_explication_cognitif = 0;
                     ?>
                     <!--Explications adulte-->
                     <div id="explications_emotion_adulte<?php echo $num_explication_emotion; ?>" class="white_content">
-                        <a href="javascript:void(0)" onclick="document.getElementById('explications_emotion_adulte<?php echo $num_explication_emotion; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
+                        <a title="Fermer la fenêtre d'explications" href="javascript:void(0)" onclick="document.getElementById('explications_emotion_adulte<?php echo $num_explication_emotion; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
                         <h3><?php the_sub_field('question'); ?></h3>
                         <h4>Adulte</h4>
                         <div class="cst_content">
@@ -84,7 +84,7 @@ $num_explication_cognitif = 0;
                     <?php $image_enfant = get_sub_field('image_enfant'); ?>
                     <!--Explications enfant-->
                     <div id="explications_emotion_enfant<?php echo $num_explication_emotion; ?>" class="white_content">
-                        <a href="javascript:void(0)" onclick="document.getElementById('explications_emotion_enfant<?php echo $num_explication_emotion; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
+                        <a title="Fermer la fenêtre d'explications" href="javascript:void(0)" onclick="document.getElementById('explications_emotion_enfant<?php echo $num_explication_emotion; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
                         <h3><?php the_sub_field('question'); ?></h3>
                         <h4>Enfant</h4>
                         <div class="cst_content">
@@ -99,7 +99,7 @@ $num_explication_cognitif = 0;
                     <?php $image_baby = get_sub_field('image_baby'); ?>
                     <!--Explications bébé-->
                     <div id="explications_emotion_baby<?php echo $num_explication_emotion; ?>" class="white_content">
-                        <a href="javascript:void(0)" onclick="document.getElementById('explications_emotion_baby<?php echo $num_explication_emotion; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
+                        <a title="Fermer la fenêtre d'explications" href="javascript:void(0)" onclick="document.getElementById('explications_emotion_baby<?php echo $num_explication_emotion; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
                         <h3><?php the_sub_field('question'); ?></h3>
                         <h4>Bébé</h4>
                         <div class="cst_content">
@@ -152,7 +152,7 @@ $num_explication_cognitif = 0;
                         ?>
                         <!--Explications adulte-->
                         <div id="explications_moteur_adulte<?php echo $num_explication_moteur; ?>" class="white_content">
-                            <a href="javascript:void(0)" onclick="document.getElementById('explications_moteur_adulte<?php echo $num_explication_moteur; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
+                            <a title="Fermer la fenêtre d'explications" href="javascript:void(0)" onclick="document.getElementById('explications_moteur_adulte<?php echo $num_explication_moteur; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
                             <h3><?php the_sub_field('question'); ?></h3>
                             <h4>Adulte</h4>
                             <div class="cst_content">
@@ -167,7 +167,7 @@ $num_explication_cognitif = 0;
                         <?php $image_enfant = get_sub_field('image_enfant'); ?>
                         <!--Explications enfant-->
                         <div id="explications_moteur_enfant<?php echo $num_explication_moteur; ?>" class="white_content">
-                            <a href="javascript:void(0)" onclick="document.getElementById('explications_moteur_enfant<?php echo $num_explication_moteur; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
+                            <a title="Fermer la fenêtre d'explications" href="javascript:void(0)" onclick="document.getElementById('explications_moteur_enfant<?php echo $num_explication_moteur; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
                             <h3><?php the_sub_field('question'); ?></h3>
                             <h4>Enfant</h4>
                             <div class="cst_content">
@@ -182,7 +182,7 @@ $num_explication_cognitif = 0;
                         <?php $image_baby = get_sub_field('image_baby'); ?>
                         <!--Explications bébé-->
                         <div id="explications_moteur_baby<?php echo $num_explication_moteur; ?>" class="white_content">
-                            <a href="javascript:void(0)" onclick="document.getElementById('explications_moteur_baby<?php echo $num_explication_moteur; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
+                            <a title="Fermer la fenêtre d'explications" href="javascript:void(0)" onclick="document.getElementById('explications_moteur_baby<?php echo $num_explication_moteur; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
                             <h3><?php the_sub_field('question'); ?></h3>
                             <h4>Bébé</h4>
                             <div class="cst_content">
@@ -236,7 +236,7 @@ $num_explication_cognitif = 0;
 
                             <!--Explications adulte-->
                             <div id="explications_cognitif_adulte<?php echo $num_explication_cognitif; ?>" class="white_content">
-                                <a href="javascript:void(0)" onclick="document.getElementById('explications_cognitif_adulte<?php echo $num_explication_cognitif; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
+                                <a title="Fermer la fenêtre d'explications" href="javascript:void(0)" onclick="document.getElementById('explications_cognitif_adulte<?php echo $num_explication_cognitif; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
                                 <h3><?php the_sub_field('question'); ?></h3>
                                 <h4>Adulte</h4>
                                 <div class="cst_content">
@@ -260,7 +260,7 @@ $num_explication_cognitif = 0;
                                         <button aria-label="Prendre rendez-vous avec Fabienne Bollard" onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
                                     </div>
                                 </div>
-                                <a href="javascript:void(0)" onclick="document.getElementById('explications_cognitif_enfant<?php echo $num_explication_cognitif; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
+                                <a title="Fermer la fenêtre d'explications" href="javascript:void(0)" onclick="document.getElementById('explications_cognitif_enfant<?php echo $num_explication_cognitif; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
                             </div>
 
                             <?php $image_baby = get_sub_field('image_baby'); ?>
@@ -275,7 +275,7 @@ $num_explication_cognitif = 0;
                                         <button aria-label="Prendre rendez-vous avec Fabienne Bollard" onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i>Prendre rendez-vous</button>
                                     </div>
                                 </div>
-                                <a href="javascript:void(0)" onclick="document.getElementById('explications_cognitif_baby<?php echo $num_explication_cognitif; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
+                                <a title="Fermer la fenêtre d'explications" href="javascript:void(0)" onclick="document.getElementById('explications_cognitif_baby<?php echo $num_explication_cognitif; ?>').style.display='none';document.getElementById('fade').style.display='none'">&#10094;&nbsp;Retour</a>
                             </div>
 
                             <div id="fade" class="black_overlay"></div>

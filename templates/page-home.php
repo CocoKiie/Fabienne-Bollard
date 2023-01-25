@@ -67,7 +67,7 @@ $file_mp4 = get_field('video_mp4');
             <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" height="<?php echo ($image2["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image2["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image2["alt"]) ?>">
         </div>
     </div>
-    <p><a href="#decouverte"><?php the_field("scroll"); ?></a></p>
+    <p><a title="Découvrir l'Éducation Neurosensorielle et Motrice" href="#decouverte"><?php the_field("scroll"); ?></a></p>
     <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" width="17" height="20" alt="flèche vers le bas">
 
     <!--cercle-->
@@ -83,7 +83,7 @@ $file_mp4 = get_field('video_mp4');
             <video controls preload="metadata">
                 <source src="<?php echo $file_mp4['url']; ?>" type="video/mp4">
                 <p>Votre navigateur ne prend pas en compte la vidéo.
-                    Vous pouvez la télécharger au format <a href="<?php echo $file_mp4['url']; ?>">MP4</a></p>
+                    Vous pouvez la télécharger au format <a title="Télécharger la vidéo expliquant le métier de Consultante en ENM" href="<?php echo $file_mp4['url']; ?>">MP4</a></p>
             </video>
             <div>
                 <div>
