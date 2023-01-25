@@ -78,7 +78,7 @@ $arg_localisation3 = get_field("arg_localisation_3");
     </section>
 </main>
 <footer class="cct-footer">
-    <p><a href="">Mentions légales</a> - <a href="">Plan du site</a></p>
+    <p><a href="/legalite">Légalités</a> - <a href="/sitemap.xml" target="_blank">Plan du site</a></p>
     <p>&copy; <?php echo (date(format: "Y")); ?> Fabienne Bollard.</p>
 </footer>
 <?php wp_footer(); //Pour appeler le css 

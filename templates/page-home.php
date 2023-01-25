@@ -58,7 +58,7 @@ $file_mp4 = get_field('video_mp4');
 <header class="accueil">
     <div class="acc_header">
         <div>
-            <h1><?php the_field("title_page"); ?></h1>
+            <h1><?php the_field("titre1"); ?></h1>
             <?php the_field("accroche"); ?>
             <button aria-label="Prendre contact avec Fabienne Bollard" onclick="location.href='<?php the_field('links_rdv', 'option'); ?>'"><i></i><?php the_field("rdv"); ?></button>
         </div>

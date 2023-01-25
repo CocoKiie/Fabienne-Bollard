@@ -17,7 +17,7 @@
             </div>
         </div>
         <div>
-            <p><a href="/legalite">Mentions légales</a> - <a href="/sitemap.xml" target="_blank">Plan du site</a></p>
+            <p><a href="/legalite">Légalités</a> - <a href="/sitemap.xml" target="_blank">Plan du site</a></p>
             <p>&copy; <?php echo (date(format: "Y")); ?> Fabienne Bollard.</p>
         </div>
     </footer>
