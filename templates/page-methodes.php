@@ -32,11 +32,11 @@ $comment3 = $paragraphe3["paragraphe_comment"];
             <?php the_field("tagline_page"); ?>
         </div>
         <div>
-            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" alt="<?php echo ($image1["alt"]) ?>" loading="lazy">
-            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" alt="<?php echo ($image2["alt"]) ?>" loading="lazy">
+            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" height="<?php echo ($image1["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image1["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image1["alt"]) ?>">
+            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" height="<?php echo ($image2["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image2["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image2["alt"]) ?>">
         </div>
     </div>
-    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" width="17" height="20" alt="flèche vers le bas" loading="lazy">
 
     <!--cercle-->
     <div class="cercle1"></div>
@@ -47,7 +47,7 @@ $comment3 = $paragraphe3["paragraphe_comment"];
     <section class="mtd_section1 mtd_section">
         <h3><?php the_field("title_section1"); ?></h3>
         <div>
-            <img src="<?php echo ($image_1["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
+            <img src="<?php echo ($image_1["sizes"]["medium_large"]); ?>" height="<?php echo ($image_1["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_1["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_1["alt"]) ?>" loading="lazy">
             <div>
                 <div>
                     <h4>Pour quoi&nbsp;?</h4>
@@ -66,7 +66,7 @@ $comment3 = $paragraphe3["paragraphe_comment"];
     <section class="mtd_section2 mtd_section">
         <h3><?php the_field("title_section2"); ?></h3>
         <div>
-            <img src="<?php echo ($image_2["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
+            <img src="<?php echo ($image_2["sizes"]["medium_large"]); ?>" height="<?php echo ($image_2["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_2["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_2["alt"]) ?>" loading="lazy">
             <div>
                 <div>
                     <h4>Pour quoi&nbsp;?</h4>
@@ -86,7 +86,7 @@ $comment3 = $paragraphe3["paragraphe_comment"];
     <section class="mtd_section3 mtd_section">
         <h3><?php the_field("title_section3"); ?></h3>
         <div>
-            <img src="<?php echo ($image_3["sizes"]["medium_large"]); ?>" alt="" loading="lazy">
+            <img src="<?php echo ($image_3["sizes"]["medium_large"]); ?>" height="<?php echo ($image_3["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_3["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_3["alt"]) ?>" loading="lazy">
             <div>
                 <div>
                     <h4>Pour quoi&nbsp;?</h4>

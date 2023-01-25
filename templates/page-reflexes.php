@@ -21,11 +21,11 @@ $image_3 = get_field("image_section3");
             <?php the_field("tagline_page"); ?>
         </div>
         <div>
-            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" alt="<?php echo ($image1["alt"]) ?>" loading="lazy">
-            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" alt="<?php echo ($image2["alt"]) ?>" loading="lazy">
+            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" height="<?php echo ($image1["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image1["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image1["alt"]) ?>">
+            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" height="<?php echo ($image2["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image2["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image2["alt"]) ?>">
         </div>
     </div>
-    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" alt="flèche vers le bas" loading="lazy">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" width="17" height="20" alt="flèche vers le bas" loading="lazy">
 
     <!--cercle-->
     <div class="cercle1"></div>
@@ -40,7 +40,7 @@ $image_3 = get_field("image_section3");
         </div>
         <div>
             <div>
-                <img src="<?php echo ($image_1["sizes"]["medium_large"]); ?>" alt="<?php echo ($image_1["alt"]) ?>" loading="lazy">
+                <img src="<?php echo ($image_1["sizes"]["medium_large"]); ?>" height="<?php echo ($image_1["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_1["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_1["alt"]) ?>" loading="lazy">
                 <?php the_field("list_section1"); ?>
             </div>
         </div>
@@ -54,7 +54,7 @@ $image_3 = get_field("image_section3");
     <section class="rfx_section2 rfx_section">
         <h3><?php the_field("title_section2"); ?></h3>
         <div>
-            <img src="<?php echo ($image_2["sizes"]["medium_large"]); ?>" alt="<?php echo ($image_2["alt"]) ?>" loading="lazy">
+            <img src="<?php echo ($image_2["sizes"]["medium_large"]); ?>" height="<?php echo ($image_2["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_2["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_2["alt"]) ?>" loading="lazy">
             <div><?php the_field("paragraphe_section2"); ?></div>
         </div>
 
@@ -66,7 +66,7 @@ $image_3 = get_field("image_section3");
         <h3><?php the_field("title_section3"); ?></h3>
         <div>
             <div><?php the_field("paragraphe_section3"); ?></div>
-            <img src="<?php echo ($image_3["sizes"]["medium_large"]); ?>" alt="<?php echo ($image_3["alt"]) ?>" loading="lazy">
+            <img src="<?php echo ($image_3["sizes"]["medium_large"]); ?>" height="<?php echo ($image_3["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image_3["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image_3["alt"]) ?>" loading="lazy">
         </div>
 
         <!--cercle-->
@@ -82,7 +82,7 @@ $image_3 = get_field("image_section3");
     </section>
     <aside class="rfx_aside">
         <p><?php the_field("cta"); ?></p>
-        <button onclick="location.href='<?php the_field('pdf');?>"><i></i><?php the_field("cta_telechargement"); ?></button>
+        <button onclick="location.href='<?php the_field('pdf'); ?>"><i></i><?php the_field("cta_telechargement"); ?></button>
     </aside>
 </main>
 
