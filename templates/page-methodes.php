@@ -25,8 +25,8 @@ $pourquoi3 = $paragraphe3["paragraphe_pourquoi"];
 $comment3 = $paragraphe3["paragraphe_comment"];
 ?>
 
-<header class="methodes">
-    <div class="mtd_header">
+<header>
+    <div>
         <div>
             <h1><?php the_field("title_page"); ?></h1>
             <?php the_field("tagline_page"); ?>
