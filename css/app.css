@@ -120,9 +120,6 @@ button i {
   height: 20px;
 }
 
-/********************\
-HEADER
-\********************/
 h1 {
   font-weight: 500;
   font-size: 18px;
@@ -130,84 +127,6 @@ h1 {
   margin: 0;
 }
 
-header.accueil {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100.5vh;
-  flex-direction: column;
-  align-items: center;
-}
-header.accueil div.acc_header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
-  align-items: center;
-  padding: 0px;
-  gap: 10%;
-  width: 80%;
-  justify-content: center;
-}
-header.accueil div.acc_header h2 {
-  width: 606px;
-  height: 227px;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 67px;
-  margin: 0;
-}
-header.accueil div.acc_header h2 strong {
-  width: 606px;
-  height: 227px;
-  font-family: "Handlee";
-  font-size: 63px;
-  line-height: 75px;
-  background-image: url("../img/hilight.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-}
-header.accueil div > img {
-  width: 293px;
-  height: 456px;
-  border-radius: 2px;
-  position: relative;
-  margin-top: 30px;
-}
-header.accueil div > img:nth-of-type(2) {
-  transform: rotate(20deg);
-  z-index: -1;
-  width: 260px;
-  height: 466px;
-  margin-left: -70px;
-  scale: 0.9;
-}
-header.accueil button {
-  background: #1CACE1;
-  margin-top: 56px;
-  gap: 15px;
-}
-header.accueil button i {
-  background-image: url("../img/calendar.svg");
-}
-header.accueil p + img {
-  display: inline-block;
-  width: 17px;
-  animation: downArrow 0.7s ease-out infinite alternate;
-  margin-top: 3px;
-}
-@keyframes downArrow {
-  0% {
-    -webkit-transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(0.8em);
-  }
-}
-
-/********************\
-SECTION1
-\********************/
 main section h2 {
   text-transform: uppercase;
   font-weight: 500;
@@ -223,7 +142,78 @@ main section h3 {
   width: 85%;
 }
 
-main section.acc_section1 {
+header {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+header > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  padding: 0px;
+  width: 80%;
+  justify-content: center;
+  gap: 5%;
+}
+header > div h2 {
+  width: 606px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 67px;
+  margin: 0;
+}
+header > div h2 strong {
+  width: 606px;
+  font-family: "Handlee";
+  font-size: 63px;
+  line-height: 75px;
+  background-image: url("../img/hilight.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+header div > img {
+  width: 293px;
+  height: 456px;
+  border-radius: 2px;
+  position: relative;
+  margin-top: 30px;
+}
+header div > img:nth-of-type(2) {
+  transform: rotate(20deg);
+  z-index: -1;
+  width: 290px;
+  height: 466px;
+  margin-left: -70px;
+  scale: 0.9;
+}
+header > img {
+  display: inline-block;
+  width: 17px;
+  animation: downArrow 0.7s ease-out infinite;
+  margin-top: 3px;
+}
+header p + img {
+  display: inline-block;
+  width: 17px;
+  animation: downArrow 0.7s ease-out infinite alternate;
+  margin-top: 3px;
+}
+@keyframes downArrow {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0.8em);
+  }
+}
+
+main section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -231,6 +221,25 @@ main section.acc_section1 {
   gap: 5px;
   position: relative;
 }
+
+/********************\
+HEADER
+\********************/
+header.accueil {
+  height: 100.5vh;
+}
+header.accueil button {
+  background: #1CACE1;
+  margin-top: 56px;
+  gap: 15px;
+}
+header.accueil button i {
+  background-image: url("../img/calendar.svg");
+}
+
+/********************\
+SECTION1
+\********************/
 main section.acc_section1 video {
   width: 664px;
   border-radius: 5px;
@@ -1973,86 +1982,14 @@ section.mtd_section3 span {
 }
 
 /********************\
-HEADER
-\********************/
-header.reflexes {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  flex-direction: column;
-  align-items: center;
-}
-header.reflexes div.rfx_header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 0px;
-  gap: 85px;
-}
-header.reflexes div.rfx_header h2 {
-  width: 606px;
-  height: 227px;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 67px;
-  margin: 0;
-}
-header.reflexes div.rfx_header h2 strong {
-  width: 606px;
-  height: 227px;
-  font-family: "Handlee";
-  font-size: 63px;
-  line-height: 75px;
-  background-image: url("../img/hilight.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-}
-header.reflexes div > img {
-  width: 293px;
-  height: 456px;
-  border-radius: 2px;
-  position: relative;
-  margin-top: 30px;
-}
-header.reflexes div > img:nth-of-type(2) {
-  transform: rotate(20deg);
-  z-index: -1;
-  width: 290px;
-  height: 466px;
-  margin-left: -70px;
-  scale: 0.9;
-}
-header.reflexes > img {
-  display: inline-block;
-  width: 17px;
-  animation: downArrow 0.7s ease-out infinite alternate;
-  margin-top: 3px;
-}
-@keyframes downArrow {
-  0% {
-    -webkit-transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(0.8em);
-  }
-}
-
-/********************\
 SECTION1
 \********************/
-section.rfx_section1 {
-  position: relative;
-}
 section.rfx_section1 > div:nth-child(2) {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 104px;
   margin-top: 50px;
+  width: 100%;
   background: rgba(28, 172, 225, 0.25);
 }
 section.rfx_section1 > div:nth-child(2) > div {
@@ -2060,6 +1997,7 @@ section.rfx_section1 > div:nth-child(2) > div {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  padding: 35px 0;
 }
 section.rfx_section1 > div:nth-child(2) > div p {
   font-weight: 400;
@@ -2076,8 +2014,8 @@ section.rfx_section1 > div:nth-child(3) > div {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  margin: 50px auto 0 auto;
-  gap: 130px;
+  margin-top: 50px;
+  gap: 90px;
   background-color: white;
   box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.18);
   border-radius: 200px;
@@ -2085,12 +2023,8 @@ section.rfx_section1 > div:nth-child(3) > div {
 }
 section.rfx_section1 img {
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
-}
-section.rfx_section1 ol {
-  margin-block-start: 0;
-  margin-block-end: 0;
+  max-width: 350px;
+  max-height: 350px;
 }
 section.rfx_section1 ol li {
   height: 40px;
@@ -2124,18 +2058,16 @@ section.rfx_section1 span {
 SECTION2-3
 \********************/
 section.rfx_section {
-  position: relative;
   margin-top: 150px;
-}
-section.rfx_section h3 {
-  width: 565px;
 }
 section.rfx_section > div {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 70px;
-  margin: 50px 0 0 131px;
+  gap: 120px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 section.rfx_section > div img {
   max-width: 650px;
@@ -2210,12 +2142,6 @@ SECTION4
 \********************/
 section.rfx_section4 {
   margin-top: 150px;
-  position: relative;
-}
-section.rfx_section4 h3 {
-  width: 100%;
-  text-align: center;
-  margin: 0;
 }
 section.rfx_section4 > div {
   display: flex;
@@ -2256,9 +2182,11 @@ aside.rfx_aside {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 0px;
   gap: 13px;
+  width: 85%;
 }
 aside.rfx_aside p {
   font-weight: 400;
@@ -2266,28 +2194,11 @@ aside.rfx_aside p {
   line-height: 21px;
 }
 aside.rfx_aside button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 20px;
   gap: 15px;
-  border: 0;
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 21px;
-  cursor: pointer;
   background: #F77E4B;
-  border-radius: 90px;
-  transition: 0.3s;
 }
 aside.rfx_aside button i {
   background-image: url("../img/download.svg");
-  background-repeat: no-repeat;
-  display: inline-block;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
 }
 
 /********************\

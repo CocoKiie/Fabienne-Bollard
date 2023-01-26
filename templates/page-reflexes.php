@@ -14,8 +14,8 @@ $image_2 = get_field("image_section2");
 $image_3 = get_field("image_section3");
 ?>
 
-<header class="reflexes">
-    <div class="rfx_header">
+<header>
+    <div>
         <div>
             <h1><?php the_field("title_page"); ?></h1>
             <?php the_field("tagline_page"); ?>

@@ -56,7 +56,7 @@ $file_mp4 = get_field('video_mp4');
 ?>
 
 <header class="accueil">
-    <div class="acc_header">
+    <div>
         <div>
             <h1><?php the_field("titre1"); ?></h1>
             <?php the_field("accroche"); ?>
