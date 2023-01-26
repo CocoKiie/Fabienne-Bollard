@@ -97,6 +97,29 @@ button:hover {
   transition: 0.3s;
 }
 
+button {
+  transition: 0.2s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  cursor: pointer;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+button i {
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
 /********************\
 HEADER
 \********************/
@@ -111,18 +134,19 @@ header.accueil {
   position: relative;
   display: flex;
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  height: 100.5vh;
   flex-direction: column;
   align-items: center;
 }
 header.accueil div.acc_header {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   align-items: center;
   padding: 0px;
-  gap: 85px;
+  gap: 10%;
+  width: 80%;
+  justify-content: center;
 }
 header.accueil div.acc_header h2 {
   width: 606px;
@@ -159,29 +183,12 @@ header.accueil div > img:nth-of-type(2) {
   scale: 0.9;
 }
 header.accueil button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 20px;
-  gap: 15px;
-  border: 0;
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 21px;
-  cursor: pointer;
   background: #1CACE1;
-  border-radius: 90px;
   margin-top: 56px;
-  transition: 0.3s;
+  gap: 15px;
 }
 header.accueil button i {
   background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
-  display: inline-block;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
 }
 header.accueil p + img {
   display: inline-block;
@@ -203,26 +210,30 @@ SECTION1
 \********************/
 main section h2 {
   text-transform: uppercase;
-  margin-left: 131px;
   font-weight: 500;
   font-size: 16px;
   line-height: 25px;
+  width: 85%;
   color: #1CACE1;
 }
 main section h3 {
   font-family: "Handlee";
   font-size: 40px;
   line-height: 112%;
-  margin: 5px 0 0 131px;
+  width: 85%;
 }
 
+main section.acc_section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+}
 main section.acc_section1 video {
   width: 664px;
-  padding-top: 50px;
   border-radius: 5px;
-}
-main section.acc_section1 video + div {
-  margin: 30px auto 0 auto;
 }
 main section.acc_section1 video + div div > i {
   background-image: url("../img/arrow.png");
@@ -234,7 +245,6 @@ main section.acc_section1 video + div div > i {
 }
 main section.acc_section1 video + div div > p {
   width: 488px;
-  height: 117px;
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
@@ -259,38 +269,23 @@ main section.acc_section1 video + div div + p {
   font-size: 12px;
 }
 main section.acc_section1 video + div button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 20px;
   margin: 80px auto 0 auto;
   gap: 10px;
   background: #F77E4B;
-  border: 0;
-  border-radius: 90px;
-  color: white;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  transition: 0.3s;
-  line-height: 21px;
 }
 main section.acc_section1 video + div button i {
   background-image: url("../img/informations.svg");
-  display: inline-block;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
 }
 main section.acc_section1 h3 + div {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  margin-left: 88px;
+  width: 85%;
+  gap: 5%;
+  justify-content: center;
 }
 main section.acc_section1 div.caroussel {
-  width: 860px;
-  height: 400px;
   margin: 60px auto 0 auto;
   display: flex;
   align-items: flex-start;
@@ -303,21 +298,17 @@ main section.acc_section1 div.caroussel {
 }
 main section.acc_section1 div.caroussel .carousel-cell {
   display: none;
-  counter-increment: carousel-cell;
+  padding: 30px 100px 70px 100px;
 }
-main section.acc_section1 div.caroussel div {
-  margin-top: 35px;
-}
-main section.acc_section1 div.caroussel div h4 {
-  width: 403px;
-  height: 32px;
+main section.acc_section1 div.caroussel .carousel-cell h4 {
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
+  text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
 }
-main section.acc_section1 div.caroussel div div > p {
+main section.acc_section1 div.caroussel .carousel-cell div > p {
   width: 450px;
   height: 160px;
   font-weight: 500;
@@ -325,17 +316,16 @@ main section.acc_section1 div.caroussel div div > p {
   line-height: 32px;
   letter-spacing: 0.03em;
 }
-main section.acc_section1 div.caroussel div div > img {
+main section.acc_section1 div.caroussel .carousel-cell div > img {
   width: 143px;
   height: 224px;
   display: inline-block;
   border-radius: 2px;
 }
-main section.acc_section1 div.caroussel div div {
+main section.acc_section1 div.caroussel .carousel-cell div {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
   flex-direction: row;
   padding: 0px;
   gap: 56px;
@@ -364,8 +354,6 @@ main section.acc_section1 div.button .rempli {
   color: #1CACE1;
 }
 main section.acc_section1 div.button button {
-  display: flex;
-  flex-direction: row;
   align-items: flex-start;
   padding: 10px 17px;
   margin: 0 10px;
@@ -373,16 +361,6 @@ main section.acc_section1 div.button button {
   font-size: 18px;
   background: #1CACE1;
   border-radius: 200px;
-  border: 0;
-  cursor: pointer;
-  color: #FFFFFF;
-}
-main section.acc_section1 div.button button i {
-  background-image: url("../img/informations.svg");
-  display: inline-block;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
 }
 main section.acc_section1 > div:last-child {
   width: 179px;
@@ -399,6 +377,10 @@ SECTION2
 \********************/
 section.acc_section2 {
   margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 section.acc_section2 div {
   display: flex;
@@ -406,8 +388,7 @@ section.acc_section2 div {
   flex-wrap: wrap;
   align-items: center;
   width: 80%;
-  justify-content: space-between;
-  margin: 0 auto;
+  justify-content: space-evenly;
 }
 section.acc_section2 div article {
   margin-top: 60px;
@@ -445,27 +426,12 @@ section.acc_section2 div article p {
   text-align: center;
 }
 section.acc_section2 div article button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 20px;
   margin: 10px auto 35px auto;
   gap: 10px;
   background: #1CACE1;
-  border: 0;
-  border-radius: 90px;
-  color: white;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
 }
 section.acc_section2 div article button i {
   background-image: url("../img/informationsi.svg");
-  display: inline-block;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
 }
 
 /********************\
@@ -473,7 +439,6 @@ SECTION3
 \********************/
 section.acc_section3 {
   margin-top: 150px;
-  overflow: hidden;
 }
 section.acc_section3 > h2,
 section.acc_section3 > h3 {
@@ -523,27 +488,12 @@ section.acc_section3 > div article div > ul > li strong {
   font-weight: 600;
 }
 section.acc_section3 button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 20px;
   margin: 90px auto 0 auto;
   gap: 10px;
   background-color: #F77E4B;
-  border: 0;
-  border-radius: 90px;
-  color: white;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
 }
 section.acc_section3 button i {
   background-image: url("../img/informations.svg");
-  display: inline-block;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
 }
 section.acc_section3 span {
   position: absolute;

@@ -4,6 +4,31 @@ button:hover {
     transition: 0.3s;
 }
 
+button {
+    transition: 0.2s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+
+    border: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    cursor: pointer;
+    border-radius: 90px;
+    transition: 0.3s;
+
+    i {
+        background-repeat: no-repeat;
+        display: inline-block;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+    }
+}
+
 /********************\
 HEADER
 \********************/
@@ -18,18 +43,19 @@ header.accueil {
     position: relative;
     display: flex;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    height: 100.5vh;
     flex-direction: column;
     align-items: center;
 
     div.acc_header {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         align-items: center;
         padding: 0px;
-        gap: 85px;
+        gap: 10%;
+        width: 80%;
+        justify-content: center;
 
         h2 {
             width: 606px;
@@ -75,30 +101,12 @@ header.accueil {
     }
 
     button {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 10px 20px;
-        gap: 15px;
-
-        border: 0;
-        color: white;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 21px;
-        cursor: pointer;
         background: #1CACE1;
-        border-radius: 90px;
         margin-top: 56px;
-        transition: 0.3s;
+        gap: 15px;
 
         i {
             background-image: url("../img/calendar.svg");
-            background-repeat: no-repeat;
-            display: inline-block;
-            background-size: contain;
-            width: 20px;
-            height: 20px;
         }
     }
 
@@ -126,10 +134,10 @@ SECTION1
 main section {
     h2 {
         text-transform: uppercase;
-        margin-left: 131px;
         font-weight: 500;
         font-size: 16px;
         line-height: 25px;
+        width: 85%;
 
         color: #1CACE1;
     }
@@ -138,19 +146,24 @@ main section {
         font-family: 'Handlee';
         font-size: 40px;
         line-height: 112%;
-        margin: 5px 0 0 131px;
+        width: 85%;
     }
 }
 
 main section.acc_section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+
     video {
         width: 664px;
-        padding-top: 50px;
         border-radius: 5px;
     }
 
     video+div {
-        margin: 30px auto 0 auto;
 
         div>i {
             background-image: url("../img/arrow.png");
@@ -164,8 +177,6 @@ main section.acc_section1 {
 
         div>p {
             width: 488px;
-            height: 117px;
-
             font-weight: 500;
             font-size: 16px;
             line-height: 28px;
@@ -196,30 +207,12 @@ main section.acc_section1 {
         }
 
         button {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 10px 20px;
             margin: 80px auto 0 auto;
             gap: 10px;
-
             background: #F77E4B;
-            border: 0;
-            border-radius: 90px;
-            color: white;
-            cursor: pointer;
-
-            font-weight: 500;
-            font-size: 16px;
-            transition: 0.3s;
-            line-height: 21px;
 
             i {
                 background-image: url("../img/informations.svg");
-                display: inline-block;
-                background-size: contain;
-                width: 20px;
-                height: 20px;
             }
         }
     }
@@ -227,13 +220,14 @@ main section.acc_section1 {
     h3+div {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
-        margin-left: 88px;
+        width: 85%;
+        gap: 5%;
+        justify-content: center;
     }
 
     div.caroussel {
-        width: 860px;
-        height: 400px;
         margin: 60px auto 0 auto;
         display: flex;
         align-items: flex-start;
@@ -247,19 +241,13 @@ main section.acc_section1 {
 
         .carousel-cell {
             display: none;
-            counter-increment: carousel-cell;
-        }
-
-        div {
-            margin-top: 35px;
+            padding: 30px 100px 70px 100px;
 
             h4 {
-                width: 403px;
-                height: 32px;
-
                 font-weight: 500;
                 font-size: 24px;
                 line-height: 32px;
+                text-align: center;
 
                 margin: 0 auto;
                 text-transform: uppercase;
@@ -287,7 +275,6 @@ main section.acc_section1 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-top: 30px;
                 flex-direction: row;
                 padding: 0px;
                 gap: 56px;
@@ -321,27 +308,13 @@ main section.acc_section1 {
         }
 
         button {
-            display: flex;
-            flex-direction: row;
             align-items: flex-start;
             padding: 10px 17px;
             margin: 0 10px;
             gap: 50px;
             font-size: 18px;
-
             background: #1CACE1;
             border-radius: 200px;
-            border: 0;
-            cursor: pointer;
-            color: #FFFFFF;
-
-            i {
-                background-image: url("../img/informations.svg");
-                display: inline-block;
-                background-size: contain;
-                width: 20px;
-                height: 20px;
-            }
         }
     }
 
@@ -361,6 +334,10 @@ SECTION2
 \********************/
 section.acc_section2 {
     margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     div {
         display: flex;
@@ -368,8 +345,7 @@ section.acc_section2 {
         flex-wrap: wrap;
         align-items: center;
         width: 80%;
-        justify-content: space-between;
-        margin: 0 auto;
+        justify-content: space-evenly;
 
         article {
             margin-top: 60px;
@@ -412,29 +388,13 @@ section.acc_section2 {
             }
 
             button {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                padding: 10px 20px;
                 margin: 10px auto 35px auto;
                 gap: 10px;
 
                 background: #1CACE1;
-                border: 0;
-                border-radius: 90px;
-                color: white;
-                cursor: pointer;
-
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 21px;
 
                 i {
                     background-image: url("../img/informationsi.svg");
-                    display: inline-block;
-                    background-size: contain;
-                    width: 20px;
-                    height: 20px;
                 }
             }
         }
@@ -446,7 +406,6 @@ SECTION3
 \********************/
 section.acc_section3 {
     margin-top: 150px;
-    overflow: hidden;
 
     >h2,
     >h3 {
@@ -510,29 +469,12 @@ section.acc_section3 {
     }
 
     button {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 10px 20px;
         margin: 90px auto 0 auto;
         gap: 10px;
-
         background-color: #F77E4B;
-        border: 0;
-        border-radius: 90px;
-        color: white;
-        cursor: pointer;
-
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 21px;
 
         i {
             background-image: url("../img/informations.svg");
-            display: inline-block;
-            background-size: contain;
-            width: 20px;
-            height: 20px;
         }
     }
 
