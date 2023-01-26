@@ -18,8 +18,8 @@ $arg_localisation2 = get_field("arg_localisation_2");
 $arg_localisation3 = get_field("arg_localisation_3");
 ?>
 
-<header class="contact">
-    <div class="heading">
+<header>
+    <div>
         <div>
             <h1><?php the_field("title_page"); ?></h1>
             <?php the_field("tagline_contact"); ?>
