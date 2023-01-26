@@ -95,6 +95,7 @@ button:hover {
   scale: 110%;
   margin-left: 10px;
   transition: 0.3s;
+  z-index: 2;
 }
 
 button {
@@ -1061,73 +1062,6 @@ footer.cct-footer p a {
 }
 
 /********************\
-HEADER
-\********************/
-header.consultation {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  flex-direction: column;
-  align-items: center;
-}
-header.consultation div.cst_header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 0px;
-  gap: 85px;
-}
-header.consultation div.cst_header h2 {
-  width: 606px;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 67px;
-  margin: 0;
-}
-header.consultation div.cst_header h2 strong {
-  width: 606px;
-  font-family: "Handlee";
-  font-size: 63px;
-  line-height: 75px;
-  background-image: url("../img/hilight.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-}
-header.consultation div > img {
-  width: 293px;
-  height: 456px;
-  border-radius: 2px;
-  position: relative;
-  margin-top: 30px;
-}
-header.consultation div > img:nth-of-type(2) {
-  transform: rotate(20deg);
-  z-index: -1;
-  width: 290px;
-  height: 466px;
-  margin-left: -70px;
-  scale: 0.9;
-}
-header.consultation > img {
-  display: inline-block;
-  width: 17px;
-  animation: downArrow 0.7s ease-out infinite alternate;
-  margin-top: 3px;
-}
-@keyframes downArrow {
-  0% {
-    -webkit-transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(0.8em);
-  }
-}
-
-/********************\
 SECTION1
 \********************/
 main section.cst > div {
@@ -1172,14 +1106,15 @@ main section.cst > div > article div > p {
   text-align: center;
   margin: 5px 0;
 }
+main section.cst > div > article div > div {
+  display: flex;
+  flex-direction: row;
+}
 main section.cst > div > article div > div > button {
-  font-weight: 500;
   font-size: 14px;
   line-height: 112%;
-  color: white;
   padding: 10px 15px;
-  border: none;
-  cursor: pointer;
+  border-radius: 0;
 }
 main section.cst > div > article div > div button:nth-of-type(1) {
   background-color: #4A423F;
@@ -1278,33 +1213,16 @@ main section.cst_section1 div.explications > div.white_content div.cst_content >
 }
 main section.cst_section1 div.explications > div.white_content div.cst_content > div button {
   margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 20px;
   gap: 15px;
-  border: 0;
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 21px;
-  cursor: pointer;
   background: #1CACE1;
-  border-radius: 90px;
-  transition: 0.3s;
 }
 main section.cst_section1 div.explications > div.white_content div.cst_content > div button i {
   background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
-  display: inline-block;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
 }
 main section.cst_section1 div.explications > div.white_content div.cst_content img {
   border-radius: 15px;
-  width: 546px;
-  height: 420px;
+  max-width: 546px;
+  max-height: 420px;
 }
 main section.cst_section1 div.explications div:nth-of-type(1) > h4 {
   background-color: #4A423F;

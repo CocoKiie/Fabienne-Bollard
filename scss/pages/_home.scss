@@ -2,6 +2,7 @@ button:hover {
     scale: 110%;
     margin-left: 10px;
     transition: 0.3s;
+    z-index: 2;
 }
 
 button {

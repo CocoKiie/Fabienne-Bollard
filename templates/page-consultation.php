@@ -16,15 +16,15 @@ $num_cognitif = 0;
 $num_explication_cognitif = 0;
 ?>
 
-<header class="consultation">
-    <div class="cst_header">
+<header>
+    <div>
         <div>
             <h1><?php the_field("title_page"); ?></h1>
             <?php the_field("tagline_page"); ?>
         </div>
         <div>
-        <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" height="<?php echo ($image1["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image1["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image1["alt"]) ?>">
-        <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" height="<?php echo ($image2["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image2["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image2["alt"]) ?>">
+            <img src="<?php echo ($image1["sizes"]["medium_large"]); ?>" height="<?php echo ($image1["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image1["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image1["alt"]) ?>">
+            <img src="<?php echo ($image2["sizes"]["medium_large"]); ?>" height="<?php echo ($image2["sizes"]["medium_large-height"]) ?>" width="<?php echo ($image2["sizes"]["medium_large-width"]) ?>" alt="<?php echo ($image2["alt"]) ?>">
         </div>
     </div>
     <img src="<?php echo get_stylesheet_directory_uri() ?>/img/arrow.svg" width="17" height="20" alt="flèche vers le bas" loading="lazy">
@@ -56,7 +56,7 @@ $num_explication_cognitif = 0;
                                 <button aria-label="Voir les explications du blocage lorsqu'on est un enfant" onclick="document.getElementById('explications_emotion_enfant<?php echo $num_emotion; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Enfant</button>
                                 <button aria-label="Voir les explications du blocage lorsqu'on est un bébé" onclick="document.getElementById('explications_emotion_baby<?php echo $num_emotion; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Bébé</button>
                             </div>
-                            <div>
+                        </div>
                     </article>
                 <?php endwhile; ?>
             </div>
@@ -139,7 +139,7 @@ $num_explication_cognitif = 0;
                                     <button aria-label="Voir les explications du blocage lorsqu'on est un enfant" onclick="document.getElementById('explications_moteur_enfant<?php echo $num_moteur; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Enfant</button>
                                     <button aria-label="Voir les explications du blocage lorsqu'on est un bébé" onclick="document.getElementById('explications_moteur_baby<?php echo $num_moteur; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Bébé</button>
                                 </div>
-                                <div>
+                            </div>
                         </article>
                     <?php endwhile; ?>
                 </div>
@@ -222,7 +222,7 @@ $num_explication_cognitif = 0;
                                         <button aria-label="Voir les explications du blocage lorsqu'on est un enfant" onclick="document.getElementById('explications_cognitif_enfant<?php echo $num_cognitif; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Enfant</button>
                                         <button aria-label="Voir les explications du blocage lorsqu'on est un bébé" onclick="document.getElementById('explications_cognitif_baby<?php echo $num_cognitif; ?>').style.display='block'; document.getElementById('fade').style.display='block'">Bébé</button>
                                     </div>
-                                    <div>
+                                </div>
                             </article>
                         <?php endwhile; ?>
                     </div>
