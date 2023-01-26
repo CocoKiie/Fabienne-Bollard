@@ -1591,7 +1591,7 @@ section.rfx_section1 > div:nth-child(4) {
 section.rfx_section1 span {
   position: absolute;
   right: 0px;
-  top: 630px;
+  top: 740px;
   width: 500px;
   height: 50px;
   background-image: url("../img/hilight.png");
@@ -1644,8 +1644,8 @@ section.rfx_section2 > div:nth-child(3) {
   position: absolute;
   width: 166px;
   height: 166px;
-  left: 380px;
-  top: 390px;
+  left: 107px;
+  top: 285px;
   border-radius: 50%;
   background: #F77E4B;
   z-index: -1;
@@ -1654,8 +1654,8 @@ section.rfx_section2 > div:nth-child(4) {
   position: absolute;
   width: 49px;
   height: 49px;
-  left: 500px;
-  top: 520px;
+  left: 104px;
+  top: 399px;
   border-radius: 50%;
   border: 1px solid #1CACE1;
 }
@@ -1668,7 +1668,7 @@ section.rfx_section3 > div:nth-child(3) {
   width: 134px;
   height: 138px;
   right: -79px;
-  top: 300px;
+  top: 259px;
   border-radius: 50%;
   background: #F77E4B;
 }
@@ -1677,7 +1677,7 @@ section.rfx_section3 > div:nth-child(4) {
   width: 191px;
   height: 191px;
   right: 130px;
-  top: 400px;
+  top: 347px;
   z-index: -1;
   border-radius: 50%;
   border: 1px solid #1CACE1;
@@ -1713,8 +1713,8 @@ section.rfx_section4 > div.cercle {
   position: absolute;
   width: 243px;
   height: 243px;
-  left: 1104px;
-  top: 153px;
+  left: 130px;
+  top: 496px;
   border-radius: 50%;
   background: rgba(28, 172, 225, 0.25);
   z-index: -1;
