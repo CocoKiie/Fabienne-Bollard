@@ -14,6 +14,7 @@
 }
 * img {
   border-radius: 2px;
+  object-fit: cover;
 }
 
 /********************\
@@ -181,6 +182,7 @@ header > div h2 strong {
 header div > img {
   width: 293px;
   height: 456px;
+  object-fit: cover;
   border-radius: 2px;
   position: relative;
   margin-top: 30px;
