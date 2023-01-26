@@ -12,8 +12,8 @@ $image_section1 = get_field("image_section1");
 $image_section2 = get_field("image_section2");
 ?>
 
-<header class="ateliers">
-    <div class="atl_header">
+<header>
+    <div>
         <div>
             <h1><?php the_field("title_page"); ?></h1>
             <?php the_field("tagline_page"); ?>
