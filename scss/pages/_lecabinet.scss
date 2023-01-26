@@ -1,99 +1,18 @@
 /********************\
 HEADER
 \********************/
-header.cabinet {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    flex-direction: column;
-    align-items: center;
-
-    div.cab_header {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        padding: 0px;
-        gap: 150px;
-
-        h2 {
-            width: 606px;
-
-            font-weight: 400;
-            font-size: 50px;
-            line-height: 67px;
-            margin: 0;
-
-            strong {
-                width: 606px;
-                height: 227px;
-
-                font-family: 'Handlee';
-                font-size: 63px;
-                line-height: 75px;
-
-                background-image: url("../img/hilight.png");
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position: center;
-            }
-        }
-    }
-
-
-    div>img {
-        width: 293px;
-        height: 456px;
-        border-radius: 2px;
-        position: relative;
-        margin-top: 30px;
-    }
-
-    div>img:nth-of-type(2) {
-        transform: rotate(20deg);
-        z-index: -1;
-        width: 290px;
-        height: 466px;
-        margin-left: -70px;
-        scale: 0.9;
-    }
-
-    >img {
-        display: inline-block;
-        width: 17px;
-        animation: downArrow 0.7s ease-out infinite alternate;
-        margin-top: 8px;
-    }
-
-    @keyframes downArrow {
-        0% {
-            -webkit-transform: translateY(0);
-        }
-
-        100% {
-            -webkit-transform: translateY(0.6em);
-        }
-    }
-}
-
 /********************\
 SECTION1
 \********************/
 section.cab_section1 {
-    h3 {
-        width: 400px;
-    }
-
     >div {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         align-items: center;
-        justify-content: center;
-        gap: 70px;
-        padding: 50px 0;
+        justify-content: space-evenly;
+        width: 90%;
+        margin-top: 50px;
 
         img {
             max-width: 700px;
@@ -103,7 +22,6 @@ section.cab_section1 {
         >div {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             gap: 20px;
 
             p {
@@ -139,11 +57,6 @@ SECTION2
 \********************/
 section.cab_section2 {
     margin-top: 150px;
-    position: relative;
-
-    h3 {
-        margin: 0;
-    }
 
     h4 {
         font-weight: 500;
@@ -168,6 +81,7 @@ section.cab_section2 {
         flex-direction: row;
         align-items: flex-start;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 100px;
 
         img {
@@ -204,6 +118,7 @@ section.cab_section2 {
         align-items: center;
         justify-content: center;
         margin-top: 200px;
+        flex-wrap: wrap;
         gap: 200px;
 
         img {
@@ -269,13 +184,13 @@ SECTION3
 \********************/
 section.cab_section3 {
     margin-top: 200px;
-    position: relative;
 
     >div {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 90px;
         padding: 50px 0 100px 0;
 
