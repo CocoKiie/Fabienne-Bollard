@@ -377,7 +377,7 @@ main section.acc_section1 > div:last-child {
   height: 179px;
   position: absolute;
   right: 20vw;
-  top: 240vh;
+  top: 750px;
   background: #F77E4B;
   border-radius: 50%;
 }
@@ -508,7 +508,7 @@ section.acc_section3 button i {
 section.acc_section3 span {
   position: absolute;
   right: 0px;
-  top: 550px;
+  top: 590px;
   width: 500px;
   height: 50px;
   background-image: url("../img/hilight.png");
