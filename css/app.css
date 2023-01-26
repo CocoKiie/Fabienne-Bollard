@@ -527,44 +527,11 @@ section.acc_section5 {
 /********************\
 HEADER
 \********************/
-header.about {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  flex-direction: column;
-  align-items: center;
-}
 header.about div.abt_header {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  padding: 0px;
-  gap: 150px;
-}
-header.about div.abt_header h2 {
-  width: 606px;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 67px;
-  margin: 0;
-}
-header.about div.abt_header h2 strong {
-  width: 606px;
-  height: 227px;
-  font-family: "Handlee";
-  font-size: 63px;
-  line-height: 75px;
-  background-image: url("../img/hilight.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
 }
 header.about div.abt_header p {
   width: 574px;
-  height: 114px;
   margin-top: 45px;
   font-weight: 500;
   font-size: 24px;
@@ -573,35 +540,6 @@ header.about div.abt_header p {
 }
 header.about div.abt_header p strong {
   font-weight: 700;
-}
-header.about div > img {
-  width: 293px;
-  height: 456px;
-  border-radius: 2px;
-  position: relative;
-  margin-top: 30px;
-}
-header.about div > img:nth-of-type(2) {
-  transform: rotate(20deg);
-  z-index: -1;
-  width: 290px;
-  height: 466px;
-  margin-left: -70px;
-  scale: 0.9;
-}
-header.about > img {
-  display: inline-block;
-  width: 17px;
-  animation: downArrow 0.7s ease-out infinite alternate;
-  margin-top: 8px;
-}
-@keyframes downArrow {
-  0% {
-    -webkit-transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(0.6em);
-  }
 }
 
 /********************\
@@ -641,14 +579,11 @@ SECTION1
 \********************/
 section.abt_section1 {
   margin-top: 80px;
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 section.abt_section1 > div.abt_card {
   width: 90%;
-  height: 550px;
+  padding: 55px 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
