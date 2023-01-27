@@ -16,7 +16,7 @@ footer {
         margin-top: 70px;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         align-items: center;
         justify-content: center;
         gap: 200px;
@@ -151,7 +151,7 @@ HEADER
 @media screen and (max-width:1445px) {
     header {
         h1{
-            margin-top: 25px;
+            margin-top: 100px;
         }
 
         h2 {
@@ -212,6 +212,40 @@ SECTION 3
         >div {
             article:last-child {
                 margin-top: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:986px) {
+    section.acc_section3 {
+        >div {
+            article:not(article:first-child) {
+                margin-top: 100px;
+            }
+        }
+    }
+}
+
+//responsive Footer
+/*----------------------------*\
+FOOTER
+\-----------------------------*/
+@media screen and (max-width:1250px){
+    footer{
+        >div{
+            gap: 100px;
+        }
+    }
+}
+
+@media screen and (max-width:980px){
+    footer{
+        >div{
+            gap: 80px;
+
+            >div{
+                gap: 40px;
             }
         }
     }
