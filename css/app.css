@@ -155,7 +155,7 @@ header {
 header > div {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   align-items: center;
   padding: 0px;
   width: 80%;
@@ -2005,13 +2005,19 @@ HEADER
 }
 @media screen and (max-width: 1445px) {
   header h1 {
-    margin-top: 100px;
+    margin-top: 25px;
+    text-align: center;
   }
   header h2 {
     text-align: center;
   }
   header div > img {
-    display: none;
+    width: 160px;
+    height: 258px;
+  }
+  header div > img:nth-of-type(2) {
+    width: 155px;
+    height: 238px;
   }
   header.accueil button {
     margin: 20px auto 70px auto;
@@ -2037,9 +2043,6 @@ SECTION 1
     top: 833px;
   }
 }
-/*----------------------------*\
-SECTION 2
-\-----------------------------*/
 /*----------------------------*\
 SECTION 3
 \-----------------------------*/

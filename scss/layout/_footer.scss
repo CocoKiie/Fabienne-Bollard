@@ -150,8 +150,9 @@ HEADER
 
 @media screen and (max-width:1445px) {
     header {
-        h1{
-            margin-top: 100px;
+        h1 {
+            margin-top: 25px;
+            text-align: center;
         }
 
         h2 {
@@ -159,7 +160,13 @@ HEADER
         }
 
         div>img {
-            display: none;
+            width: 160px;
+            height: 258px;
+        }
+
+        div>img:nth-of-type(2) {
+            width: 155px;
+            height: 238px;
         }
     }
 
@@ -198,13 +205,6 @@ SECTION 1
 }
 
 /*----------------------------*\
-SECTION 2
-\-----------------------------*/
-@media screen and (max-width:1440px){
-
-}
-
-/*----------------------------*\
 SECTION 3
 \-----------------------------*/
 @media screen and (max-width:1471.5px) {
@@ -231,20 +231,20 @@ SECTION 3
 /*----------------------------*\
 FOOTER
 \-----------------------------*/
-@media screen and (max-width:1250px){
-    footer{
-        >div{
+@media screen and (max-width:1250px) {
+    footer {
+        >div {
             gap: 100px;
         }
     }
 }
 
-@media screen and (max-width:980px){
-    footer{
-        >div{
+@media screen and (max-width:980px) {
+    footer {
+        >div {
             gap: 80px;
 
-            >div{
+            >div {
                 gap: 40px;
             }
         }
