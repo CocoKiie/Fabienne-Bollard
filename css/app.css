@@ -148,14 +148,13 @@ header {
   position: relative;
   display: flex;
   width: 100%;
-  height: 100vh;
   flex-direction: column;
   align-items: center;
 }
 header > div {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0px;
   width: 80%;
@@ -170,7 +169,6 @@ header > div h2 {
   margin: 0;
 }
 header > div h2 strong {
-  width: 606px;
   font-family: "Handlee";
   font-size: 63px;
   line-height: 75px;
@@ -228,9 +226,6 @@ main section {
 /********************\
 HEADER
 \********************/
-header.accueil {
-  height: 100.5vh;
-}
 header.accueil button {
   background: #1CACE1;
   margin-top: 56px;
@@ -243,9 +238,15 @@ header.accueil button i {
 /********************\
 SECTION1
 \********************/
+main section.acc_section1 {
+  margin-top: 100px;
+}
 main section.acc_section1 video {
   width: 664px;
   border-radius: 5px;
+}
+main section.acc_section1 video + div {
+  padding: 0 3%;
 }
 main section.acc_section1 video + div div > i {
   background-image: url("../img/arrow.png");
@@ -293,8 +294,8 @@ main section.acc_section1 h3 + div {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: 40px;
   width: 85%;
-  gap: 5%;
   justify-content: center;
 }
 main section.acc_section1 div.caroussel {
@@ -450,7 +451,7 @@ section.acc_section2 div article button i {
 SECTION3
 \********************/
 section.acc_section3 {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 section.acc_section3 > h2,
 section.acc_section3 > h3 {
@@ -499,6 +500,17 @@ section.acc_section3 > div article div > ul > li {
 section.acc_section3 > div article div > ul > li strong {
   font-weight: 600;
 }
+section.acc_section3 > div article span {
+  position: absolute;
+  right: 0px;
+  top: 87%;
+  width: 500px;
+  height: 50px;
+  background-image: url("../img/hilight.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 section.acc_section3 button {
   margin: 90px auto 0 auto;
   gap: 10px;
@@ -506,17 +518,6 @@ section.acc_section3 button {
 }
 section.acc_section3 button i {
   background-image: url("../img/informations.svg");
-}
-section.acc_section3 span {
-  position: absolute;
-  right: 0px;
-  top: 590px;
-  width: 500px;
-  height: 50px;
-  background-image: url("../img/hilight.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 /********************\
@@ -720,6 +721,7 @@ main section.cct_section1 {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 7%;
+  margin-top: 50px;
   padding: 70px 0;
 }
 main section.cct_section1 > div {
@@ -986,6 +988,9 @@ main section.cst > div > article div > div button:hover {
   margin-left: 0;
 }
 
+main section.cst_section1 {
+  margin-top: 50px;
+}
 main section.cst_section1 h2 {
   color: black;
 }
@@ -1106,11 +1111,11 @@ aside.cst_aside span {
 }
 
 /********************\
-HEADER
-\********************/
-/********************\
 SECTION1
 \********************/
+section.cab_section1 {
+  margin-top: 50px;
+}
 section.cab_section1 > div {
   display: flex;
   flex-direction: row;
@@ -1326,7 +1331,7 @@ section.cab_section3 > div:nth-child(4) {
 SECTION1
 \********************/
 main section.atl_section1 {
-  position: relative;
+  margin-top: 50px;
 }
 main section.atl_section1 > div {
   display: flex;
@@ -1433,8 +1438,11 @@ section.atl_section2 span {
 }
 
 /********************\
-SECTION
+SECTION 
 \********************/
+section.mtd_section {
+  margin-top: 50px;
+}
 section.mtd_section > div {
   display: flex;
   flex-direction: row;
@@ -1534,6 +1542,9 @@ section.mtd_section3 span {
 /********************\
 SECTION1
 \********************/
+section.rfx_section1 {
+  margin-top: 50px;
+}
 section.rfx_section1 > div:nth-child(2) {
   display: flex;
   align-items: center;
@@ -1973,6 +1984,68 @@ footer > div:nth-child(2) p {
 footer > div:nth-child(2) a {
   color: white;
   text-decoration: underline;
+}
+
+/*----------------------------*\
+HEADER
+\-----------------------------*/
+@media screen and (max-width: 1495px) {
+  header > p {
+    margin-top: 20px;
+  }
+  header div > img {
+    width: 275px;
+    height: 450px;
+  }
+  header div > img:nth-of-type(2) {
+    width: 270px;
+    height: 460px;
+  }
+}
+@media screen and (max-width: 1445px) {
+  header h1 {
+    margin-top: 25px;
+  }
+  header h2 {
+    text-align: center;
+  }
+  header div > img {
+    display: none;
+  }
+  header.accueil button {
+    margin: 20px auto 70px auto;
+  }
+}
+/*----------------------------*\
+SECTION 1
+\-----------------------------*/
+@media screen and (max-width: 1519px) {
+  main section.acc_section1 h3 + div {
+    margin-top: 60px;
+  }
+  main section.acc_section1 video + div {
+    margin-top: 5%;
+  }
+  main section.acc_section1 video + div button {
+    margin: 30px auto 0 auto;
+  }
+  main section.acc_section1 div.caroussel {
+    margin: 100px auto 0 auto;
+  }
+  main section.acc_section1 > div:last-child {
+    top: 833px;
+  }
+}
+/*----------------------------*\
+SECTION 2
+\-----------------------------*/
+/*----------------------------*\
+SECTION 3
+\-----------------------------*/
+@media screen and (max-width: 1471.5px) {
+  section.acc_section3 > div article:last-child {
+    margin-top: 100px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

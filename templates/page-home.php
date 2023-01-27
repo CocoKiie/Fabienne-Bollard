@@ -172,16 +172,16 @@ $file_mp4 = get_field('video_mp4');
                 <span class="dots" onclick="currentDiv(1)"></span>
                 <span class="dots" onclick="currentDiv(2)"></span>
                 <?php if ($title_slide_3 || $txt_slide_3) : ?>
-                    <span class="dots" onclick="currentDiv(2)"></span>
+                    <span class="dots" onclick="currentDiv(3)"></span>
                 <?php endif; ?>
                 <?php if ($title_slide_4 || $txt_slide_4) : ?>
-                    <span class="dots" onclick="currentDiv(2)"></span>
+                    <span class="dots" onclick="currentDiv(4)"></span>
                 <?php endif; ?>
                 <?php if ($title_slide_5 || $txt_slide_5) : ?>
-                    <span class="dots" onclick="currentDiv(2)"></span>
+                    <span class="dots" onclick="currentDiv(5)"></span>
                 <?php endif; ?>
                 <?php if ($title_slide_6 || $txt_slide_6) : ?>
-                    <span class="dots" onclick="currentDiv(2)"></span>
+                    <span class="dots" onclick="currentDiv(6)"></span>
                 <?php endif; ?>
             </div>
             <button aria-label="Voir la suite du contenu" onclick="plusDivs(1)">&#10095;</button>
@@ -270,14 +270,12 @@ $file_mp4 = get_field('video_mp4');
                 <div>
                     <h4><?php echo $titre_brainball; ?></h4>
                     <?php echo $paragraphe_brainball; ?>
-                    <div>
+                </div>
+                <!--Soulignment-->
+                <span></span>
             </article>
         </div>
         <button aria-label="Voir plus d'informations sur les 3 méthodes pratiquées par Fabienne Bollard" onclick="location.href='<?php the_field('links_methodes', 'option'); ?>'"><i></i><?php the_field("button_section_4"); ?></button>
-
-        <!--Soulignment-->
-        <span></span>
-
     </section>
     <section class="acc_section5">
         <h2><?php the_field("title_section_4"); ?></h2>
