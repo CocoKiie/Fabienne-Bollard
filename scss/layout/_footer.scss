@@ -204,6 +204,27 @@ SECTION 1
     }
 }
 
+@media screen and (max-width:881px) {
+    main section.acc_section1 {
+        div.caroussel {
+            border-radius: 100px;
+
+            .carousel-cell {
+                padding: 30px 50px 90px 50px;
+
+                div {
+                    flex-direction: column;
+                    gap: 15px;
+                }
+            }
+        }
+
+        >div:last-child {
+            top: 780px;
+        }
+    }
+}
+
 /*----------------------------*\
 SECTION 3
 \-----------------------------*/
@@ -242,10 +263,17 @@ FOOTER
 @media screen and (max-width:980px) {
     footer {
         >div {
-            gap: 80px;
+            >img {
+                display: none;
+            }
 
-            >div {
-                gap: 40px;
+            >div{
+                gap: 50px;
+                align-items: center;
+
+                >ul{
+                    align-items: center;
+                }
             }
         }
     }

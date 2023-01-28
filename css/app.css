@@ -331,8 +331,8 @@ main section.acc_section1 div.caroussel .carousel-cell div > p {
   letter-spacing: 0.03em;
 }
 main section.acc_section1 div.caroussel .carousel-cell div > img {
-  width: 143px;
-  height: 224px;
+  max-width: 350px;
+  max-height: 220px;
   display: inline-block;
   border-radius: 2px;
 }
@@ -343,6 +343,7 @@ main section.acc_section1 div.caroussel .carousel-cell div {
   flex-direction: row;
   padding: 0px;
   gap: 56px;
+  margin-top: 15px;
 }
 main section.acc_section1 div.button {
   display: flex;
@@ -2043,6 +2044,21 @@ SECTION 1
     top: 833px;
   }
 }
+@media screen and (max-width: 881px) {
+  main section.acc_section1 div.caroussel {
+    border-radius: 100px;
+  }
+  main section.acc_section1 div.caroussel .carousel-cell {
+    padding: 30px 50px 90px 50px;
+  }
+  main section.acc_section1 div.caroussel .carousel-cell div {
+    flex-direction: column;
+    gap: 15px;
+  }
+  main section.acc_section1 > div:last-child {
+    top: 780px;
+  }
+}
 /*----------------------------*\
 SECTION 3
 \-----------------------------*/
@@ -2065,11 +2081,15 @@ FOOTER
   }
 }
 @media screen and (max-width: 980px) {
-  footer > div {
-    gap: 80px;
+  footer > div > img {
+    display: none;
   }
   footer > div > div {
-    gap: 40px;
+    gap: 50px;
+    align-items: center;
+  }
+  footer > div > div > ul {
+    align-items: center;
   }
 }
 
