@@ -105,7 +105,7 @@ section.rfx_section {
 
         img {
             max-width: 650px;
-            max-height: 400px;
+            max-height: 250px;
         }
 
         div {
@@ -192,6 +192,10 @@ SECTION4
 section.rfx_section4 {
     margin-top: 150px;
 
+    h3{
+        text-align: center;
+    }
+
     >div {
         display: flex;
         flex-direction: column;
@@ -232,7 +236,7 @@ section.rfx_section4 {
 ASIDE
 \********************/
 aside.rfx_aside {
-    margin: 100px 0 150px 0;
+    margin: 100px auto 150px auto;
     display: flex;
     flex-direction: row;
     align-items: center;

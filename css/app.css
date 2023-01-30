@@ -1393,6 +1393,9 @@ section.atl_section2 {
   margin: 150px 0;
   position: relative;
 }
+section.atl_section2 h2, section.atl_section2 h3 {
+  text-align: end;
+}
 section.atl_section2 > div {
   display: flex;
   flex-direction: row;
@@ -1634,7 +1637,7 @@ section.rfx_section > div {
 }
 section.rfx_section > div img {
   max-width: 650px;
-  max-height: 400px;
+  max-height: 250px;
 }
 section.rfx_section > div div {
   display: flex;
@@ -1706,6 +1709,9 @@ SECTION4
 section.rfx_section4 {
   margin-top: 150px;
 }
+section.rfx_section4 h3 {
+  text-align: center;
+}
 section.rfx_section4 > div {
   display: flex;
   flex-direction: column;
@@ -1741,7 +1747,7 @@ section.rfx_section4 > div.cercle {
 ASIDE
 \********************/
 aside.rfx_aside {
-  margin: 100px 0 150px 0;
+  margin: 100px auto 150px auto;
   display: flex;
   flex-direction: row;
   align-items: center;
