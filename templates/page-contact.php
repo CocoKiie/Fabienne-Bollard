@@ -49,7 +49,7 @@ $arg_localisation3 = get_field("arg_localisation_3");
         </div>
         <div>
             <legend>Formulaire de contact</legend>
-            <?php echo do_shortcode('[wpforms id="471"]'); ?>
+            <?php echo do_shortcode('[wpforms id="471"]');?>
         </div>
     </section>
     <section class="cct_section2">
@@ -71,7 +71,7 @@ $arg_localisation3 = get_field("arg_localisation_3");
                     <?php endif; ?>
                 </ul>
             <?php endif; ?>
-            <iframe title="Carte généré par Google Map afin de mieux visualiser la localisation du cabinet de Fabienne Bollard" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2774.3869758717196!2d6.0740369!3d45.9435508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b84455fd16ea1%3A0xca6ee41c7f2d9480!2s464%20Rte%20des%20Pr%C3%A9s%20Rollier%2C%2074330%20Sillingy!5e0!3m2!1sfr!2sfr!4v1673972335245!5m2!1sfr!2sfr" width="630" height="241" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11097.547903486879!2d6.0740369!3d45.9435508!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x71f5c35ad52d8fe5!2sFabienne%20Bollard%20-%20Consultante%20ENM!5e0!3m2!1sfr!2sfr!4v1675358247186!5m2!1sfr!2sfr" width="630" height="241" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 </main>

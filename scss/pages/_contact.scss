@@ -37,13 +37,13 @@ SECTION1
 \********************/
 main section.cct_section1 {
     background: rgba(28, 172, 225, 0.25);
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     flex-direction: row;
-    gap: 7%;
+    gap: 9%;
     margin-top: 50px;
     padding: 70px 0;
 
-    >div {
+    >div:nth-of-type(1) {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -108,115 +108,114 @@ main section.cct_section1 {
         }
     }
 
-    div {
-        width: 710px;
-
-
-        border: 1px solid black;
-        border-radius: 2px;
+    >div:nth-of-type(2) {
+        width: 645px;
 
         legend {
             font-family: 'Handlee';
             font-size: 24px;
             line-height: 32px;
             letter-spacing: 0.095em;
+            text-align: center;
         }
 
-        input,
-        label {
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 21px;
-        }
+        >div.wpforms-container-full {
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px auto;
 
-        div.wpforms-field-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 38px;
-
-            >div.wpforms-field {
+            form {
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
-                justify-content: flex-start;
-                border: 0;
+                align-items: center;
+                width: 645px;
 
-                input {
-                    width: 260px;
-                    height: 30px;
-                    background: transparent;
-                    border: none;
-                    border-bottom: 1px solid black;
-                    margin: 2px 0;
-                    font-weight: 500;
-                    font-size: 14px;
-                    border-radius: 2px;
+                div.wpforms-field-container {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+
+                    div.wpforms-field {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 20px 10px 10px 20px;
+
+
+                        label {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 21px;
+                            letter-spacing: 0.05em;
+                        }
+
+                        input {
+                            background-color: transparent;
+                            border: 1px solid transparent;
+                            border-bottom: 1px solid #000000;
+                            transition: 0.3s;
+                            width: 300px;
+                            padding: 5px;
+                        }
+
+                        ::placeholder {
+                            color: #0000004a;
+                            font-size: 16px;
+                            text-transform: none !important;
+                        }
+
+                        input:focus {
+                            background-color: white;
+                            transition: 0.3s;
+                        }
+
+                        div.wpforms-field-description {
+                            color: #0000004a;
+                            font-size: 12px;
+                        }
+
+                        textarea {
+                            resize: vertical;
+                            max-width: 603px;
+                        }
+                    }
+
+                    div.wpforms-field:nth-child(n+3) {
+                        width: 640px;
+
+                        label {
+                            width: 100%;
+                        }
+
+                        input {
+                            width: 600px;
+                        }
+                    }
+
+                    div.wpforms-field[data-field-id="4"] {
+                        padding: 20px 0 10px 0;
+                    }
+
+                    div.wpforms-field[data-field-id="5"] {
+
+                        input {
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+
+                div.wpforms-submit-container {
+                    button {
+                        background: #F77E4B;
+                        border-radius: 90px;
+                        color: white;
+                        margin: 10px 0 25px 0;
+                    }
                 }
             }
-
-            >div.wpforms-field:nth-child(n+3) {
-
-                input,
-                textarea {
-                    width: 575px;
-                    border: none;
-                    margin: 8px 0;
-                }
-
-                input {
-                    border-bottom: 1px solid black;
-                }
-
-                textarea {
-                    height: 100px;
-                }
-            }
-
-            input:focus,
-            textarea:focus {
-                outline-style: none;
-                box-shadow: none;
-                background-color: white !important;
-            }
-
-            input::placeholder,
-            textarea::placeholder {
-                color: black;
-                opacity: 0.3;
-                font-weight: 400;
-            }
-        }
-
-
-        div.wpforms-field-description {
-            font-size: 10px;
-            opacity: 0.5;
-            font-weight: 400;
-        }
-
-        div>button {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 10px 20px;
-            gap: 10px;
-
-            background-color: #1CACE1;
-            border: 0;
-            border-radius: 90px;
-            color: white;
-            cursor: pointer;
-
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 21px;
-            transition: 0.3s;
-            margin: 25px auto 0 auto;
         }
     }
 }
+
 
 /********************\
 SECTION2
@@ -235,6 +234,7 @@ main section.cct_section2 {
 
     >div {
         display: flex;
+        flex-wrap: wrap;
         align-items: flex-start;
         flex-direction: row;
         justify-content: center;

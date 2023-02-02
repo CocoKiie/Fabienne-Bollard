@@ -720,23 +720,23 @@ SECTION1
 \********************/
 main section.cct_section1 {
   background: rgba(28, 172, 225, 0.25);
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   flex-direction: row;
-  gap: 7%;
+  gap: 9%;
   margin-top: 50px;
   padding: 70px 0;
 }
-main section.cct_section1 > div {
+main section.cct_section1 > div:nth-of-type(1) {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main section.cct_section1 > div img {
+main section.cct_section1 > div:nth-of-type(1) img {
   max-width: 320px;
   max-height: 320px;
 }
-main section.cct_section1 > div > h3 {
+main section.cct_section1 > div:nth-of-type(1) > h3 {
   font-family: "Handlee";
   font-size: 24px;
   line-height: 32px;
@@ -744,7 +744,7 @@ main section.cct_section1 > div > h3 {
   margin: 25px 0 0 0;
   width: 302px;
 }
-main section.cct_section1 > div > ul {
+main section.cct_section1 > div:nth-of-type(1) > ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -756,118 +756,113 @@ main section.cct_section1 > div > ul {
   gap: 15px;
   width: 302px;
 }
-main section.cct_section1 > div > ul li {
+main section.cct_section1 > div:nth-of-type(1) > ul li {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 10px;
 }
-main section.cct_section1 > div > ul li a {
+main section.cct_section1 > div:nth-of-type(1) > ul li a {
   font-weight: 400;
 }
-main section.cct_section1 > div > ul li i {
+main section.cct_section1 > div:nth-of-type(1) > ul li i {
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
 }
-main section.cct_section1 > div > ul li:nth-child(1) i {
+main section.cct_section1 > div:nth-of-type(1) > ul li:nth-child(1) i {
   background-image: url("../img/phone-black.svg");
 }
-main section.cct_section1 > div > ul li:nth-child(2) i {
+main section.cct_section1 > div:nth-of-type(1) > ul li:nth-child(2) i {
   background-image: url("../img/localisation-black.svg");
 }
-main section.cct_section1 > div > ul li:nth-child(3) i {
+main section.cct_section1 > div:nth-of-type(1) > ul li:nth-child(3) i {
   background-image: url("../img/mail-black.svg");
 }
-main section.cct_section1 div {
-  width: 710px;
-  border: 1px solid black;
-  border-radius: 2px;
+main section.cct_section1 > div:nth-of-type(2) {
+  width: 645px;
 }
-main section.cct_section1 div legend {
+main section.cct_section1 > div:nth-of-type(2) legend {
   font-family: "Handlee";
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0.095em;
+  text-align: center;
 }
-main section.cct_section1 div input,
-main section.cct_section1 div label {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
+main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px auto;
 }
-main section.cct_section1 div div.wpforms-field-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 38px;
-}
-main section.cct_section1 div div.wpforms-field-container > div.wpforms-field {
+main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  border: 0;
+  align-items: center;
+  width: 645px;
 }
-main section.cct_section1 div div.wpforms-field-container > div.wpforms-field input {
-  width: 260px;
-  height: 30px;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid black;
-  margin: 2px 0;
-  font-weight: 500;
-  font-size: 14px;
-  border-radius: 2px;
-}
-main section.cct_section1 div div.wpforms-field-container > div.wpforms-field:nth-child(n+3) input,
-main section.cct_section1 div div.wpforms-field-container > div.wpforms-field:nth-child(n+3) textarea {
-  width: 575px;
-  border: none;
-  margin: 8px 0;
-}
-main section.cct_section1 div div.wpforms-field-container > div.wpforms-field:nth-child(n+3) input {
-  border-bottom: 1px solid black;
-}
-main section.cct_section1 div div.wpforms-field-container > div.wpforms-field:nth-child(n+3) textarea {
-  height: 100px;
-}
-main section.cct_section1 div div.wpforms-field-container input:focus,
-main section.cct_section1 div div.wpforms-field-container textarea:focus {
-  outline-style: none;
-  box-shadow: none;
-  background-color: white !important;
-}
-main section.cct_section1 div div.wpforms-field-container input::placeholder,
-main section.cct_section1 div div.wpforms-field-container textarea::placeholder {
-  color: black;
-  opacity: 0.3;
-  font-weight: 400;
-}
-main section.cct_section1 div div.wpforms-field-description {
-  font-size: 10px;
-  opacity: 0.5;
-  font-weight: 400;
-}
-main section.cct_section1 div div > button {
+main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  padding: 10px 20px;
-  gap: 10px;
-  background-color: #1CACE1;
-  border: 0;
+  flex-wrap: wrap;
+}
+main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px 10px 20px;
+}
+main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+}
+main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field input {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #000000;
+  transition: 0.3s;
+  width: 300px;
+  padding: 5px;
+}
+main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field ::placeholder {
+  color: rgba(0, 0, 0, 0.2901960784);
+  font-size: 16px;
+  text-transform: none !important;
+}
+main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field input:focus {
+  background-color: white;
+  transition: 0.3s;
+}
+main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field div.wpforms-field-description {
+  color: rgba(0, 0, 0, 0.2901960784);
+  font-size: 12px;
+}
+main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field textarea {
+  resize: vertical;
+  max-width: 603px;
+}
+main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field:nth-child(n+3) {
+  width: 640px;
+}
+main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field:nth-child(n+3) label {
+  width: 100%;
+}
+main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field:nth-child(n+3) input {
+  width: 600px;
+}
+main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field[data-field-id="4"] {
+  padding: 20px 0 10px 0;
+}
+main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field[data-field-id="5"] input {
+  text-transform: uppercase;
+}
+main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-submit-container button {
+  background: #F77E4B;
   border-radius: 90px;
   color: white;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-  transition: 0.3s;
-  margin: 25px auto 0 auto;
+  margin: 10px 0 25px 0;
 }
 
 /********************\
@@ -886,6 +881,7 @@ main section.cct_section2 > h3 {
 }
 main section.cct_section2 > div {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   flex-direction: row;
   justify-content: center;
