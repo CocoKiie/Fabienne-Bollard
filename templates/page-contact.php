@@ -47,12 +47,10 @@ $arg_localisation3 = get_field("arg_localisation_3");
                 <li><i></i><a title="Envoyer un mail à Fabienne Bollard" href="mailto:fabienne.bollard74@gmail.com">fabienne.bollard74@gmail.com</a></li>
             </ul>
         </div>
-        <form method="post">
-            <fieldset>
-                <legend><?php the_field("legend_form"); ?></legend>
-                <?php echo do_shortcode('[wpforms id="471" title="false"]'); ?>
-            </fieldset>
-        </form>
+        <div>
+            <legend>Formulaire de contact</legend>
+            <?php echo do_shortcode('[wpforms id="471"]'); ?>
+        </div>
     </section>
     <section class="cct_section2">
         <h3><?php the_field("title_section_2"); ?></h3>

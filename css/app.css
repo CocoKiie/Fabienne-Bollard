@@ -781,40 +781,38 @@ main section.cct_section1 > div > ul li:nth-child(2) i {
 main section.cct_section1 > div > ul li:nth-child(3) i {
   background-image: url("../img/mail-black.svg");
 }
-main section.cct_section1 form {
+main section.cct_section1 div {
   width: 710px;
-}
-main section.cct_section1 form fieldset {
   border: 1px solid black;
   border-radius: 2px;
 }
-main section.cct_section1 form fieldset legend {
+main section.cct_section1 div legend {
   font-family: "Handlee";
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0.095em;
 }
-main section.cct_section1 form fieldset input,
-main section.cct_section1 form fieldset label {
+main section.cct_section1 div input,
+main section.cct_section1 div label {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
 }
-main section.cct_section1 form fieldset div.wpforms-field-container {
+main section.cct_section1 div div.wpforms-field-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   gap: 38px;
 }
-main section.cct_section1 form fieldset div.wpforms-field-container > div.wpforms-field {
+main section.cct_section1 div div.wpforms-field-container > div.wpforms-field {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   border: 0;
 }
-main section.cct_section1 form fieldset div.wpforms-field-container > div.wpforms-field input {
+main section.cct_section1 div div.wpforms-field-container > div.wpforms-field input {
   width: 260px;
   height: 30px;
   background: transparent;
@@ -825,36 +823,36 @@ main section.cct_section1 form fieldset div.wpforms-field-container > div.wpform
   font-size: 14px;
   border-radius: 2px;
 }
-main section.cct_section1 form fieldset div.wpforms-field-container > div.wpforms-field:nth-child(n+3) input,
-main section.cct_section1 form fieldset div.wpforms-field-container > div.wpforms-field:nth-child(n+3) textarea {
+main section.cct_section1 div div.wpforms-field-container > div.wpforms-field:nth-child(n+3) input,
+main section.cct_section1 div div.wpforms-field-container > div.wpforms-field:nth-child(n+3) textarea {
   width: 575px;
   border: none;
   margin: 8px 0;
 }
-main section.cct_section1 form fieldset div.wpforms-field-container > div.wpforms-field:nth-child(n+3) input {
+main section.cct_section1 div div.wpforms-field-container > div.wpforms-field:nth-child(n+3) input {
   border-bottom: 1px solid black;
 }
-main section.cct_section1 form fieldset div.wpforms-field-container > div.wpforms-field:nth-child(n+3) textarea {
+main section.cct_section1 div div.wpforms-field-container > div.wpforms-field:nth-child(n+3) textarea {
   height: 100px;
 }
-main section.cct_section1 form fieldset div.wpforms-field-container input:focus,
-main section.cct_section1 form fieldset div.wpforms-field-container textarea:focus {
+main section.cct_section1 div div.wpforms-field-container input:focus,
+main section.cct_section1 div div.wpforms-field-container textarea:focus {
   outline-style: none;
   box-shadow: none;
   background-color: white !important;
 }
-main section.cct_section1 form fieldset div.wpforms-field-container input::placeholder,
-main section.cct_section1 form fieldset div.wpforms-field-container textarea::placeholder {
+main section.cct_section1 div div.wpforms-field-container input::placeholder,
+main section.cct_section1 div div.wpforms-field-container textarea::placeholder {
   color: black;
   opacity: 0.3;
   font-weight: 400;
 }
-main section.cct_section1 form div.wpforms-field-description {
+main section.cct_section1 div div.wpforms-field-description {
   font-size: 10px;
   opacity: 0.5;
   font-weight: 400;
 }
-main section.cct_section1 form div > button {
+main section.cct_section1 div div > button {
   display: flex;
   flex-direction: row;
   align-items: center;

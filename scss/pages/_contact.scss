@@ -108,87 +108,87 @@ main section.cct_section1 {
         }
     }
 
-    form {
+    div {
         width: 710px;
 
-        fieldset {
-            border: 1px solid black;
-            border-radius: 2px;
 
-            legend {
-                font-family: 'Handlee';
-                font-size: 24px;
-                line-height: 32px;
-                letter-spacing: 0.095em;
-            }
+        border: 1px solid black;
+        border-radius: 2px;
 
-            input,
-            label {
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 21px;
-            }
+        legend {
+            font-family: 'Handlee';
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.095em;
+        }
 
-            div.wpforms-field-container {
+        input,
+        label {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        div.wpforms-field-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 38px;
+
+            >div.wpforms-field {
                 display: flex;
-                flex-direction: row;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 38px;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                border: 0;
 
-                >div.wpforms-field {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: flex-start;
-                    border: 0;
+                input {
+                    width: 260px;
+                    height: 30px;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    margin: 2px 0;
+                    font-weight: 500;
+                    font-size: 14px;
+                    border-radius: 2px;
+                }
+            }
 
-                    input {
-                        width: 260px;
-                        height: 30px;
-                        background: transparent;
-                        border: none;
-                        border-bottom: 1px solid black;
-                        margin: 2px 0;
-                        font-weight: 500;
-                        font-size: 14px;
-                        border-radius: 2px;
-                    }
+            >div.wpforms-field:nth-child(n+3) {
+
+                input,
+                textarea {
+                    width: 575px;
+                    border: none;
+                    margin: 8px 0;
                 }
 
-                >div.wpforms-field:nth-child(n+3) {
-
-                    input,
-                    textarea {
-                        width: 575px;
-                        border: none;
-                        margin: 8px 0;
-                    }
-
-                    input {
-                        border-bottom: 1px solid black;
-                    }
-
-                    textarea {
-                        height: 100px;
-                    }
+                input {
+                    border-bottom: 1px solid black;
                 }
 
-                input:focus,
-                textarea:focus {
-                    outline-style: none;
-                    box-shadow: none;
-                    background-color: white !important;
+                textarea {
+                    height: 100px;
                 }
+            }
 
-                input::placeholder,
-                textarea::placeholder {
-                    color: black;
-                    opacity: 0.3;
-                    font-weight: 400;
-                }
+            input:focus,
+            textarea:focus {
+                outline-style: none;
+                box-shadow: none;
+                background-color: white !important;
+            }
+
+            input::placeholder,
+            textarea::placeholder {
+                color: black;
+                opacity: 0.3;
+                font-weight: 400;
             }
         }
+
 
         div.wpforms-field-description {
             font-size: 10px;
