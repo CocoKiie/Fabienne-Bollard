@@ -88,8 +88,8 @@ $file_mp4 = get_field('video_mp4');
             <div>
                 <div>
                     <i></i>
-                    <p><strong>Être consultante en <abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>* c'est</strong>
-                        <?php the_field("def_job"); ?></p>
+                    <p><strong>Être consultante en <abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>*&nbsp;c'est</strong>
+                        <br><?php the_field("def_job"); ?></p>
                 </div>
                 <p><dfn id="E.N.M.">*<abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>&nbsp;=&nbsp;Éducation Neurosensorielle et&nbsp;Motrice</dfn></p>
                 <button aria-label="Voir plus d'informations sur les réflexes archaïques" onclick="location.href='<?php the_field('links_reflexes', 'option'); ?>'"><i></i><?php the_field("button_i_reflexes"); ?></button>

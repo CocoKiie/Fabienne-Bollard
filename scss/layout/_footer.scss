@@ -177,6 +177,44 @@ HEADER
     }
 }
 
+@media screen and (max-width:700px) {
+    nav{
+        height: 60px;
+    }
+    
+    header {
+        h1 {
+            width: 83vw;
+            font-size: 30px;
+        }
+
+        >div h2 {
+            width: 83vw;
+            font-size: 30px;
+            line-height: 44px;
+
+            strong {
+                font-size: 36px;
+                line-height: 44px;
+            }
+        }
+    }
+
+    header.accueil button{
+        margin-bottom: 30px;
+    }
+
+    div.cercle2 {
+        left: -34.3vw;
+        top: 65vh;
+    }
+
+    div.cercle3 {
+        left: 2vw;
+        top: 80vh;
+    }
+}
+
 /*----------------------------*\
 SECTION 1
 \-----------------------------*/
@@ -186,8 +224,12 @@ SECTION 1
             margin-top: 60px;
         }
 
+        video {
+            width: clamp(300px, 83vw, 800px);
+        }
+
         video+div {
-            margin-top: 5%;
+            margin-top: 75px;
 
             button {
                 margin: 30px auto 0 auto;
@@ -225,6 +267,66 @@ SECTION 1
     }
 }
 
+@media screen and (max-width:590px) {
+    main section.acc_section1 {
+        video+div {
+            margin-top: 90px;
+
+            div>p {
+                width: clamp(275px, 100%, 488px);
+
+                strong {
+                    padding-bottom: 22px;
+                    display: inline-block;
+                }
+
+                br {
+                    display: block;
+                }
+            }
+
+            div+p {
+                width: 250px;
+                display: inline-block;
+            }
+
+            button {
+                margin: 50px auto 0 auto;
+            }
+        }
+
+        div.caroussel {
+            border-radius: 100px;
+            margin-top: 90px;
+
+            h4 {
+                width: 250px;
+            }
+
+            .carousel-cell {
+                padding: 30px 50px 90px 50px;
+
+                div {
+                    flex-direction: column;
+                    gap: 15px;
+
+                    p {
+                        height: auto;
+                        width: 280px;
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+
+        >div:last-child {
+            top: 877px;
+            left: 7px;
+        }
+    }
+}
+
 /*----------------------------*\
 SECTION 3
 \-----------------------------*/
@@ -233,6 +335,11 @@ SECTION 3
         >div {
             article:last-child {
                 margin-top: 100px;
+
+                span {
+                    top: 92%;
+                    right: -150px;
+                }
             }
         }
     }
@@ -267,12 +374,25 @@ FOOTER
                 display: none;
             }
 
-            >div{
+            >div {
                 gap: 50px;
                 align-items: center;
 
-                >ul{
+                >ul {
                     align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    footer {
+        >div {
+            >div {
+                img {
+                    width: 364px;
+                    height: fit-content;
                 }
             }
         }

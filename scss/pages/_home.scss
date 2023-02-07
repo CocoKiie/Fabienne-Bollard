@@ -178,11 +178,16 @@ main section.acc_section1 {
 
     video+div {
         padding: 0 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         div>i {
             background-image: url("../img/arrow.png");
             display: inline-block;
             background-size: contain;
+            background-repeat: no-repeat;
             width: 48.03px;
             height: 53.76px;
 
@@ -200,6 +205,10 @@ main section.acc_section1 {
 
             strong {
                 font-size: 28px;
+            }
+
+            br {
+                display: none;
             }
         }
 

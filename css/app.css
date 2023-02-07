@@ -248,11 +248,16 @@ main section.acc_section1 video {
 }
 main section.acc_section1 video + div {
   padding: 0 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 main section.acc_section1 video + div div > i {
   background-image: url("../img/arrow.png");
   display: inline-block;
   background-size: contain;
+  background-repeat: no-repeat;
   width: 48.03px;
   height: 53.76px;
   transform: rotate(-7.86deg);
@@ -267,6 +272,9 @@ main section.acc_section1 video + div div > p {
 }
 main section.acc_section1 video + div div > p strong {
   font-size: 28px;
+}
+main section.acc_section1 video + div div > p br {
+  display: none;
 }
 main section.acc_section1 video + div div {
   display: flex;
@@ -2024,6 +2032,35 @@ HEADER
     margin: 20px auto 70px auto;
   }
 }
+@media screen and (max-width: 700px) {
+  nav {
+    height: 60px;
+  }
+  header h1 {
+    width: 83vw;
+    font-size: 30px;
+  }
+  header > div h2 {
+    width: 83vw;
+    font-size: 30px;
+    line-height: 44px;
+  }
+  header > div h2 strong {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  header.accueil button {
+    margin-bottom: 30px;
+  }
+  div.cercle2 {
+    left: -34.3vw;
+    top: 65vh;
+  }
+  div.cercle3 {
+    left: 2vw;
+    top: 80vh;
+  }
+}
 /*----------------------------*\
 SECTION 1
 \-----------------------------*/
@@ -2031,8 +2068,11 @@ SECTION 1
   main section.acc_section1 h3 + div {
     margin-top: 60px;
   }
+  main section.acc_section1 video {
+    width: clamp(300px, 83vw, 800px);
+  }
   main section.acc_section1 video + div {
-    margin-top: 5%;
+    margin-top: 75px;
   }
   main section.acc_section1 video + div button {
     margin: 30px auto 0 auto;
@@ -2059,12 +2099,62 @@ SECTION 1
     top: 780px;
   }
 }
+@media screen and (max-width: 590px) {
+  main section.acc_section1 video + div {
+    margin-top: 90px;
+  }
+  main section.acc_section1 video + div div > p {
+    width: clamp(275px, 100%, 488px);
+  }
+  main section.acc_section1 video + div div > p strong {
+    padding-bottom: 22px;
+    display: inline-block;
+  }
+  main section.acc_section1 video + div div > p br {
+    display: block;
+  }
+  main section.acc_section1 video + div div + p {
+    width: 250px;
+    display: inline-block;
+  }
+  main section.acc_section1 video + div button {
+    margin: 50px auto 0 auto;
+  }
+  main section.acc_section1 div.caroussel {
+    border-radius: 100px;
+    margin-top: 90px;
+  }
+  main section.acc_section1 div.caroussel h4 {
+    width: 250px;
+  }
+  main section.acc_section1 div.caroussel .carousel-cell {
+    padding: 30px 50px 90px 50px;
+  }
+  main section.acc_section1 div.caroussel .carousel-cell div {
+    flex-direction: column;
+    gap: 15px;
+  }
+  main section.acc_section1 div.caroussel .carousel-cell div p {
+    height: auto;
+    width: 280px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  main section.acc_section1 > div:last-child {
+    top: 877px;
+    left: 7px;
+  }
+}
 /*----------------------------*\
 SECTION 3
 \-----------------------------*/
 @media screen and (max-width: 1471.5px) {
   section.acc_section3 > div article:last-child {
     margin-top: 100px;
+  }
+  section.acc_section3 > div article:last-child span {
+    top: 92%;
+    right: -150px;
   }
 }
 @media screen and (max-width: 986px) {
@@ -2090,6 +2180,12 @@ FOOTER
   }
   footer > div > div > ul {
     align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer > div > div img {
+    width: 364px;
+    height: fit-content;
   }
 }
 
