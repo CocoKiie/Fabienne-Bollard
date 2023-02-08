@@ -208,7 +208,7 @@ HEADER
 
         >div h2 {
             width: 83vw;
-            font-size: 30px;
+            font-size: 28px;
             line-height: 44px;
 
             strong {
@@ -309,6 +309,8 @@ SECTION 1
 
 @media screen and (max-width:590px) {
     main section.acc_section1 {
+        padding-bottom: 75px;
+
         video+div {
             margin-top: 60px;
 
@@ -347,7 +349,7 @@ SECTION 1
             margin-top: 90px;
 
             .carousel-cell {
-                padding: 30px 50px 90px 50px;
+                padding: 30px 20px 90px 20px;
 
                 h4 {
                     width: 250px;
@@ -471,7 +473,7 @@ SECTION 3
                 img{
                     width: 100%;
                 }
-                
+
                 div {
                     >h4 {
                         text-align: center;
