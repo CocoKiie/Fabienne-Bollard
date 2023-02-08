@@ -329,7 +329,7 @@ SECTION 1
                     margin-bottom: 10px;
                     font-weight: 600;
 
-                    abbr{
+                    abbr {
                         font-weight: 600;
                     }
                 }
@@ -470,7 +470,7 @@ SECTION 3
     section.acc_section3 {
         >div {
             article {
-                img{
+                img {
                     width: 100%;
                 }
 
@@ -483,11 +483,12 @@ SECTION 3
 
                     >p {
                         font-size: 14px;
-                        width: 325px;
+                        width: 295px;
                     }
 
                     >ul {
-                        width: 325px;
+                        width: 295px;
+
                         >li {
                             font-size: 14px;
                             line-height: 23px;
@@ -496,10 +497,10 @@ SECTION 3
                 }
             }
         }
-    }
-
-    >button{
-        width: 295px;
+        
+        button {
+            width: 80%;
+        }
     }
 }
 

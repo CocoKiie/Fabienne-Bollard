@@ -605,7 +605,7 @@ section.acc_section3 > div article div > h4 {
   margin: 25px auto 0 auto;
 }
 section.acc_section3 > div article div > p {
-  width: 390px;
+  width: 90px;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
@@ -2362,17 +2362,17 @@ SECTION 3
   }
   section.acc_section3 > div article div > p {
     font-size: 14px;
-    width: 325px;
+    width: 295px;
   }
   section.acc_section3 > div article div > ul {
-    width: 325px;
+    width: 295px;
   }
   section.acc_section3 > div article div > ul > li {
     font-size: 14px;
     line-height: 23px;
   }
-  > button {
-    width: 295px;
+  section.acc_section3 button {
+    width: 80%;
   }
 }
 /*----------------------------*\
