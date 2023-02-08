@@ -244,8 +244,18 @@ HEADER
         }
     }
 
-    header >div h2 {
+    header>div h2 {
         width: 90vw;
+    }
+
+    div.cercle2 {
+        left: -45vw;
+        top: 55vh;
+    }
+
+    div.cercle3 {
+        left: -8vw;
+        top: 68vh;
     }
 }
 
@@ -254,10 +264,6 @@ SECTION 1
 \-----------------------------*/
 @media screen and (max-width:1519px) {
     main section.acc_section1 {
-        h3+div {
-            margin-top: 60px;
-        }
-
         video {
             width: clamp(300px, 83vw, 800px);
         }
@@ -306,6 +312,10 @@ SECTION 1
         video+div {
             margin-top: 60px;
 
+            div>i {
+                left: 10px;
+            }
+
             div>p {
                 width: clamp(275px, 100%, 488px);
                 font-size: 14px;
@@ -314,6 +324,12 @@ SECTION 1
                 strong {
                     display: inline-block;
                     font-size: 17px;
+                    margin-bottom: 10px;
+                    font-weight: 600;
+
+                    abbr{
+                        font-weight: 600;
+                    }
                 }
 
                 br {
@@ -361,6 +377,46 @@ SECTION 1
 
     button {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width:495px) {
+    main section.acc_section1 {
+        video+div {
+            div>i {
+                left: -15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:440px) {
+    main section.acc_section1 {
+        video+div {
+            div>i {
+                left: -30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    main section.acc_section1 {
+        video+div {
+            div>i {
+                left: -40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:383px) {
+    main section.acc_section1 {
+        video+div {
+            div>i {
+                left: 0px;
+            }
+        }
     }
 }
 
@@ -420,9 +476,11 @@ SECTION 3
 
                     >p {
                         font-size: 14px;
+                        width: 325px;
                     }
 
                     >ul {
+                        width: 325px;
                         >li {
                             font-size: 14px;
                             line-height: 23px;

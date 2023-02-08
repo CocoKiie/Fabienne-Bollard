@@ -253,11 +253,16 @@ main section.acc_section1 video + div {
   align-items: center;
   justify-content: center;
 }
+main section.acc_section1 video + div > div {
+  position: relative;
+}
 main section.acc_section1 video + div div > i {
   background-image: url("../img/arrow.png");
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat;
+  position: absolute;
+  left: -45px;
   width: 48.03px;
   height: 53.76px;
   transform: rotate(-7.86deg);
@@ -2083,14 +2088,19 @@ HEADER
   header > div h2 {
     width: 90vw;
   }
+  div.cercle2 {
+    left: -45vw;
+    top: 55vh;
+  }
+  div.cercle3 {
+    left: -8vw;
+    top: 68vh;
+  }
 }
 /*----------------------------*\
 SECTION 1
 \-----------------------------*/
 @media screen and (max-width: 1519px) {
-  main section.acc_section1 h3 + div {
-    margin-top: 60px;
-  }
   main section.acc_section1 video {
     width: clamp(300px, 83vw, 800px);
   }
@@ -2126,6 +2136,9 @@ SECTION 1
   main section.acc_section1 video + div {
     margin-top: 60px;
   }
+  main section.acc_section1 video + div div > i {
+    left: 10px;
+  }
   main section.acc_section1 video + div div > p {
     width: clamp(275px, 100%, 488px);
     font-size: 14px;
@@ -2134,6 +2147,11 @@ SECTION 1
   main section.acc_section1 video + div div > p strong {
     display: inline-block;
     font-size: 17px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  main section.acc_section1 video + div div > p strong abbr {
+    font-weight: 600;
   }
   main section.acc_section1 video + div div > p br {
     display: block;
@@ -2171,6 +2189,26 @@ SECTION 1
     font-size: 14px;
   }
 }
+@media screen and (max-width: 495px) {
+  main section.acc_section1 video + div div > i {
+    left: -15px;
+  }
+}
+@media screen and (max-width: 440px) {
+  main section.acc_section1 video + div div > i {
+    left: -30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main section.acc_section1 video + div div > i {
+    left: -40px;
+  }
+}
+@media screen and (max-width: 383px) {
+  main section.acc_section1 video + div div > i {
+    left: 0px;
+  }
+}
 /*----------------------------*\
 SECTION 2
 \-----------------------------*/
@@ -2204,6 +2242,10 @@ SECTION 3
   }
   section.acc_section3 > div article div > p {
     font-size: 14px;
+    width: 325px;
+  }
+  section.acc_section3 > div article div > ul {
+    width: 325px;
   }
   section.acc_section3 > div article div > ul > li {
     font-size: 14px;
