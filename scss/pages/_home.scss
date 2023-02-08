@@ -118,6 +118,7 @@ header {
         width: 17px;
         animation: downArrow 0.7s ease-out infinite alternate;
         margin-top: 3px;
+        padding-bottom: 100px;
     }
 
     //OU//
@@ -127,6 +128,7 @@ header {
         width: 17px;
         animation: downArrow 0.7s ease-out infinite alternate;
         margin-top: 3px;
+        padding-bottom: 150px;
     }
 
     @keyframes downArrow {
@@ -169,7 +171,6 @@ header.accueil {
 SECTION1
 \********************/
 main section.acc_section1 {
-    margin-top: 100px;
 
     video {
         width: 664px;
