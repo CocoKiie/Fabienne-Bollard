@@ -175,17 +175,35 @@ HEADER
             margin: 20px auto 70px auto;
         }
     }
+
+    div.cercle2 {
+        left: -10vw;
+        top: 65vh;
+    }
+
+    div.cercle3 {
+        left: 2vw;
+        top: 80vh;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    div.cercle2 {
+        left: -15vw;
+        top: 65vh;
+    }
+
+    div.cercle3 {
+        left: 2vw;
+        top: 80vh;
+    }
 }
 
 @media screen and (max-width:700px) {
-    nav{
-        height: 60px;
-    }
-    
     header {
         h1 {
             width: 83vw;
-            font-size: 30px;
+            font-size: 14px;
         }
 
         >div h2 {
@@ -198,20 +216,36 @@ HEADER
                 line-height: 44px;
             }
         }
+
+        div+p {
+            display: none;
+        }
     }
 
-    header.accueil button{
+    header.accueil button {
         margin-bottom: 30px;
     }
 
     div.cercle2 {
-        left: -34.3vw;
+        left: -28vw;
         top: 65vh;
     }
 
     div.cercle3 {
         left: 2vw;
         top: 80vh;
+    }
+}
+
+@media screen and (max-width:590px) {
+    main section {
+        h3 {
+            font-size: 30px;
+        }
+    }
+
+    header >div h2 {
+        width: 90vw;
     }
 }
 
@@ -241,7 +275,7 @@ SECTION 1
         }
 
         >div:last-child {
-            top: 833px;
+            top: 930px;
         }
     }
 }
@@ -262,7 +296,7 @@ SECTION 1
         }
 
         >div:last-child {
-            top: 780px;
+            top: 885px;
         }
     }
 }
@@ -270,24 +304,21 @@ SECTION 1
 @media screen and (max-width:590px) {
     main section.acc_section1 {
         video+div {
-            margin-top: 90px;
+            margin-top: 60px;
 
             div>p {
                 width: clamp(275px, 100%, 488px);
+                font-size: 14px;
+                line-height: 24px;
 
                 strong {
-                    padding-bottom: 22px;
                     display: inline-block;
+                    font-size: 17px;
                 }
 
                 br {
                     display: block;
                 }
-            }
-
-            div+p {
-                width: 250px;
-                display: inline-block;
             }
 
             button {
@@ -299,12 +330,14 @@ SECTION 1
             border-radius: 100px;
             margin-top: 90px;
 
-            h4 {
-                width: 250px;
-            }
-
             .carousel-cell {
                 padding: 30px 50px 90px 50px;
+
+                h4 {
+                    width: 250px;
+                    line-height: 24px;
+                    font-size: 17px;
+                }
 
                 div {
                     flex-direction: column;
@@ -312,7 +345,7 @@ SECTION 1
 
                     p {
                         height: auto;
-                        width: 280px;
+                        width: 255px;
                         font-size: 14px;
                         line-height: 24px;
                     }
@@ -323,6 +356,26 @@ SECTION 1
         >div:last-child {
             top: 877px;
             left: 7px;
+        }
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+/*----------------------------*\
+SECTION 2
+\-----------------------------*/
+@media screen and (max-width:590px) {
+    section.acc_section2 {
+        div {
+            article {
+                p {
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
@@ -350,6 +403,32 @@ SECTION 3
         >div {
             article:not(article:first-child) {
                 margin-top: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:590px) {
+    section.acc_section3 {
+        >div {
+            article {
+                div {
+                    >h4 {
+                        text-align: center;
+                        font-size: 17px;
+                    }
+
+                    >p {
+                        font-size: 14px;
+                    }
+
+                    >ul {
+                        >li {
+                            font-size: 14px;
+                            line-height: 23px;
+                        }
+                    }
+                }
             }
         }
     }

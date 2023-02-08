@@ -196,7 +196,6 @@ main section.acc_section1 {
 
         div>p {
             width: 488px;
-            font-weight: 500;
             font-size: 16px;
             line-height: 28px;
 
@@ -280,7 +279,6 @@ main section.acc_section1 {
                 width: 450px;
                 height: 160px;
 
-                font-weight: 500;
                 font-size: 16px;
                 line-height: 32px;
 
@@ -454,9 +452,7 @@ section.acc_section3 {
             div {
                 >h4 {
                     width: 317px;
-                    height: 29px;
-
-                    font-weight: 400;
+                    font-weight: 500;
                     font-size: 24px;
                     line-height: 29px;
                     margin: 25px auto 0 auto;
@@ -484,7 +480,7 @@ section.acc_section3 {
                         line-height: 25px;
 
                         strong {
-                            font-weight: 600;
+                            font-weight: 500;
                         }
                     }
                 }

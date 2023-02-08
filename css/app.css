@@ -52,7 +52,7 @@ nav.navigation div ul {
   flex-direction: row;
   padding: 0;
   margin: 0;
-  gap: 35px;
+  gap: 30px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
@@ -264,7 +264,6 @@ main section.acc_section1 video + div div > i {
 }
 main section.acc_section1 video + div div > p {
   width: 488px;
-  font-weight: 500;
   font-size: 16px;
   line-height: 28px;
   text-align: center;
@@ -333,7 +332,6 @@ main section.acc_section1 div.caroussel .carousel-cell h4 {
 main section.acc_section1 div.caroussel .carousel-cell div > p {
   width: 450px;
   height: 160px;
-  font-weight: 500;
   font-size: 16px;
   line-height: 32px;
   letter-spacing: 0.03em;
@@ -482,8 +480,7 @@ section.acc_section3 > div article img {
 }
 section.acc_section3 > div article div > h4 {
   width: 317px;
-  height: 29px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 24px;
   line-height: 29px;
   margin: 25px auto 0 auto;
@@ -508,7 +505,7 @@ section.acc_section3 > div article div > ul > li {
   line-height: 25px;
 }
 section.acc_section3 > div article div > ul > li strong {
-  font-weight: 600;
+  font-weight: 500;
 }
 section.acc_section3 > div article span {
   position: absolute;
@@ -2031,14 +2028,29 @@ HEADER
   header.accueil button {
     margin: 20px auto 70px auto;
   }
+  div.cercle2 {
+    left: -10vw;
+    top: 65vh;
+  }
+  div.cercle3 {
+    left: 2vw;
+    top: 80vh;
+  }
+}
+@media screen and (max-width: 1250px) {
+  div.cercle2 {
+    left: -15vw;
+    top: 65vh;
+  }
+  div.cercle3 {
+    left: 2vw;
+    top: 80vh;
+  }
 }
 @media screen and (max-width: 700px) {
-  nav {
-    height: 60px;
-  }
   header h1 {
     width: 83vw;
-    font-size: 30px;
+    font-size: 14px;
   }
   header > div h2 {
     width: 83vw;
@@ -2049,16 +2061,27 @@ HEADER
     font-size: 36px;
     line-height: 44px;
   }
+  header div + p {
+    display: none;
+  }
   header.accueil button {
     margin-bottom: 30px;
   }
   div.cercle2 {
-    left: -34.3vw;
+    left: -28vw;
     top: 65vh;
   }
   div.cercle3 {
     left: 2vw;
     top: 80vh;
+  }
+}
+@media screen and (max-width: 590px) {
+  main section h3 {
+    font-size: 30px;
+  }
+  header > div h2 {
+    width: 90vw;
   }
 }
 /*----------------------------*\
@@ -2081,7 +2104,7 @@ SECTION 1
     margin: 100px auto 0 auto;
   }
   main section.acc_section1 > div:last-child {
-    top: 833px;
+    top: 930px;
   }
 }
 @media screen and (max-width: 881px) {
@@ -2096,26 +2119,24 @@ SECTION 1
     gap: 15px;
   }
   main section.acc_section1 > div:last-child {
-    top: 780px;
+    top: 885px;
   }
 }
 @media screen and (max-width: 590px) {
   main section.acc_section1 video + div {
-    margin-top: 90px;
+    margin-top: 60px;
   }
   main section.acc_section1 video + div div > p {
     width: clamp(275px, 100%, 488px);
+    font-size: 14px;
+    line-height: 24px;
   }
   main section.acc_section1 video + div div > p strong {
-    padding-bottom: 22px;
     display: inline-block;
+    font-size: 17px;
   }
   main section.acc_section1 video + div div > p br {
     display: block;
-  }
-  main section.acc_section1 video + div div + p {
-    width: 250px;
-    display: inline-block;
   }
   main section.acc_section1 video + div button {
     margin: 50px auto 0 auto;
@@ -2124,11 +2145,13 @@ SECTION 1
     border-radius: 100px;
     margin-top: 90px;
   }
-  main section.acc_section1 div.caroussel h4 {
-    width: 250px;
-  }
   main section.acc_section1 div.caroussel .carousel-cell {
     padding: 30px 50px 90px 50px;
+  }
+  main section.acc_section1 div.caroussel .carousel-cell h4 {
+    width: 250px;
+    line-height: 24px;
+    font-size: 17px;
   }
   main section.acc_section1 div.caroussel .carousel-cell div {
     flex-direction: column;
@@ -2136,13 +2159,25 @@ SECTION 1
   }
   main section.acc_section1 div.caroussel .carousel-cell div p {
     height: auto;
-    width: 280px;
+    width: 255px;
     font-size: 14px;
     line-height: 24px;
   }
   main section.acc_section1 > div:last-child {
     top: 877px;
     left: 7px;
+  }
+  button {
+    font-size: 14px;
+  }
+}
+/*----------------------------*\
+SECTION 2
+\-----------------------------*/
+@media screen and (max-width: 590px) {
+  section.acc_section2 div article p {
+    font-weight: 500;
+    font-size: 14px;
   }
 }
 /*----------------------------*\
@@ -2160,6 +2195,19 @@ SECTION 3
 @media screen and (max-width: 986px) {
   section.acc_section3 > div article:not(article:first-child) {
     margin-top: 100px;
+  }
+}
+@media screen and (max-width: 590px) {
+  section.acc_section3 > div article div > h4 {
+    text-align: center;
+    font-size: 17px;
+  }
+  section.acc_section3 > div article div > p {
+    font-size: 14px;
+  }
+  section.acc_section3 > div article div > ul > li {
+    font-size: 14px;
+    line-height: 23px;
   }
 }
 /*----------------------------*\
