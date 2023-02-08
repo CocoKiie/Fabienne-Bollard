@@ -41,7 +41,11 @@
 
 <body>
     <nav class="navigation" role="navigation">
-    <a href="/" title="Retour sur la page d'accueil"><img src="<?php echo ($logo["sizes"]["medium_large"]); ?>" 
+    <input type="checkbox" id="menuToggle">
+        <label class="menu-btn" for="menuToggle">
+            <div class="menu"><img src="image.jpg" alt="" class="icon"> MENU</div>
+        </label>
+    <a class="first-link" href="/" title="Retour sur la page d'accueil"><img src="<?php echo ($logo["sizes"]["medium_large"]); ?>" 
     height="<?php echo($logo["sizes"]["medium_large-height"])?>" 
     width="<?php echo($logo["sizes"]["medium_large-width"])?>"
     alt="<?php echo($logo["alt"])?>"></a>

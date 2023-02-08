@@ -10,9 +10,23 @@
         text-decoration: none;
     }
 
+    html,
     body {
         overflow-x: hidden;
-        width: 100%;
+        -webkit-overflow-scrolling: touch;
+        width: 100vw;
+        height: fit-content;
+        position: relative;
+    }
+
+    header,
+    article,
+    section {
+        overflow: hidden;
+    }
+
+    html {
+        position: fixed;
     }
 
     img {
@@ -31,13 +45,20 @@ nav.navigation {
     background-color: #ffffff;
     box-shadow: 0px 4px 10px -5px rgba(0, 0, 0, 0.15);
     z-index: 100;
+    height: 100px;
     position: sticky;
     top: 0;
     width: 100%;
 
+
+    input,
+    div.menu {
+        display: none;
+    }
+
     div {
         top: 0;
-        height: 100px;
+        height: 100%;
         display: flex;
         justify-content: center;
         justify-content: flex-end;
@@ -81,6 +102,10 @@ nav.navigation {
             text-decoration: underline;
         }
 
+        img.icon {
+            display: none;
+        }
+
         >ul>li>ul {
             display: none;
             position: absolute;
@@ -105,6 +130,111 @@ nav.navigation {
 
         >ul>li:hover>ul {
             display: block;
+        }
+    }
+}
+
+@media screen and (max-width:1125px) {
+    nav.navigation {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        width: 95%;
+        padding: 0 10px;
+        margin: 0 auto;
+
+        >div>ul {
+            flex-direction: column;
+            width: 100%;
+            padding: 10px 0;
+            gap: 10px;
+        }
+
+        >div>ul li a {
+            padding: 10px 0;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .menu-menu-principale-container {
+            display: none;
+            position: fixed;
+            top: 80px;
+            right: 2.5%;
+            width: 220px;
+            height: 330px;
+            gap: 0;
+            background: white;
+            border: solid 2px #4A423F;
+            border-radius: 5px;
+            z-index: 100px;
+        }
+
+        >div>ul>li>ul {
+            bottom: 35px;
+            left: -140px;
+        }
+
+        .menu-btn {
+            position: relative;
+            display: inline-block;
+            padding: 3px 6px;
+            cursor: pointer;
+        }
+
+        .menu-btn div.menu {
+            border: solid 2px #4A423F;
+            border-radius: 20px;
+            padding: 4px 10px;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1CACE1;
+        }
+
+        img.icon {
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+        }
+
+        #menuToggle:checked~.menu-menu-principale-container,
+        img.icon {
+            display: flex;
+            animation: menu-slide-left 0.3s ease;
+        }
+
+        #menuToggle:checked~.icon {
+            display: contents;
+        }
+
+        @keyframes menu-slide-left {
+            0% {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(0%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    nav.navigation {
+        justify-content: space-around;
+        flex-direction: row-reverse;
+
+        a.first-link {
+            right: 0;
+            font-size: 16px;
+
+            img {
+                width: 250px;
+                height: fit-content;
+            }
         }
     }
 }

@@ -468,11 +468,16 @@ SECTION 3
     section.acc_section3 {
         >div {
             article {
+                img{
+                    width: 100%;
+                }
+                
                 div {
                     >h4 {
                         text-align: center;
                         font-size: 17px;
                     }
+
 
                     >p {
                         font-size: 14px;
@@ -489,6 +494,10 @@ SECTION 3
                 }
             }
         }
+    }
+
+    >button{
+        width: 295px;
     }
 }
 
