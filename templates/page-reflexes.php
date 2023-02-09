@@ -77,9 +77,6 @@ $image_3 = get_field("image_section3");
     <section class="rfx_section4">
         <h3><?php the_field("title_section4"); ?></h3>
         <div><?php the_field("paragraphe_section4"); ?></div>
-
-        <!--cercle-->
-        <div class="cercle"></div>
     </section>
     <aside class="rfx_aside">
         <p><?php the_field("cta"); ?></p>

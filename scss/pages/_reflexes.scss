@@ -3,7 +3,7 @@ SECTION1
 \********************/
 section.rfx_section1 {
     margin-top: 50px;
-    
+
     >div:nth-child(2) {
         display: flex;
         align-items: center;
@@ -20,11 +20,11 @@ section.rfx_section1 {
             padding: 35px 0;
 
             p {
-                font-weight: 400;
                 font-size: 16px;
                 line-height: 30px;
                 width: 69%;
                 text-align: center;
+                letter-spacing: 0.02em;
             }
         }
     }
@@ -32,11 +32,14 @@ section.rfx_section1 {
     >div:nth-child(3) {
         display: flex;
         flex-direction: row;
+        padding-bottom: 20px;
 
         >div {
             display: inline-flex;
             flex-direction: row;
             align-items: center;
+            justify-content: center;
+            flex-wrap: wrap-reverse;
             margin-top: 50px;
             gap: 90px;
             background-color: white;
@@ -54,6 +57,7 @@ section.rfx_section1 {
 
     ol {
         display: flex;
+        padding: 15px;
         flex-direction: column;
         gap: 30px;
     }
@@ -79,6 +83,7 @@ section.rfx_section1 {
         background-image: url("../img/hilight.png");
         background-repeat: no-repeat;
         background-size: cover;
+        z-index: -1;
         background-position: center;
     }
 }
@@ -87,16 +92,17 @@ section.rfx_section1 {
 SECTION2-3
 \********************/
 section.rfx_section {
-    margin-top: 150px;
+    margin-top: 40px;
 
     >div {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 120px;
+        gap: clamp(15px, 100%, 6%);
         justify-content: space-evenly;
         flex-wrap: wrap;
         margin-top: 50px;
+        width: 85%;
 
         img {
             max-width: 650px;
@@ -109,10 +115,9 @@ section.rfx_section {
             gap: 10px;
 
             p {
-                font-weight: 400;
                 font-size: 16px;
                 line-height: 30px;
-                width: 550px;
+                width: 440px;
 
                 strong {
                     font-weight: 600;
@@ -122,7 +127,6 @@ section.rfx_section {
                     text-decoration: underline;
                 }
             }
-
         }
     }
 }
@@ -131,6 +135,7 @@ section.rfx_section {
 SECTION2
 \********************/
 section.rfx_section2 {
+    padding-bottom: 114px;
 
     >div:nth-child(3) {
         position: absolute;
@@ -158,6 +163,11 @@ section.rfx_section2 {
 SECTION3
 \********************/
 section.rfx_section3 {
+    padding-bottom: 144px;
+
+    >div {
+        flex-wrap: wrap-reverse;
+    }
 
     >div:nth-child(3) {
         position: absolute;
@@ -173,8 +183,8 @@ section.rfx_section3 {
         position: absolute;
         width: 191px;
         height: 191px;
-        right: 130px;
-        top: 347px;
+        right: 207px;
+        top: 330px;
         z-index: -1;
         border-radius: 50%;
         border: 1px solid #1CACE1;
@@ -185,9 +195,9 @@ section.rfx_section3 {
 SECTION4
 \********************/
 section.rfx_section4 {
-    margin-top: 150px;
+    margin-top: 20px;
 
-    h3{
+    h3 {
         text-align: center;
     }
 
@@ -199,7 +209,6 @@ section.rfx_section4 {
         margin-top: 30px;
 
         p {
-            font-weight: 400;
             font-size: 16px;
             line-height: 30px;
             text-align: center;
@@ -213,17 +222,6 @@ section.rfx_section4 {
                 text-decoration: underline;
             }
         }
-    }
-
-    >div.cercle {
-        position: absolute;
-        width: 243px;
-        height: 243px;
-        left: 130px;
-        top: 496px;
-        border-radius: 50%;
-        background: rgba(28, 172, 225, 0.25);
-        z-index: -1;
     }
 }
 
@@ -242,7 +240,6 @@ aside.rfx_aside {
     width: 85%;
 
     p {
-        font-weight: 400;
         font-size: 17px;
         line-height: 21px;
     }

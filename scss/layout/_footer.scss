@@ -172,12 +172,12 @@ HEADER
 
     div.cercle2 {
         left: -10vw;
-        top: 35vh;
+        top: 30vh;
     }
 
     div.cercle3 {
         left: 1vw;
-        top: 48vh;
+        top: 40vh;
     }
 }
 
@@ -228,20 +228,8 @@ HEADER
     }
 }
 
-@media screen and (max-width:1280px) {
-    div.cercle2 {
-        left: -10vw;
-        top: 30vh;
-    }
-
-    div.cercle3 {
-        left: 2vw;
-        top: 40vh;
-    }
-}
-
 @media screen and (max-width:810px) {
-    header{
+    header {
         >div {
             margin-top: 5vh;
         }
@@ -278,7 +266,7 @@ HEADER
 
     div.cercle3 {
         left: 1vw;
-        top: 80vh;
+        top: 70vh;
     }
 }
 
@@ -310,25 +298,13 @@ HEADER
     }
 
     div.cercle2 {
-        left: -28vw;
-        top: 65vh;
+        left: -15vw;
+        top: 47vh;
     }
 
     div.cercle3 {
-        left: 2vw;
-        top: 80vh;
-    }
-}
-
-@media screen and (max-width:600px){
-    div.cercle2 {
-        left: -18vw;
-        top: 55vh;
-    }
-
-    div.cercle3 {
-        left: 1vw;
-        top: 75vh;
+        left: 6vw;
+        top: 60vh;
     }
 }
 
@@ -344,7 +320,7 @@ HEADER
     }
 }
 
-@media screen and (max-width:555px) {
+@media screen and (max-width:490px) {
     main section {
         h3 {
             font-size: 30px;
@@ -357,12 +333,12 @@ HEADER
 
     div.cercle2 {
         left: -30vw;
-        top: 55vh;
+        top: 50vh;
     }
 
     div.cercle3 {
         left: 1vw;
-        top: 70vh;
+        top: 60vh;
     }
 }
 
@@ -629,8 +605,396 @@ SECTION 3
 /*----------------------------*\
 HEADER
 \-----------------------------*/
-header:not(header.accueil) > img{
-    margin-top: 50px;
+header:not(header.accueil) {
+    >img {
+        margin-top: 50px;
+    }
+
+    div.cercle2 {
+        left: -5.3vw;
+        top: 41vh;
+    }
+
+    div.cercle3 {
+        left: 4vw;
+        top: 56vh;
+    }
+}
+
+@media screen and (max-width:1160px) {
+    header:not(header.accueil) {
+        div.cercle2 {
+            left: -5.3vw;
+            top: 41vh;
+        }
+
+        div.cercle3 {
+            left: 4vw;
+            top: 56vh;
+        }
+    }
+}
+
+@media screen and (max-width:1500px) {
+    header:not(header.accueil) {
+        div.cercle2 {
+            left: -8vw;
+            top: 27vh;
+        }
+
+        div.cercle3 {
+            left: 2vw;
+            top: 40vh;
+        }
+    }
+}
+
+@media screen and (max-width:1160px) {
+    header:not(header.accueil) {
+        div.cercle2 {
+            left: -4vw;
+            top: 42vh;
+        }
+
+        div.cercle3 {
+            left: 9vw;
+            top: 55vh;
+        }
+    }
+}
+
+@media screen and (max-width:1090px) {
+    header:not(header.accueil) {
+        div.cercle2 {
+            left: -8vw;
+            top: 42vh;
+        }
+
+        div.cercle3 {
+            left: 7vw;
+            top: 55vh;
+        }
+    }
+}
+
+@media screen and (max-width:950px) {
+    header:not(header.accueil) {
+        div.cercle2 {
+            left: -13vw;
+            top: 41vh;
+        }
+
+        div.cercle3 {
+            left: 4vw;
+            top: 54vh;
+        }
+    }
+}
+
+@media screen and (max-width:810px) {
+    header:not(header.accueil) {
+        div.cercle2 {
+            left: -18vw;
+            top: 42vh;
+        }
+
+        div.cercle3 {
+            left: 2vw;
+            top: 55vh;
+        }
+    }
+}
+
+@media screen and (max-width:750px) {
+    header:not(header.accueil) {
+        div.cercle2 {
+            left: -22vw;
+            top: 36vh;
+        }
+
+        div.cercle3 {
+            left: 2vw;
+            top: 47vh;
+        }
+    }
+}
+
+@media screen and (max-width:650px) {
+    header:not(header.accueil) {
+        div.cercle2 {
+            left: -19vw;
+            top: 42vh;
+        }
+
+        div.cercle3 {
+            left: 6vw;
+            top: 54vh;
+        }
+    }
+}
+
+@media screen and (max-width:590px) {
+    header:not(header.accueil) {
+        div.cercle2 {
+            left: -23vw;
+            top: 43vh;
+        }
+
+        div.cercle3 {
+            left: 6vw;
+            top: 54vh;
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+    header:not(header.accueil) {
+        div.cercle2 {
+            left: -24vw;
+            top: 39vh;
+        }
+
+        div.cercle3 {
+            left: 6vw;
+            top: 51vh;
+        }
+    }
+}
+
+@media screen and (max-width:490px) {
+    header:not(header.accueil) {
+        div.cercle2 {
+            left: -33vw;
+            top: 41vh;
+        }
+
+        div.cercle3 {
+            left: 1vw;
+            top: 51vh;
+        }
+    }
+}
+
+@media screen and (max-width:430px) {
+    header:not(header.accueil) {
+        div.cercle2 {
+            left: -37vw;
+            top: 40vh;
+        }
+
+        div.cercle3 {
+            left: 2vw;
+            top: 52vh;
+        }
+    }
+}
+
+@media screen and (max-width:415px) {
+    header:not(header.accueil) {
+        div.cercle2 {
+            left: -37vw;
+            top: 42vh;
+        }
+
+        div.cercle3 {
+            left: 2vw;
+            top: 55vh;
+        }
+    }
+}
+
+@media screen and (max-width:370px) {
+    header:not(header.accueil) {
+        div.cercle2 {
+            left: -44vw;
+            top: 46vh;
+        }
+
+        div.cercle3 {
+            left: 1vw;
+            top: 56vh;
+        }
+    }
+}
+
+/*----------------------------*\
+SECTION1
+\-----------------------------*/
+@media screen and (max-width:590px) {
+    section.rfx_section1 {
+        >div:nth-child(2) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            width: 100%;
+            background: rgba(28, 172, 225, 0.25);
+
+            >div {
+                gap: 20px;
+
+                p {
+                    font-size: 14px;
+                    line-height: 26px;
+                    width: 85%;
+                }
+            }
+        }
+
+        >div:nth-child(3) {
+            display: flex;
+            flex-direction: row;
+
+            >div {
+                gap: 50px;
+                border-radius: 80px;
+                padding: 29px;
+                width: 65%;
+                margin: 50px auto 50px auto;
+            }
+        }
+
+        img {
+            max-width: 250px;
+            max-height: 250px;
+        }
+
+        ol {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                font-size: 14px;
+            }
+        }
+
+        >div:nth-child(4) {
+            left: 350px;
+            top: 435px;
+        }
+
+        span {
+            right: 0px;
+            top: 740px;
+        }
+    }
+}
+
+
+/*----------------------------*\
+SECTION2-3
+\-----------------------------*/
+@media screen and (max-width:1234px) {
+    section.rfx_section {
+        margin-top: 50px;
+
+        >div {
+            gap: 15px;
+            margin-top: 20px;
+            width: 85%;
+
+            div p {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                max-width: none;
+            }
+        }
+    }
+
+    section.rfx_section3 {
+        margin-top: 100px;
+        padding-bottom: 100px;
+
+        >div:nth-child(3) {
+            right: -79px;
+            top: 259px;
+        }
+
+        >div:nth-child(4) {
+            right: -59px;
+            top: 135px;
+        }
+    }
+
+    section.rfx_section2 {
+        padding-bottom: 20px;
+
+        >div:nth-child(3) {
+            left: -108px;
+            top: 95px;
+        }
+
+        >div:nth-child(4) {
+            left: 23px;
+            top: 220px;
+        }
+    }
+}
+
+@media screen and (max-width:590px) {
+    section.rfx_section {
+        >div {
+            div {
+                p {
+                    font-size: 14px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------*\
+SECTION4
+\-----------------------------*/
+@media screen and (max-width:1150px) {
+    section.rfx_section4 {
+        margin-top: 100px;
+
+        >div {
+            margin-top: 20px;
+
+            p {
+                text-align: justify;
+                width: 85%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:590px) {
+    section.rfx_section4 {
+        >div {
+            p {
+                font-size: 14px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+/*----------------------------*\
+ASIDE
+\-----------------------------*/
+@media screen and (max-width:1150px) {
+    aside.rfx_aside p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:590px) {
+
+    aside.rfx_aside p,
+    aside.rfx_aside button {
+        font-size: 14px;
+    }
+
+    aside.rfx_aside {
+        margin-bottom: 80px;
+    }
 }
 
 
