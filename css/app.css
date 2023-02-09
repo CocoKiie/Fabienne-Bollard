@@ -17,7 +17,7 @@
   position: relative;
 }
 * header,
-* section {
+* section:not(section.cst) {
   overflow: hidden;
   width: 100%;
 }
@@ -2472,6 +2472,9 @@ SECTION 3
     width: 80%;
   }
 }
+/*----------------------------*\
+SECTION1
+\-----------------------------*/
 /*----------------------------*\
 FOOTER
 \-----------------------------*/

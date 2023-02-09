@@ -20,7 +20,7 @@
     }
 
     header,
-    section {
+    section:not(section.cst) {
         overflow: hidden;
         width: 100%;
     }
