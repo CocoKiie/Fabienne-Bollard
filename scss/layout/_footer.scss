@@ -150,6 +150,53 @@ HEADER
 
 @media screen and (max-width:1445px) {
     header {
+        >div {
+            margin-top: 10vh;
+        }
+
+        div>img {
+            width: 202px;
+            height: 310px;
+            margin-top: 0;
+        }
+
+        div>img:nth-of-type(2) {
+            width: 190px;
+            height: 320px;
+        }
+
+        >p {
+            margin-top: 60px;
+        }
+    }
+
+    div.cercle2 {
+        left: -10vw;
+        top: 35vh;
+    }
+
+    div.cercle3 {
+        left: 1vw;
+        top: 48vh;
+    }
+}
+
+@media screen and (max-width:1227px) {
+    header {
+        div>img {
+            width: 177px;
+            height: 281px;
+        }
+
+        div>img:nth-of-type(2) {
+            width: 167px;
+            height: 289px;
+        }
+    }
+}
+
+@media screen and (max-width:1170px) {
+    header {
         h1 {
             margin-top: 25px;
             text-align: center;
@@ -159,14 +206,18 @@ HEADER
             text-align: center;
         }
 
+        div+p {
+            display: none;
+        }
+
         div>img {
-            width: 160px;
-            height: 258px;
+            width: 177px;
+            height: 281px;
         }
 
         div>img:nth-of-type(2) {
-            width: 155px;
-            height: 238px;
+            width: 167px;
+            height: 289px;
         }
     }
 
@@ -175,26 +226,58 @@ HEADER
             margin: 20px auto 70px auto;
         }
     }
+}
 
+@media screen and (max-width:1280px) {
     div.cercle2 {
         left: -10vw;
-        top: 65vh;
+        top: 30vh;
     }
 
     div.cercle3 {
         left: 2vw;
-        top: 80vh;
+        top: 40vh;
     }
 }
 
-@media screen and (max-width:1250px) {
+@media screen and (max-width:810px) {
+    header{
+        >div {
+            margin-top: 5vh;
+        }
+    }
+
     div.cercle2 {
         left: -15vw;
-        top: 65vh;
+        top: 55vh;
     }
 
     div.cercle3 {
         left: 2vw;
+        top: 75vh;
+    }
+}
+
+@media screen and (max-width:800px) {
+    div.cercle2 {
+        left: -15vw;
+        top: 45vh;
+    }
+
+    div.cercle3 {
+        left: 2vw;
+        top: 55vh;
+    }
+}
+
+@media screen and (max-width:750px) {
+    div.cercle2 {
+        left: -20vw;
+        top: 60vh;
+    }
+
+    div.cercle3 {
+        left: 1vw;
         top: 80vh;
     }
 }
@@ -237,7 +320,31 @@ HEADER
     }
 }
 
+@media screen and (max-width:600px){
+    div.cercle2 {
+        left: -18vw;
+        top: 55vh;
+    }
+
+    div.cercle3 {
+        left: 1vw;
+        top: 75vh;
+    }
+}
+
 @media screen and (max-width:590px) {
+    main section {
+        h3 {
+            font-size: 30px;
+        }
+    }
+
+    header>div h2 {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width:555px) {
     main section {
         h3 {
             font-size: 30px;
@@ -249,13 +356,25 @@ HEADER
     }
 
     div.cercle2 {
-        left: -45vw;
+        left: -30vw;
         top: 55vh;
     }
 
     div.cercle3 {
-        left: -8vw;
-        top: 68vh;
+        left: 1vw;
+        top: 70vh;
+    }
+}
+
+@media screen and (max-width:420px) {
+    div.cercle2 {
+        left: -35vw;
+        top: 50vh;
+    }
+
+    div.cercle3 {
+        left: 1vw;
+        top: 62vh;
     }
 }
 
@@ -345,14 +464,14 @@ SECTION 1
         }
 
         div.caroussel {
-            border-radius: 100px;
+            border-radius: 60px;
             margin-top: 90px;
 
             .carousel-cell {
                 padding: 30px 20px 90px 20px;
 
                 h4 {
-                    width: 250px;
+                    width: 230px;
                     line-height: 24px;
                     font-size: 17px;
                 }
@@ -412,7 +531,7 @@ SECTION 1
     }
 }
 
-@media screen and (max-width:383px) {
+@media screen and (max-width:371px) {
     main section.acc_section1 {
         video+div {
             div>i {
@@ -470,6 +589,8 @@ SECTION 3
     section.acc_section3 {
         >div {
             article {
+                width: 100%;
+
                 img {
                     width: 100%;
                 }
@@ -497,7 +618,7 @@ SECTION 3
                 }
             }
         }
-        
+
         button {
             width: 80%;
         }

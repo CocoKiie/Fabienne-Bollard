@@ -46,7 +46,6 @@ main section {
         font-size: 16px;
         line-height: 25px;
         width: 85%;
-        position: relative;
 
         color: #1CACE1;
     }
@@ -85,6 +84,7 @@ header {
             line-height: 67px;
             margin: 0;
             z-index: 2;
+            position: relative;
 
             strong {
                 font-family: 'Handlee';
@@ -175,6 +175,7 @@ header.accueil {
 SECTION1
 \********************/
 main section.acc_section1 {
+    padding-bottom: 70px;
 
     video {
         width: 664px;
@@ -470,7 +471,7 @@ section.acc_section3 {
                 }
 
                 >p {
-                    width: 90px;
+                    width: 390px;
 
                     font-weight: 400;
                     font-size: 15px;
