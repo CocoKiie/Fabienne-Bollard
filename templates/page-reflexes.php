@@ -11,6 +11,7 @@ $image2 = get_field("image2");
 
 $image_1 = get_field("image_section1");
 $image_2 = get_field("image_section2");
+$file = get_field('pdf');
 $image_3 = get_field("image_section3");
 ?>
 
@@ -82,7 +83,7 @@ $image_3 = get_field("image_section3");
     </section>
     <aside class="rfx_aside">
         <p><?php the_field("cta"); ?></p>
-        <button aria-label="Télécharger le pdf" onclick="location.href='<?php the_field('pdf'); ?>"><i></i><?php the_field("cta_telechargement"); ?></button>
+        <button aria-label="Télécharger le pdf" onclick="window.open('<?php echo $file['url'] ?>', '_blank')"><i></i><?php the_field("cta_telechargement"); ?></button>
     </aside>
 </main>
 
