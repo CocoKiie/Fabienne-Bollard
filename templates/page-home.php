@@ -51,7 +51,6 @@ $title_slide_6 = get_field("title_slide_6");
 $txt_slide_6 = get_field("txt_slide_6");
 
 //motion design
-$file_webp = get_field('video_webp');
 $file_mp4 = get_field('video_mp4');
 ?>
 
