@@ -33,6 +33,7 @@ section.rfx_section1 {
         display: flex;
         flex-direction: row;
         padding-bottom: 20px;
+        width: 100%;
 
         >div {
             display: inline-flex;
@@ -40,7 +41,7 @@ section.rfx_section1 {
             align-items: center;
             justify-content: center;
             flex-wrap: wrap-reverse;
-            margin-top: 50px;
+            margin: 50px auto 0 auto;
             gap: 90px;
             background-color: white;
             box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.18);
@@ -71,20 +72,6 @@ section.rfx_section1 {
         border-radius: 50%;
         background: #F77E4B;
         z-index: -1;
-    }
-
-    span {
-        position: absolute;
-        right: 0px;
-        top: 740px;
-        width: 500px;
-        height: 50px;
-
-        background-image: url("../img/hilight.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: -1;
-        background-position: center;
     }
 }
 

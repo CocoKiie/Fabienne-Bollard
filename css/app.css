@@ -1698,6 +1698,7 @@ section.rfx_section1 > div:nth-child(3) {
   display: flex;
   flex-direction: row;
   padding-bottom: 20px;
+  width: 100%;
 }
 section.rfx_section1 > div:nth-child(3) > div {
   display: inline-flex;
@@ -1705,7 +1706,7 @@ section.rfx_section1 > div:nth-child(3) > div {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap-reverse;
-  margin-top: 50px;
+  margin: 50px auto 0 auto;
   gap: 90px;
   background-color: white;
   box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.18);
@@ -1732,18 +1733,6 @@ section.rfx_section1 > div:nth-child(4) {
   border-radius: 50%;
   background: #F77E4B;
   z-index: -1;
-}
-section.rfx_section1 span {
-  position: absolute;
-  right: 0px;
-  top: 740px;
-  width: 500px;
-  height: 50px;
-  background-image: url("../img/hilight.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-  background-position: center;
 }
 
 /********************\
@@ -2612,7 +2601,12 @@ header:not(header.accueil) div.cercle3 {
 /*----------------------------*\
 SECTION1
 \-----------------------------*/
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 950px) {
+  section.rfx_section1 > div:nth-child(3) > div {
+    padding: 29px 50px 29px 50px;
+  }
+}
+@media screen and (max-width: 800px) {
   section.rfx_section1 > div:nth-child(2) {
     display: flex;
     align-items: center;
@@ -2637,7 +2631,7 @@ SECTION1
     gap: 50px;
     border-radius: 80px;
     padding: 29px;
-    width: 65%;
+    width: 70%;
     margin: 50px auto 50px auto;
   }
   section.rfx_section1 img {

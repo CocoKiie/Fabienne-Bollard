@@ -48,9 +48,6 @@ $image_3 = get_field("image_section3");
 
         <!--cercle-->
         <div></div>
-
-        <!--soulignement-->
-        <span></span>
     </section>
     <section class="rfx_section2 rfx_section">
         <h3><?php the_field("title_section2"); ?></h3>

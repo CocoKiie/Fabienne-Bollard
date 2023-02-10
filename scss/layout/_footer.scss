@@ -820,7 +820,17 @@ header:not(header.accueil) {
 /*----------------------------*\
 SECTION1
 \-----------------------------*/
-@media screen and (max-width:590px) {
+@media screen and (max-width:950px){
+    section.rfx_section1 {
+        >div:nth-child(3) {
+            >div {
+                padding: 29px 50px 29px 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
     section.rfx_section1 {
         >div:nth-child(2) {
             display: flex;
@@ -849,7 +859,7 @@ SECTION1
                 gap: 50px;
                 border-radius: 80px;
                 padding: 29px;
-                width: 65%;
+                width: 70%;
                 margin: 50px auto 50px auto;
             }
         }
