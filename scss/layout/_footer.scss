@@ -1105,7 +1105,7 @@ SECTION1
             }
         }
 
-        button{
+        button {
             width: 60%;
         }
     }
@@ -1161,6 +1161,182 @@ SECTION2
 
         span {
             top: 92%;
+        }
+    }
+}
+
+//responsive contact
+/*----------------------------*\
+SECTION1
+\-----------------------------*/
+@media screen and (max-width:1000px) {
+    main section.cct_section1 {
+        gap: 50px;
+        margin-top: 50px;
+        padding: 70px 0;
+
+        >div:nth-of-type(1) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-width: 250px;
+                max-height: 250px;
+                margin-bottom: 20px;
+            }
+
+            >h3 {
+                font-size: 18px;
+                line-height: 28px;
+                width: 85%;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            >ul {
+                padding: 0px;
+                margin-top: 20px;
+                gap: 20px;
+                width: 302px;
+
+                li {
+                    align-items: center;
+                    gap: 10px;
+
+                    a {
+                        font-size: 14px;
+                    }
+
+                    i {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
+
+        >div:nth-of-type(2) {
+            width: 45%;
+
+            legend {
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            >div.wpforms-container-full {
+                border: 1px solid black;
+                margin: 25px auto 10px auto;
+
+                form {
+                    width: 100%;
+
+                    div.wpforms-field-container {
+                        flex-direction: column;
+
+                        div.wpforms-field {
+                            padding: 20px 10px;
+
+                            label {
+                                font-size: 14px;
+                                margin: 0;
+                            }
+
+                            input {
+                                width: clamp(250px, 100%, 600px);
+                                padding: 5px;
+                            }
+
+                            ::placeholder {
+                                font-size: 14px;
+                            }
+
+                            div.wpforms-field-description {
+                                font-size: 10px;
+                            }
+
+                            textarea {
+                                max-width: 603px;
+                            }
+                        }
+
+                        div.wpforms-field:nth-child(n+3) {
+                            width: clamp(250px, 100%, 600px);
+
+                            label {
+                                width: clamp(250px, 100%, 600px);
+                            }
+
+                            input {
+                                width: clamp(250px, 100%, 600px);
+                            }
+                        }
+
+                        div.wpforms-field[data-field-id="4"] {
+                            padding: 20px 10px;
+                        }
+                    }
+
+                    div.wpforms-submit-container {
+                        button {
+                            margin: 10px 0 25px 0;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:780px) {
+    main section.cct_section1 {
+        gap: 50px;
+        margin-top: 50px;
+        padding: 70px 0;
+
+        >div:nth-of-type(2){
+            padding: 0;
+        }
+
+        >div:nth-of-type(2) {
+            width: 85%;
+            padding: 0;
+        }
+    }
+}
+
+/*----------------------------*\
+SECTION2
+\-----------------------------*/
+@media screen and (max-width:590px) {
+    main section.cct_section2 {
+        >h3 {
+            font-size: 18px;
+            line-height: 30px;
+            margin: 5px 0 0 11%;
+            width: 85%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        >div {
+            align-items: flex-start;
+            justify-content: center;
+            gap: 70px;
+            margin-top: 15px;
+            width: 100%;
+
+            iframe {
+                width: 85%;
+                height: 241px;
+            }
+
+            ul {
+                padding: 0;
+                width: 500px;
+            }
         }
     }
 }

@@ -859,10 +859,12 @@ main section.cct_section1 > div:nth-of-type(1) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-left: 20px;
 }
 main section.cct_section1 > div:nth-of-type(1) img {
   max-width: 320px;
   max-height: 320px;
+  padding-top: 20px;
 }
 main section.cct_section1 > div:nth-of-type(1) > h3 {
   font-family: "Handlee";
@@ -892,6 +894,7 @@ main section.cct_section1 > div:nth-of-type(1) > ul li {
 }
 main section.cct_section1 > div:nth-of-type(1) > ul li a {
   font-weight: 400;
+  text-decoration: underline;
 }
 main section.cct_section1 > div:nth-of-type(1) > ul li i {
   display: inline-block;
@@ -911,6 +914,7 @@ main section.cct_section1 > div:nth-of-type(1) > ul li:nth-child(3) i {
 }
 main section.cct_section1 > div:nth-of-type(2) {
   width: 645px;
+  padding-right: 20px;
 }
 main section.cct_section1 > div:nth-of-type(2) legend {
   font-family: "Handlee";
@@ -970,6 +974,8 @@ main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form
 main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field textarea {
   resize: vertical;
   max-width: 603px;
+  border-radius: 2px;
+  border: 0;
 }
 main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field:nth-child(n+3) {
   width: 640px;
@@ -2848,6 +2854,146 @@ SECTION2
   }
   section.atl_section2 span {
     top: 92%;
+  }
+}
+/*----------------------------*\
+SECTION1
+\-----------------------------*/
+@media screen and (max-width: 1000px) {
+  main section.cct_section1 {
+    gap: 50px;
+    margin-top: 50px;
+    padding: 70px 0;
+  }
+  main section.cct_section1 > div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main section.cct_section1 > div:nth-of-type(1) img {
+    max-width: 250px;
+    max-height: 250px;
+    margin-bottom: 20px;
+  }
+  main section.cct_section1 > div:nth-of-type(1) > h3 {
+    font-size: 18px;
+    line-height: 28px;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  main section.cct_section1 > div:nth-of-type(1) > ul {
+    padding: 0px;
+    margin-top: 20px;
+    gap: 20px;
+    width: 302px;
+  }
+  main section.cct_section1 > div:nth-of-type(1) > ul li {
+    align-items: center;
+    gap: 10px;
+  }
+  main section.cct_section1 > div:nth-of-type(1) > ul li a {
+    font-size: 14px;
+  }
+  main section.cct_section1 > div:nth-of-type(1) > ul li i {
+    width: 16px;
+    height: 16px;
+  }
+  main section.cct_section1 > div:nth-of-type(2) {
+    width: 45%;
+  }
+  main section.cct_section1 > div:nth-of-type(2) legend {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full {
+    border: 1px solid black;
+    margin: 25px auto 10px auto;
+  }
+  main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form {
+    width: 100%;
+  }
+  main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container {
+    flex-direction: column;
+  }
+  main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field {
+    padding: 20px 10px;
+  }
+  main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field label {
+    font-size: 14px;
+    margin: 0;
+  }
+  main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field input {
+    width: clamp(250px, 100%, 600px);
+    padding: 5px;
+  }
+  main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field ::placeholder {
+    font-size: 14px;
+  }
+  main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field div.wpforms-field-description {
+    font-size: 10px;
+  }
+  main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field textarea {
+    max-width: 603px;
+  }
+  main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field:nth-child(n+3) {
+    width: clamp(250px, 100%, 600px);
+  }
+  main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field:nth-child(n+3) label {
+    width: clamp(250px, 100%, 600px);
+  }
+  main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field:nth-child(n+3) input {
+    width: clamp(250px, 100%, 600px);
+  }
+  main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-field-container div.wpforms-field[data-field-id="4"] {
+    padding: 20px 10px;
+  }
+  main section.cct_section1 > div:nth-of-type(2) > div.wpforms-container-full form div.wpforms-submit-container button {
+    margin: 10px 0 25px 0;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 780px) {
+  main section.cct_section1 {
+    gap: 50px;
+    margin-top: 50px;
+    padding: 70px 0;
+  }
+  main section.cct_section1 > div:nth-of-type(2) {
+    padding: 0;
+  }
+  main section.cct_section1 > div:nth-of-type(2) {
+    width: 85%;
+    padding: 0;
+  }
+}
+/*----------------------------*\
+SECTION2
+\-----------------------------*/
+@media screen and (max-width: 590px) {
+  main section.cct_section2 > h3 {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 5px 0 0 11%;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  main section.cct_section2 > div {
+    align-items: flex-start;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 15px;
+    width: 100%;
+  }
+  main section.cct_section2 > div iframe {
+    width: 85%;
+    height: 241px;
+  }
+  main section.cct_section2 > div ul {
+    padding: 0;
+    width: 500px;
   }
 }
 /*----------------------------*\

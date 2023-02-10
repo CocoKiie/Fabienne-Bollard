@@ -48,10 +48,12 @@ main section.cct_section1 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-left: 20px;
 
         img {
             max-width: 320px;
             max-height: 320px;
+            padding-top: 20px;
         }
 
         >h3 {
@@ -83,6 +85,7 @@ main section.cct_section1 {
 
                 a {
                     font-weight: 400;
+                    text-decoration: underline;
                 }
 
                 i {
@@ -110,6 +113,7 @@ main section.cct_section1 {
 
     >div:nth-of-type(2) {
         width: 645px;
+        padding-right: 20px;
 
         legend {
             font-family: 'Handlee';
@@ -176,6 +180,8 @@ main section.cct_section1 {
                         textarea {
                             resize: vertical;
                             max-width: 603px;
+                            border-radius: 2px;
+                            border: 0;
                         }
                     }
 
