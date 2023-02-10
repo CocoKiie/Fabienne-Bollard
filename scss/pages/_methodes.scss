@@ -3,6 +3,7 @@ SECTION
 \********************/
 section.mtd_section {
     margin-top: 50px;
+
     >div {
         display: flex;
         flex-direction: row;
@@ -63,6 +64,7 @@ SECTION 2
 \********************/
 section.mtd_section2 {
     margin-top: 100px;
+    padding-bottom: 20px;
 
     >div {
         flex-direction: row-reverse;
@@ -96,12 +98,13 @@ section.mtd_section2 {
 SECTION 3
 \********************/
 section.mtd_section3 {
-    margin: 100px 0 200px 0;
+    margin: 100px 0 20px 0;
+    padding-bottom: 120px;
 
     span {
         position: absolute;
         right: 0px;
-        top: 650px;
+        top: 90%;
         width: 500px;
         height: 50px;
 

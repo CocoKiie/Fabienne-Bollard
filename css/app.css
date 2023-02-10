@@ -113,7 +113,7 @@ nav.navigation div > ul > li:hover > ul {
   display: block;
 }
 
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 1150px) {
   nav.navigation {
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -1622,6 +1622,7 @@ SECTION 2
 \********************/
 section.mtd_section2 {
   margin-top: 100px;
+  padding-bottom: 20px;
 }
 section.mtd_section2 > div {
   flex-direction: row-reverse;
@@ -1652,12 +1653,13 @@ section.mtd_section2 > div.cercle2 {
 SECTION 3
 \********************/
 section.mtd_section3 {
-  margin: 100px 0 200px 0;
+  margin: 100px 0 20px 0;
+  padding-bottom: 120px;
 }
 section.mtd_section3 span {
   position: absolute;
   right: 0px;
-  top: 650px;
+  top: 90%;
   width: 500px;
   height: 50px;
   background-image: url("../img/hilight.png");
@@ -2251,12 +2253,6 @@ HEADER
   }
 }
 @media screen and (max-width: 490px) {
-  main section h3 {
-    font-size: 30px;
-  }
-  header > div h2 {
-    width: 90vw;
-  }
   div.cercle2 {
     left: -30vw;
     top: 50vh;
@@ -2739,6 +2735,43 @@ ASIDE
   }
   aside.rfx_aside {
     margin-bottom: 80px;
+  }
+}
+/*----------------------------*\
+SECTION
+\-----------------------------*/
+@media screen and (max-width: 1200px) {
+  section.mtd_section > div {
+    gap: 25px;
+    margin-top: 25px;
+  }
+  section.mtd_section > div img {
+    width: 90%;
+    max-height: 350px;
+  }
+  section.mtd_section > div > div {
+    gap: 30px;
+    width: 85%;
+  }
+  section.mtd_section > div > div div {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  section.mtd_section > div > div div p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 590px) {
+  section.mtd_section > div > div h4 {
+    font-size: 17px;
+  }
+  section.mtd_section > div > div div p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  section.mtd_section3 span {
+    right: -200px;
   }
 }
 /*----------------------------*\
