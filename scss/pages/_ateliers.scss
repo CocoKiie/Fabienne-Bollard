@@ -7,14 +7,13 @@ main section.atl_section1 {
     >div {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         align-items: center;
         justify-content: center;
         gap: 70px;
         padding: 50px 0;
 
         img {
-            border-radius: 2px;
             max-width: 700px;
             max-height: 500px;
         }
@@ -28,8 +27,8 @@ main section.atl_section1 {
             p {
                 width: 600px;
                 font-weight: 400;
-                font-size: 18px;
-                line-height: 33px;
+                font-size: 16px;
+                line-height: 30px;
                 letter-spacing: 0.02em;
 
                 strong {
@@ -85,7 +84,6 @@ section.atl_section2 {
         padding: 50px 0;
 
         img {
-            border-radius: 2px;
             max-width: 700px;
             max-height: 500px;
         }
@@ -99,8 +97,8 @@ section.atl_section2 {
             p {
                 width: 600px;
                 font-weight: 400;
-                font-size: 18px;
-                line-height: 33px;
+                font-size: 16px;
+                line-height: 30px;
                 letter-spacing: 0.02em;
 
                 strong {

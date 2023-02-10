@@ -17,7 +17,7 @@
   position: relative;
 }
 * header,
-* section:not(section.cst) {
+* section {
   overflow: hidden;
   width: 100%;
 }
@@ -113,7 +113,7 @@ nav.navigation div > ul > li:hover > ul {
   display: block;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1180px) {
   nav.navigation {
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -1460,14 +1460,13 @@ main section.atl_section1 {
 main section.atl_section1 > div {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   align-items: center;
   justify-content: center;
   gap: 70px;
   padding: 50px 0;
 }
 main section.atl_section1 > div img {
-  border-radius: 2px;
   max-width: 700px;
   max-height: 500px;
 }
@@ -1480,8 +1479,8 @@ main section.atl_section1 > div > div {
 main section.atl_section1 > div > div p {
   width: 600px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 33px;
+  font-size: 16px;
+  line-height: 30px;
   letter-spacing: 0.02em;
 }
 main section.atl_section1 > div > div p strong {
@@ -1528,7 +1527,6 @@ section.atl_section2 > div {
   padding: 50px 0;
 }
 section.atl_section2 > div img {
-  border-radius: 2px;
   max-width: 700px;
   max-height: 500px;
 }
@@ -1541,8 +1539,8 @@ section.atl_section2 > div > div {
 section.atl_section2 > div > div p {
   width: 600px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 33px;
+  font-size: 16px;
+  line-height: 30px;
   letter-spacing: 0.02em;
 }
 section.atl_section2 > div > div p strong {
@@ -2772,6 +2770,84 @@ SECTION
   }
   section.mtd_section3 span {
     right: -200px;
+  }
+}
+/*----------------------------*\
+SECTION1
+\-----------------------------*/
+@media screen and (max-width: 1255px) {
+  main section.atl_section1 {
+    padding-bottom: 10px;
+  }
+  main section.atl_section1 h2 {
+    padding-bottom: 10px;
+  }
+  main section.atl_section1 > div {
+    width: 100%;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  main section.atl_section1 > div img {
+    width: 85%;
+    max-height: 250px;
+  }
+  main section.atl_section1 > div > div p {
+    width: 85%;
+    margin: 0 auto;
+  }
+  main section.atl_section1 button {
+    margin-top: 0;
+  }
+  main section.atl_section1 > div.cercle {
+    left: -165px;
+    top: 182px;
+  }
+}
+@media screen and (max-width: 590px) {
+  main section.atl_section1 > div p {
+    font-size: 14px !important;
+    line-height: 26px !important;
+  }
+  main section.atl_section1 button {
+    width: 60%;
+  }
+}
+/*----------------------------*\
+SECTION2
+\-----------------------------*/
+@media screen and (max-width: 1255px) {
+  section.atl_section2 {
+    margin: 120px 0;
+    padding-bottom: 50px;
+  }
+  section.atl_section2 h2 {
+    padding-bottom: 10px;
+  }
+  section.atl_section2 > div {
+    width: 100%;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  section.atl_section2 > div img {
+    width: 85%;
+    max-height: 250px;
+  }
+  section.atl_section2 > div > div p {
+    width: 85%;
+    margin: 0 auto;
+  }
+  section.atl_section2 span {
+    right: -150px;
+    top: 91%;
+  }
+}
+@media screen and (max-width: 590px) {
+  section.atl_section2 > div > div p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  section.atl_section2 span {
+    top: 92%;
   }
 }
 /*----------------------------*\
