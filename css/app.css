@@ -11,7 +11,6 @@
 * html,
 * body {
   overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
   width: 100vw;
   height: fit-content;
   position: relative;
@@ -1059,18 +1058,18 @@ main section.cst > div {
   align-items: center;
   gap: 40px;
   width: 80%;
+  overflow-x: auto;
   margin: 40px auto 0 auto;
 }
 main section.cst > div > article {
   border: 2px solid #1CACE1;
-  width: 250px;
-  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
   gap: 35px;
+  margin-bottom: 15px;
 }
 main section.cst > div > article > h3 {
   font-family: "Montserrat";
@@ -1080,6 +1079,7 @@ main section.cst > div > article > h3 {
   text-align: center;
   margin: 0;
   width: 200px;
+  padding-top: 15px;
 }
 main section.cst > div > article img {
   width: 182px;
@@ -1089,7 +1089,7 @@ main section.cst > div > article img {
 main section.cst > div > article div > p {
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 112%;
   width: 100%;
   text-align: center;
@@ -1138,14 +1138,13 @@ main section.cst_section1 div.explications > div.black_overlay {
 main section.cst_section1 div.explications > div.white_content {
   display: none;
   position: fixed;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translateY(-50%);
   width: 80%;
-  height: 85%;
   background-color: white;
   z-index: 550;
   border-radius: 25px;
+  padding-bottom: 20px;
 }
 main section.cst_section1 div.explications > div.white_content a {
   font-size: 16px;
@@ -1175,8 +1174,10 @@ main section.cst_section1 div.explications > div.white_content h3 {
   font-family: "Handlee";
   font-size: 40px;
   line-height: 112%;
-  margin: 20px 0 0 0;
+  margin: 20px auto 0 auto;
   text-align: center;
+  width: 90%;
+  padding-top: 10px;
 }
 main section.cst_section1 div.explications > div.white_content h4 {
   font-weight: 400;
@@ -1200,8 +1201,7 @@ main section.cst_section1 div.explications > div.white_content div.cst_content >
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  width: 506px;
-  max-height: 300px;
+  width: 90%;
 }
 main section.cst_section1 div.explications > div.white_content div.cst_content > div button {
   margin-top: 20px;
@@ -1215,6 +1215,7 @@ main section.cst_section1 div.explications > div.white_content div.cst_content i
   border-radius: 15px;
   max-width: 546px;
   max-height: 420px;
+  padding: 0 0 0 20px;
 }
 main section.cst_section1 div.explications div:nth-of-type(1) > h4 {
   background-color: #4A423F;
@@ -2255,6 +2256,14 @@ HEADER
   header > div h2 {
     width: 90vw;
   }
+  button {
+    padding: 8px 18px;
+    gap: 8px !important;
+  }
+  button i {
+    width: 16px;
+    height: 16px;
+  }
 }
 @media screen and (max-width: 490px) {
   div.cercle2 {
@@ -2994,6 +3003,72 @@ SECTION2
   main section.cct_section2 > div ul {
     padding: 0;
     width: 500px;
+  }
+}
+/*----------------------------*\
+DIV EXPLICATIONS
+\-----------------------------*/
+@media screen and (max-width: 1300px) {
+  main section.cst_section1 div.explications > div.white_content div.cst_content img {
+    max-width: 346px;
+    max-height: 360px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  main section.cst_section1 div.explications > div.white_content div.cst_content img {
+    max-width: 346px;
+    max-height: 400px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  main section.cst_section1 div.explications > div.white_content div.cst_content img {
+    display: none;
+  }
+  main section.cst_section1 div.explications > div.white_content div.cst_content > div p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  main section.cst_section1 div.explications > div.white_content div.cst_content > div button {
+    margin: 20px auto 0 auto;
+    gap: 15px;
+    background: #1CACE1;
+  }
+}
+@media screen and (max-width: 590px) {
+  main section.cst_section1 div.explications > div.white_content a {
+    font-size: 14px;
+  }
+  main section.cst_section1 div.explications > div.white_content h3 {
+    font-size: 30px;
+    line-height: 112%;
+  }
+  main section.cst_section1 div.explications > div.white_content h4 {
+    font-size: 17px;
+    line-height: 112%;
+  }
+  main section.cst_section1 div.explications > div.white_content div.cst_content > div p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  main section.cst_section1 div.explications > div.white_content div.cst_content > div button {
+    font-size: 14px;
+    line-height: 26px;
+    gap: 8px;
+  }
+  main section.cst_section1 div.explications > div.white_content div.cst_content > div button i {
+    width: 16px;
+    height: 16px;
+  }
+}
+/*----------------------------*\
+ASIDE
+\-----------------------------*/
+@media screen and (max-width: 590px) {
+  html {
+    overflow-x: hidden;
+  }
+  aside.cst_aside span {
+    right: -150px;
   }
 }
 /*----------------------------*\

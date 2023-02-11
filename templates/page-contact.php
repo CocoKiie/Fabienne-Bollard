@@ -49,8 +49,7 @@ $arg_localisation3 = get_field("arg_localisation_3");
         </div>
         <div>
             <legend>Formulaire de contact</legend>
-            <?php echo do_shortcode('[wpforms id="164"]');
-            //471?>
+            <?php echo do_shortcode('[wpforms id="471"]');?>
         </div>
     </section>
     <section class="cct_section2">

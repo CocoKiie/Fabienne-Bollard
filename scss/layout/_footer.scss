@@ -318,6 +318,16 @@ HEADER
     header>div h2 {
         width: 90vw;
     }
+
+    button{
+        padding: 8px 18px;
+        gap: 8px !important;
+
+        i{
+            width: 16px;
+            height: 16px;
+        }
+    }
 }
 
 @media screen and (max-width:490px) {
@@ -1337,6 +1347,125 @@ SECTION2
                 padding: 0;
                 width: 500px;
             }
+        }
+    }
+}
+
+//responsive consultation
+/*----------------------------*\
+DIV EXPLICATIONS
+\-----------------------------*/
+@media screen and (max-width:1300px){
+    main section.cst_section1 {
+        div.explications {
+            >div.white_content {
+                div.cst_content {    
+                    img {
+                        max-width: 346px;
+                        max-height: 360px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1100px){
+    main section.cst_section1 {
+        div.explications {
+            >div.white_content {
+                div.cst_content {    
+                    img {
+                        max-width: 346px;
+                        max-height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1050px){
+    main section.cst_section1 {
+        div.explications {
+            >div.white_content {
+                div.cst_content {    
+                    img {
+                        display: none;
+                    }
+
+                    >div {
+                        p {
+                            width: 90%;
+                            margin: 0 auto;
+                        }
+    
+                        button {
+                            margin: 20px auto 0 auto;
+                            gap: 15px;
+                            background: #1CACE1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:590px){
+    main section.cst_section1 {
+        div.explications {
+            >div.white_content {
+
+                a{
+                    font-size: 14px;
+                }
+
+                h3 {
+                    font-size: 30px;
+                    line-height: 112%;
+                }
+    
+                h4 {
+                    font-size: 17px;
+                    line-height: 112%;
+                }
+
+                div.cst_content {
+                    >div {
+                        p {
+                            font-size: 14px;
+                            line-height: 26px;
+                        }
+    
+                        button {
+                            font-size: 14px;
+                            line-height: 26px;
+                            gap: 8px;
+
+                            i{
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------*\
+ASIDE
+\-----------------------------*/
+@media screen and (max-width:590px){
+    html{
+        overflow-x: hidden;
+    }
+    
+    aside.cst_aside {
+        span {
+            right: -150px;
         }
     }
 }

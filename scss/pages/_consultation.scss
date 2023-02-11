@@ -1,24 +1,24 @@
 /********************\
 SECTION1
 \********************/
-main section.cst > div {
+main section.cst>div {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 40px;
     width: 80%;
+    overflow-x: auto;
     margin: 40px auto 0 auto;
 
     >article {
         border: 2px solid #1CACE1;
-        width: 250px;
-        height: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         border-radius: 5px;
         gap: 35px;
+        margin-bottom: 15px;
 
         >h3 {
             font-family: 'Montserrat';
@@ -28,6 +28,7 @@ main section.cst > div {
             text-align: center;
             margin: 0;
             width: 200px;
+            padding-top: 15px;
         }
 
         img {
@@ -39,7 +40,7 @@ main section.cst > div {
         div>p {
             text-transform: uppercase;
             font-weight: 400;
-            font-size: 14px;
+            font-size: 13px;
             line-height: 112%;
             width: 100%;
             text-align: center;
@@ -79,7 +80,7 @@ main section.cst > div {
 main section.cst_section1 {
     margin-top: 50px;
 
-    h2{
+    h2 {
         color: black;
     }
 
@@ -99,16 +100,15 @@ main section.cst_section1 {
         >div.white_content {
             display: none;
             position: fixed;
-            top: 10%;
-            left: 50%;
-            transform: translateX(-50%);
+            top: 50%;
+            transform: translateY(-50%);
             width: 80%;
-            height: 85%;
             background-color: white;
             z-index: 550;
             border-radius: 25px;
+            padding-bottom: 20px;
 
-            a{
+            a {
                 font-size: 16px;
                 position: absolute;
                 top: -15px;
@@ -130,7 +130,7 @@ main section.cst_section1 {
                 }
             }
 
-            a:hover{
+            a:hover {
                 scale: 1.1;
                 transition: 0.3s;
             }
@@ -139,8 +139,10 @@ main section.cst_section1 {
                 font-family: 'Handlee';
                 font-size: 40px;
                 line-height: 112%;
-                margin: 20px 0 0 0;
+                margin: 20px auto 0 auto;
                 text-align: center;
+                width: 90%;
+                padding-top: 10px;
             }
 
             h4 {
@@ -167,8 +169,7 @@ main section.cst_section1 {
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 30px;
-                        width: 506px;
-                        max-height: 300px;
+                        width: 90%;
                     }
 
                     button {
@@ -186,6 +187,7 @@ main section.cst_section1 {
                     border-radius: 15px;
                     max-width: 546px;
                     max-height: 420px;
+                    padding: 0 0 0 20px;
                 }
             }
         }
