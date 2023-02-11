@@ -745,6 +745,10 @@ header:not(header.accueil) {
             top: 54vh;
         }
     }
+
+    header{
+        margin-top: 100px;
+    }
 }
 
 @media screen and (max-width:540px) {
@@ -1462,7 +1466,7 @@ ASIDE
     html{
         overflow-x: hidden;
     }
-    
+
     aside.cst_aside {
         span {
             right: -150px;
