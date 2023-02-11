@@ -635,6 +635,12 @@ header:not(header.accueil) {
     }
 }
 
+@media screen and (max-width:1180px){
+    header{
+        margin-top: 100px;
+    }
+}
+
 @media screen and (max-width:1500px) {
     header:not(header.accueil) {
         div.cercle2 {
@@ -744,10 +750,6 @@ header:not(header.accueil) {
             left: 6vw;
             top: 54vh;
         }
-    }
-
-    header{
-        margin-top: 100px;
     }
 }
 

@@ -140,6 +140,7 @@ nav.navigation {
         flex-direction: row-reverse;
         width: 95%;
         padding: 0 10px;
+        position: fixed;
 
         >div>ul {
             flex-direction: column;
@@ -225,7 +226,6 @@ nav.navigation {
     nav.navigation {
         justify-content: space-around;
         flex-direction: row-reverse;
-        position: fixed;
 
         a.first-link {
             right: 0;

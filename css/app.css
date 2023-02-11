@@ -118,6 +118,7 @@ nav.navigation div > ul > li:hover > ul {
     flex-direction: row-reverse;
     width: 95%;
     padding: 0 10px;
+    position: fixed;
   }
   nav.navigation > div > ul {
     flex-direction: column;
@@ -191,7 +192,6 @@ nav.navigation div > ul > li:hover > ul {
   nav.navigation {
     justify-content: space-around;
     flex-direction: row-reverse;
-    position: fixed;
   }
   nav.navigation a.first-link {
     right: 0;
@@ -2477,6 +2477,11 @@ header:not(header.accueil) div.cercle3 {
     top: 56vh;
   }
 }
+@media screen and (max-width: 1180px) {
+  header {
+    margin-top: 100px;
+  }
+}
 @media screen and (max-width: 1500px) {
   header:not(header.accueil) div.cercle2 {
     left: -8vw;
@@ -2555,9 +2560,6 @@ header:not(header.accueil) div.cercle3 {
   header:not(header.accueil) div.cercle3 {
     left: 6vw;
     top: 54vh;
-  }
-  header {
-    margin-top: 100px;
   }
 }
 @media screen and (max-width: 540px) {
