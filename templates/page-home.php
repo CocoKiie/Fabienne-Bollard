@@ -50,6 +50,24 @@ $txt_slide_5 = get_field("txt_slide_5");
 $title_slide_6 = get_field("title_slide_6");
 $txt_slide_6 = get_field("txt_slide_6");
 
+//SLIDER témoignages
+//Prénom et nom
+@$comment_name_slide_1 = get_field("comment_name_slide_1");
+@$comment_name_slide_2 = get_field("comment_name_slide_2");
+@$comment_name_slide_3 = get_field("comment_name_slide_3");
+@$comment_name_slide_4 = get_field("comment_name_slide_4");
+@$comment_name_slide_5 = get_field("comment_name_slide_5");
+@$comment_name_slide_6 = get_field("comment_name_slide_6");
+@$comment_name_slide_7 = get_field("comment_name_slide_7");
+//Texte
+@$comment_txt_slide_1 = get_field("comment_txt_slide_1");
+@$comment_txt_slide_2 = get_field("comment_txt_slide_2");
+@$comment_txt_slide_3 = get_field("comment_txt_slide_3");
+@$comment_txt_slide_4 = get_field("comment_txt_slide_4");
+@$comment_txt_slide_5 = get_field("comment_txt_slide_5");
+@$comment_txt_slide_6 = get_field("comment_txt_slide_6");
+@$comment_txt_slide_7 = get_field("comment_txt_slide_7");
+
 //motion design
 $file_mp4 = get_field('video_mp4');
 ?>
@@ -88,7 +106,8 @@ $file_mp4 = get_field('video_mp4');
                 <div>
                     <i></i>
                     <p><strong>Être consultante en <abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>*&nbsp;c'est</strong>
-                        <br><?php the_field("def_job"); ?></p>
+                        <br><?php the_field("def_job"); ?>
+                    </p>
                 </div>
                 <p><dfn id="E.N.M.">*<abbr title="Éducation Neurosensorielle et Motrice">E.N.M.</abbr>&nbsp;=&nbsp;Éducation Neurosensorielle et&nbsp;Motrice</dfn></p>
                 <button aria-label="Voir plus d'informations sur les réflexes archaïques" onclick="location.href='<?php the_field('links_reflexes', 'option'); ?>'"><i></i><?php the_field("button_i_reflexes"); ?></button>
@@ -276,13 +295,152 @@ $file_mp4 = get_field('video_mp4');
         </div>
         <button aria-label="Voir plus d'informations sur les 3 méthodes pratiquées par Fabienne Bollard" onclick="location.href='<?php the_field('links_methodes', 'option'); ?>'"><i></i><?php the_field("button_section_4"); ?></button>
     </section>
-    <section class="acc_section5">
-        <h2><?php the_field("title_section_4"); ?></h2>
-        <h3><?php the_field("tagline_section_4"); ?></h3>
 
-        <!--cercle-->
-        <div></div>
-    </section>
+    <?php if ($comment_name_slide_1 || $comment_txt_slide_1) : ?>
+        <section class="acc_section5">
+            <h2><?php the_field("title_section_4"); ?></h2>
+            <h3><?php the_field("tagline_section_4"); ?></h3>
+
+            <div class="caroussel-temoignage">
+                <?php if ($comment_name_slide_1 || $comment_txt_slide_1) : ?>
+                    <div class="carousel-cell-temoignage">
+                        <?php if ($comment_name_slide_1) : ?>
+                            <h4><?php echo $comment_name_slide_1; ?></h4>
+                        <?php endif; ?>
+                        <?php if ($comment_txt_slide_1) : ?>
+                            <p>“<?php echo $comment_txt_slide_1; ?></p>
+                        <?php endif; ?>
+                    </div>
+                <?php endif; ?>
+                <?php if ($comment_name_slide_2 || $comment_txt_slide_2) : ?>
+                    <div class="carousel-cell-temoignage">
+                        <?php if ($comment_name_slide_2) : ?>
+                            <h4><?php echo $comment_name_slide_2; ?></h4>
+                        <?php endif; ?>
+                        <?php if ($comment_txt_slide_2) : ?>
+                            <p>“<?php echo $comment_txt_slide_2; ?></p>
+                        <?php endif; ?>
+                    </div>
+                <?php endif; ?>
+                <?php if ($comment_name_slide_3 || $comment_txt_slide_3) : ?>
+                    <div class="carousel-cell-temoignage">
+                        <?php if ($comment_name_slide_3) : ?>
+                            <h4><?php echo $comment_name_slide_3; ?></h4>
+                        <?php endif; ?>
+                        <?php if ($comment_txt_slide_3) : ?>
+                            <p>“<?php echo $comment_txt_slide_3; ?></p>
+                        <?php endif; ?>
+                    </div>
+                <?php endif; ?>
+                <?php if ($comment_name_slide_4 || $comment_txt_slide_4) : ?>
+                    <div class="carousel-cell-temoignage">
+                        <?php if ($comment_name_slide_4) : ?>
+                            <h4><?php echo $comment_name_slide_4; ?></h4>
+                        <?php endif; ?>
+                        <?php if ($comment_txt_slide_4) : ?>
+                            <p>“<?php echo $comment_txt_slide_4; ?></p>
+                        <?php endif; ?>
+                    </div>
+                <?php endif; ?>
+                <?php if ($comment_name_slide_5 || $comment_txt_slide_5) : ?>
+                    <div class="carousel-cell-temoignage">
+                        <?php if ($comment_name_slide_5) : ?>
+                            <h4><?php echo $comment_name_slide_5; ?></h4>
+                        <?php endif; ?>
+                        <?php if ($comment_txt_slide_5) : ?>
+                            <p>“<?php echo $comment_txt_slide_5; ?></p>
+                        <?php endif; ?>
+                    </div>
+                <?php endif; ?>
+                <?php if ($comment_name_slide_6 || $comment_txt_slide_6) : ?>
+                    <div class="carousel-cell-temoignage">
+                        <?php if ($comment_name_slide_6) : ?>
+                            <h4><?php echo $comment_name_slide_6; ?></h4>
+                        <?php endif; ?>
+                        <?php if ($comment_txt_slide_6) : ?>
+                            <p>“<?php echo $comment_txt_slide_6; ?></p>
+                        <?php endif; ?>
+                    </div>
+                <?php endif; ?>
+                <?php if ($comment_name_slide_7 || $comment_txt_slide_7) : ?>
+                    <div class="carousel-cell-temoignage">
+                        <?php if ($comment_name_slide_7) : ?>
+                            <h4><?php echo $comment_name_slide_7; ?></h4>
+                        <?php endif; ?>
+                        <?php if ($comment_txt_slide_7) : ?>
+                            <p>“<?php echo $comment_txt_slide_7; ?></p>
+                        <?php endif; ?>
+                    </div>
+                <?php endif; ?>
+            </div>
+
+            <!--Boutons slider-->
+            <div class="button-temoignage">
+                <button aria-label="Voir la suite du contenu" onclick="plusDivsTemoignage(-1)">&#10094;</button>
+                <!--Compteur-->
+                <div>
+                    <?php if ($comment_name_slide_1 || $comment_txt_slide_1) : ?>
+                        <span class="dots-temoignage" onclick="currentDiv(1)"></span>
+                    <?php endif; ?>
+                    <?php if ($comment_name_slide_2 || $comment_txt_slide_2) : ?>
+                        <span class="dots-temoignage" onclick="currentDiv(2)"></span>
+                    <?php endif; ?>
+                    <?php if ($comment_name_slide_3 || $comment_txt_slide_3) : ?>
+                        <span class="dots-temoignage" onclick="currentDiv(3)"></span>
+                    <?php endif; ?>
+                    <?php if ($comment_name_slide_4 || $comment_txt_slide_4) : ?>
+                        <span class="dots-temoignage" onclick="currentDiv(4)"></span>
+                    <?php endif; ?>
+                    <?php if ($comment_name_slide_5 || $comment_txt_slide_5) : ?>
+                        <span class="dots-temoignage" onclick="currentDiv(5)"></span>
+                    <?php endif; ?>
+                    <?php if ($comment_name_slide_6 || $comment_txt_slide_6) : ?>
+                        <span class="dots-temoignage" onclick="currentDiv(6)"></span>
+                    <?php endif; ?>
+                    <?php if ($comment_name_slide_7 || $comment_txt_slide_7) : ?>
+                        <span class="dots-temoignage" onclick="currentDiv(7)"></span>
+                    <?php endif; ?>
+                </div>
+                <button aria-label="Voir la suite du contenu" onclick="plusDivsTemoignage(1)">&#10095;</button>
+            </div>
+            <script>
+                var slideIndexTemoignage = 1;
+                showDivsTemoignage(slideIndexTemoignage);
+
+                function plusDivsTemoignage(t) {
+                    showDivsTemoignage(slideIndexTemoignage += t);
+                }
+
+                function currentDivTemoignage(t) {
+                    showDivsTemoignage(slideIndexTemoignage = t);
+                }
+
+                function showDivsTemoignage(t) {
+                    var iTemoignage;
+                    var xTemoignage = document.getElementsByClassName("carousel-cell-temoignage");
+                    var dotsTemoignage = document.getElementsByClassName("dots-temoignage");
+
+                    if (t > xTemoignage.length) {
+                        slideIndexTemoignage = 1;
+                    }
+                    if (t < 1) {
+                        slideIndexTemoignage = xTemoignage.length;
+                    }
+                    for (iTemoignage = 0; iTemoignage < dotsTemoignage.length; iTemoignage++) {
+                        dotsTemoignage[iTemoignage].className = dotsTemoignage[iTemoignage].className.replace(" rempliT", "");
+                    }
+                    for (iTemoignage = 0; iTemoignage < xTemoignage.length; iTemoignage++) {
+                        xTemoignage[iTemoignage].style.display = "none";
+                    }
+                    xTemoignage[slideIndexTemoignage - 1].style.display = "block";
+                    dotsTemoignage[slideIndexTemoignage - 1].className += " rempliT";
+                }
+            </script>
+
+            <!--cercle-->
+            <div></div>
+        </section>
+    <?php endif; ?>
 </main>
 
 <?php

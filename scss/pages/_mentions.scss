@@ -2,53 +2,59 @@
 LEGALITE
 \********************/
 main.legalite section {
+    align-items: flex-start;
+
     h1 {
         font-weight: 400;
-        font-size: 100px;
+        font-size: 150px;
         line-height: 75px;
-        margin-left: 131px;
-        margin-top: 50px;
+        margin: 100px auto 0 auto;
+        width: 85%;
     }
 
     h2{
         font-size: 32px;
-        margin-left: 131px;
-        margin-top: 100px;
+        margin: 100px auto 0 auto;
+        line-height: 120%;
+        width: 85%;
     }
 
     h3{
-        margin-top: 40px;
+        margin: 40px auto 0 auto;
         font-size: 36px;
-        margin-left: 131px;
+        width: 100%;
     }
 
     h4{
-        margin-top: 20px;
+        margin: 20px auto 0 auto;
         font-size: 20px;
-        margin-left: 131px;
+        width: 100%;
     }
 
     h5{
-        margin-top: 10px;
+        margin: 10px auto 0 auto;
         font-size: 16px;
-        margin-left: 131px;
+        width: 100%;
     }
 
     p{
-        margin-top: 10px;
-        width: 80%;
-        margin-left: 131px;
+        margin: 10px auto 0 auto;
+        width: 100%;
     }
 
     ul{
-        margin-left: 131px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    article{
+        width: 85%;
+        margin: 0 auto;
     }
 
     aside{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
         padding: 100px 0;
+        margin: 0 auto;
+        width: 85%;
     }
 }

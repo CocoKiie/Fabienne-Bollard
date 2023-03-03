@@ -189,7 +189,7 @@ main section.acc_section1 {
         align-items: center;
         justify-content: center;
 
-        >div{
+        >div {
             position: relative;
         }
 
@@ -439,7 +439,7 @@ SECTION3
 \********************/
 section.acc_section3 {
     margin-top: 100px;
-    padding-bottom: 15px;
+    padding-bottom: 100px;
 
     >h2,
     >h3 {
@@ -525,8 +525,82 @@ section.acc_section3 {
 }
 
 /********************\
-SECTION4
+SECTION5
 \********************/
 section.acc_section5 {
-    margin: 90px 0;
+    padding-bottom: 100px;
+
+    div.caroussel-temoignage {
+        margin: 60px auto 0 auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+
+        background: #FFFFFF;
+        box-shadow: 0px 0px 35px -10px rgba(0, 0, 0, 0.18);
+        border-radius: 50px;
+        z-index: 50;
+        max-width: 60%;
+
+        .carousel-cell-temoignage {
+            display: none;
+            padding: 30px 80px 70px 80px;
+
+            h4 {
+                font-weight: 400;
+                font-size: 30px;
+                font-family: 'Handlee';
+                line-height: 32px;
+                text-align: center;
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            p {
+                width: 100%;
+                padding-bottom: 20px;
+                font-size: 16px;
+                line-height: 32px;
+
+                letter-spacing: 0.03em;
+            }
+        }
+    }
+
+    div.button-temoignage {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: -70px;
+        position: relative;
+        gap: 15px;
+        z-index: 50;
+
+        span {
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            border-radius: 50%;
+            margin: 3px;
+            border: 1px solid #1CACE1;
+            cursor: pointer;
+        }
+
+        .rempliT {
+            background: #1CACE1;
+            color: #1CACE1;
+        }
+
+        button {
+            align-items: flex-start;
+            padding: 10px 17px;
+            margin: 0 10px;
+            gap: 50px;
+            font-size: 18px;
+            background: #1CACE1;
+            border-radius: 200px;
+        }
+    }
 }
