@@ -116,7 +116,6 @@ nav.navigation div > ul > li:hover > ul {
   nav.navigation {
     justify-content: space-between;
     flex-direction: row-reverse;
-    width: 95%;
     padding: 0 10px;
     position: fixed;
   }
@@ -425,6 +424,7 @@ main section.acc_section1 h3 + div {
   align-items: center;
   margin-top: 40px;
   width: 85%;
+  gap: 20px;
   justify-content: center;
 }
 main section.acc_section1 div.caroussel {
