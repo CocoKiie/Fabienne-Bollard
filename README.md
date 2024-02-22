@@ -8,4 +8,4 @@ Etant un petit groupe, j'ai pu participer à toutes les phases du projet : la r�
 Vous trouverez le site héberger ici : 
 https://fabiennebollardreflexesarchaiques74.fr/
 
-(Oui, je regrette de ne pas avoir été là pour conseiller le choix du nom de domaine :D ce qui est sûre c'est que je ne referais pas l'erreur !)
+(Oui, je regrette de ne pas avoir été là pour conseiller mon équipe sur le choix du nom de domaine :D ce qui est sûre c'est que je ne referais pas l'erreur !)
